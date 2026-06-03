@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-03T06:26:53+00:00",
+  "generated_at": "2026-06-03T08:20:09+00:00",
   "data_sources": [
     {
       "name": "International football results by martj42",
@@ -46,6 +46,6 @@
     "market_values_valued": 815
   },
   "disclaimer": "This is an educational forecasting model for a portfolio/GitHub project. It is not betting advice and does not use private team information.",
-  "market_values_generated_at": "2026-06-03T07:29:52+00:00",
+  "market_values_generated_at": "2026-06-03T08:31:56+00:00",
   "market_value_note": "Market values are matched from a public Transfermarkt dataset mirror. Unmatched players are left blank; team totals sum only matched player values."
 }

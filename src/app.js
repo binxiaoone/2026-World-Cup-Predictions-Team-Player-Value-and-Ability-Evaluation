@@ -5,86 +5,18 @@ const state = {
   fixtures: [],
   groups: {},
   manifest: {},
+  predictionsMeta: {},
   activeView: "overview",
   search: "",
   group: "All",
   team: "All",
-  lang: localStorage.getItem("worldcup-lang") || "zh",
+  lang: localStorage.getItem("worldcup-lang") || "en",
 };
 
 const I18N = {
-  zh: {
-    appTitle: "世界杯 AI 预测仪表盘",
-    loadingData: "正在加载数据...",
-    generated: "生成时间",
-    teams: "球队",
-    players: "球员",
-    fixtures: "赛程",
-    validationAccuracy: "验证准确率",
-    search: "搜索",
-    searchPlaceholder: "球队、球员、俱乐部...",
-    group: "小组",
-    groups: "小组",
-    team: "球队",
-    overview: "总览",
-    championProbability: "冠军概率",
-    teamStrength: "球队强度",
-    eloRecent: "Elo + 近期状态",
-    featuredSquads: "重点球队阵容",
-    topExperience: "国家队经验最多",
-    matchPredictions: "比赛预测",
-    winDrawLoss: "主胜 / 平局 / 客胜",
-    playerDatabase: "球员数据库",
-    photo: "照片",
-    player: "球员",
-    position: "位置",
-    overall: "综合",
-    marketValue: "身价",
-    squadValue: "总身价",
-    valueCoverage: "覆盖率",
-    noValue: "暂无",
-    age: "年龄",
-    caps: "出场",
-    goals: "进球",
-    club: "俱乐部",
-    links: "链接",
-    all: "全部",
-    simulations: "次模拟",
-    champion: "冠军",
-    form: "状态",
-    avgAge: "平均年龄",
-    shown: "条展示",
-    noTeams: "没有球队匹配当前筛选。",
-    noSquads: "没有阵容匹配当前筛选。",
-    noFixtures: "没有赛程匹配当前筛选。",
-    noGroups: "没有小组匹配当前筛选。",
-    noPlayers: "没有球员匹配当前筛选。",
-    source: "百科",
-    hupu: "虎扑",
-    hupuSearch: "虎扑搜索",
-    fallbackImage: "备用头像",
-    ratingNote: "6星能力为模型估算，基于出场、进球、年龄、位置、球队 Elo 和近期状态。",
-    photoAlt: "照片",
-    pick: "预测",
-    draw: "平局",
-    homeWin: "主胜",
-    awayWin: "客胜",
-    footerText: "教育演示预测，不构成投注建议。数据来源见",
-    dataLoadFailed: "数据加载失败",
-    attack: "进攻",
-    creativity: "创造",
-    defense: "防守",
-    experience: "经验",
-    physical: "身体",
-    impact: "影响",
-    atk: "进",
-    cre: "创",
-    def: "防",
-    exp: "经",
-    phy: "体",
-    imp: "影",
-  },
+  zh: null,
   en: {
+    documentTitle: "World Cup AI Predictor",
     appTitle: "AI Prediction Dashboard",
     loadingData: "Loading data...",
     generated: "Generated",
@@ -101,6 +33,9 @@ const I18N = {
     championProbability: "Champion Probability",
     teamStrength: "Team Strength",
     eloRecent: "Elo + recent form",
+    dataSources: "Data sources",
+    scheduleFreshness: "Schedule times",
+    squadFreshness: "Squads",
     featuredSquads: "Featured Squads",
     topExperience: "Top international experience",
     matchPredictions: "Match Predictions",
@@ -132,14 +67,11 @@ const I18N = {
     noPlayers: "No players match the current filters.",
     source: "Wiki",
     hupu: "Hupu",
-    hupuSearch: "Hupu search",
     fallbackImage: "Fallback image",
     ratingNote: "6-star model estimate from caps, goals, age, position, team Elo, and recent form.",
     photoAlt: "photo",
     pick: "Pick",
     draw: "Draw",
-    homeWin: "Home win",
-    awayWin: "Away win",
     footerText: "Educational forecast only. Not betting advice. Data sources are listed in",
     dataLoadFailed: "Data Load Failed",
     attack: "Attack",
@@ -158,35 +90,26 @@ const I18N = {
 };
 
 const HUPU_ALIASES = {
-  "Lionel Messi": "梅西",
-  "Cristiano Ronaldo": "C罗",
-  "Kylian Mbappé": "姆巴佩",
-  Neymar: "内马尔",
-  "Erling Haaland": "哈兰德",
-  "Harry Kane": "凯恩",
-  "Mohamed Salah": "萨拉赫",
-  "Son Heung-min": "孙兴慜",
-  "Luka Modrić": "莫德里奇",
-  "Kevin De Bruyne": "德布劳内",
-  "Romelu Lukaku": "卢卡库",
-  "Sadio Mané": "马内",
-  "Memphis Depay": "德佩",
-  "Virgil van Dijk": "范戴克",
-  "Rodri": "罗德里",
-  "Bruno Fernandes": "B费",
-  "Vinícius Júnior": "维尼修斯",
-  "Jude Bellingham": "贝林厄姆",
-  "Lautaro Martínez": "劳塔罗",
-  "Antoine Griezmann": "格列兹曼",
+  "Cristiano Ronaldo": "Cristiano Ronaldo",
+  "Lionel Messi": "Lionel Messi",
+  "Kylian Mbappe": "Kylian Mbappe",
+  "Kylian Mbappé": "Kylian Mbappe",
 };
 
 const $ = (selector) => document.querySelector(selector);
 const $$ = (selector) => Array.from(document.querySelectorAll(selector));
-const percent = (value) => `${(Number(value || 0) * 100).toFixed(1)}%`;
-const number = (value) => Number(value || 0).toLocaleString(state.lang === "zh" ? "zh-CN" : "en-US");
 
 function t(key) {
-  return I18N[state.lang][key] ?? I18N.en[key] ?? key;
+  const current = I18N[state.lang] || I18N.en;
+  return current[key] ?? I18N.en[key] ?? key;
+}
+
+function percent(value) {
+  return `${(Number(value || 0) * 100).toFixed(1)}%`;
+}
+
+function number(value) {
+  return Number(value || 0).toLocaleString(state.lang === "zh" ? "zh-CN" : "en-US");
 }
 
 function normalize(value) {
@@ -270,7 +193,7 @@ function bindEvents() {
 
 function applyStaticTranslations() {
   document.documentElement.lang = state.lang === "zh" ? "zh-CN" : "en";
-  document.title = state.lang === "zh" ? "世界杯 AI 预测仪表盘" : "World Cup AI Predictor";
+  document.title = t("documentTitle");
   $$("[data-i18n]").forEach((element) => {
     element.textContent = t(element.dataset.i18n);
   });
@@ -327,7 +250,7 @@ function initials(name) {
 }
 
 function hupuQuery(player) {
-  return HUPU_ALIASES[player.player] || `${player.player} ${player.team} 足球`;
+  return HUPU_ALIASES[player.player] || `${player.player} ${player.team} football`;
 }
 
 function hupuUrl(player) {
@@ -355,7 +278,9 @@ function fixturePasses(fixture) {
   if (state.group !== "All" && fixture.group !== state.group) return false;
   if (state.team !== "All" && ![fixture.home_team, fixture.away_team].includes(state.team)) return false;
   if (!state.search) return true;
-  const haystack = [fixture.home_team, fixture.away_team, fixture.city, fixture.group].map(normalize).join(" ");
+  const haystack = [fixture.home_team, fixture.away_team, fixture.city, fixture.group, fixture.venue, fixture.kickoff_et]
+    .map(normalize)
+    .join(" ");
   return haystack.includes(normalize(state.search));
 }
 
@@ -370,8 +295,32 @@ function renderAll() {
   $("#fixtureCount").textContent = number(state.manifest.counts?.fixtures_predicted ?? state.fixtures.length);
   $("#modelAccuracy").textContent = percent(state.manifest.model?.validation_accuracy ?? 0);
   $("#simulationRuns").textContent = `${number(state.predictionsMeta.simulation_runs)} ${t("simulations")}`;
-
+  renderHeroFacts();
   renderFilteredViews();
+}
+
+function renderHeroFacts() {
+  const sources = state.manifest.data_sources || [];
+  const sourceNames = sources.map((source) => source.name).slice(0, 3);
+  const scheduleFixtures = state.fixtures.filter((fixture) => fixture.kickoff_utc || fixture.kickoff_et);
+  const firstMatch = scheduleFixtures[0];
+  const squadUpdated = state.manifest.generated_at
+    ? new Date(state.manifest.generated_at).toLocaleDateString(state.lang === "zh" ? "zh-CN" : "en-US")
+    : "--";
+
+  $("#dataSourceSummary").textContent = `${number(sources.length)} ${state.lang === "zh" ? "??????" : "public sources"}`;
+  $("#dataSourceSummary").textContent = `${number(sources.length)} public sources`;
+  $("#dataSourceDetail").textContent = sourceNames.join(" / ");
+
+  $("#scheduleSummary").textContent = firstMatch
+    ? `${firstMatch.date} ${firstMatch.kickoff_et || firstMatch.kickoff_utc || ""}`.trim()
+    : "--";
+  $("#scheduleDetail").textContent = firstMatch
+    ? `${firstMatch.home_team} vs ${firstMatch.away_team} | ${firstMatch.venue || firstMatch.city || "--"}`
+    : "Kickoff times unavailable";
+
+  $("#squadSummary").textContent = "Final 48-team FIFA squads";
+  $("#squadDetail").textContent = `Current page data generated on ${squadUpdated}`;
 }
 
 function renderFilteredViews() {
@@ -390,7 +339,9 @@ function renderChampionList() {
     .slice(0, 10);
 
   $("#championList").innerHTML = teams.length
-    ? teams.map((team, index) => rankRow(index + 1, team.team, `${t("group")} ${team.group} | Elo ${team.elo}`, team.simulation?.champion || 0)).join("")
+    ? teams
+        .map((team, index) => rankRow(index + 1, team.team, `${t("group")} ${team.group} | Elo ${team.elo}`, team.simulation?.champion || 0))
+        .join("")
     : empty(t("noTeams"));
 }
 
@@ -427,7 +378,7 @@ function rankRow(rank, title, subtitle, value, label = percent(value)) {
 function renderFeaturedSquads() {
   const teams = state.teams
     .filter((team) => teamPasses(team.team))
-    .sort((a, b) => (b.squad?.total_caps || 0) - (a.squad?.total_caps || 0))
+    .sort((a, b) => (b.squad?.market_value?.total_eur || 0) - (a.squad?.market_value?.total_eur || 0))
     .slice(0, 6);
 
   $("#featuredSquads").innerHTML = teams.length
@@ -452,7 +403,7 @@ function renderFeaturedSquads() {
                     (player) => `
                       <div class="mini-player">
                         <span class="team-name">${escapeHtml(player.player)}</span>
-                        <span>${number(player.goals)} ${state.lang === "zh" ? "球" : "G"}</span>
+                        <span>${number(player.goals)} G</span>
                       </div>
                     `,
                   )
@@ -474,11 +425,14 @@ function renderFixtures() {
 
 function fixtureCard(fixture) {
   const p = fixture.probabilities;
+  const timeLine = [fixture.kickoff_et ? `ET ${fixture.kickoff_et}` : null, fixture.kickoff_utc ? `UTC ${fixture.kickoff_utc}` : null]
+    .filter(Boolean)
+    .join(" | ");
   return `
     <article class="fixture">
       <div>
         <strong>${escapeHtml(fixture.date)}</strong>
-        <div class="subtext">${t("group")} ${escapeHtml(fixture.group)} | ${escapeHtml(fixture.city)}</div>
+        <div class="subtext">${timeLine || "--"}</div>
       </div>
       <div>
         <div class="match-title">
@@ -486,6 +440,7 @@ function fixtureCard(fixture) {
           <span class="versus">vs</span>
           <span>${escapeHtml(fixture.away_team)}</span>
         </div>
+        <div class="subtext">${t("group")} ${escapeHtml(fixture.group)} | ${escapeHtml(fixture.venue || fixture.city || "--")}</div>
         <div class="prob-bars">
           ${probLine(fixture.home_team, p.home_win)}
           ${probLine(t("draw"), p.draw)}
@@ -509,41 +464,42 @@ function probLine(label, value) {
 
 function renderGroups() {
   const entries = Object.entries(state.groups).filter(([group]) => state.group === "All" || state.group === group);
-  $("#groupTables").innerHTML = entries
-    .map(([group, rows]) => {
-      const filteredRows = rows.filter((row) => teamPasses(row.team));
-      if (!filteredRows.length) return "";
-      return `
-        <section class="group-table">
-          <h3>${t("group")} ${escapeHtml(group)}</h3>
-          <table>
-            <thead>
-              <tr>
-                <th>#</th>
-                <th>${t("team")}</th>
-                <th>xPts</th>
-                <th>xW</th>
-              </tr>
-            </thead>
-            <tbody>
-              ${filteredRows
-                .map(
-                  (row) => `
-                    <tr>
-                      <td>${row.rank}</td>
-                      <td><strong>${escapeHtml(row.team)}</strong></td>
-                      <td>${row.expected_points.toFixed(2)}</td>
-                      <td>${row.expected_wins.toFixed(2)}</td>
-                    </tr>
-                  `,
-                )
-                .join("")}
-            </tbody>
-          </table>
-        </section>
-      `;
-    })
-    .join("") || empty(t("noGroups"));
+  $("#groupTables").innerHTML =
+    entries
+      .map(([group, rows]) => {
+        const filteredRows = rows.filter((row) => teamPasses(row.team));
+        if (!filteredRows.length) return "";
+        return `
+          <section class="group-table">
+            <h3>${t("group")} ${escapeHtml(group)}</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>${t("team")}</th>
+                  <th>xPts</th>
+                  <th>xW</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${filteredRows
+                  .map(
+                    (row) => `
+                      <tr>
+                        <td>${row.rank}</td>
+                        <td><strong>${escapeHtml(row.team)}</strong></td>
+                        <td>${row.expected_points.toFixed(2)}</td>
+                        <td>${row.expected_wins.toFixed(2)}</td>
+                      </tr>
+                    `,
+                  )
+                  .join("")}
+              </tbody>
+            </table>
+          </section>
+        `;
+      })
+      .join("") || empty(t("noGroups"));
 }
 
 function renderPlayers() {
@@ -647,7 +603,7 @@ function radarSvg(scores = {}) {
     })
     .join("");
   const axes = labels
-    .map(([key, label], index) => {
+    .map(([, label], index) => {
       const [x, y] = point(index, maxR + 18);
       const [x2, y2] = point(index, maxR);
       return `
@@ -657,10 +613,9 @@ function radarSvg(scores = {}) {
     })
     .join("");
   const dots = labels
-    .map(([key], index) => {
+    .map(([key, , fullLabel], index) => {
       const value = Math.max(1, Math.min(6, Number(scores[key] || 1)));
       const [x, y] = point(index, (value / 6) * maxR);
-      const fullLabel = labels[index][2];
       return `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="3" class="radar-dot"><title>${fullLabel}: ${value.toFixed(1)}/6</title></circle>`;
     })
     .join("");

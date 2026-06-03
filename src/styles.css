@@ -85,6 +85,45 @@ main {
   padding: 22px clamp(16px, 4vw, 52px) 36px;
 }
 
+.hero-strip {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.hero-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 16px 18px;
+  background:
+    linear-gradient(135deg, rgba(15, 122, 79, 0.08), rgba(47, 102, 144, 0.08)),
+    var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.hero-label {
+  display: block;
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.hero-card strong {
+  display: block;
+  margin-top: 8px;
+  font-size: 1.15rem;
+  line-height: 1.2;
+}
+
+.hero-card p {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 0.84rem;
+  line-height: 1.45;
+}
+
 .source-pill {
   flex: 0 1 auto;
   min-width: 190px;
@@ -348,6 +387,10 @@ select:focus,
   border-radius: 8px;
   padding: 14px;
   background: #fbfcfb;
+}
+
+.squad {
+  position: relative;
 }
 
 .squad-stats {
@@ -737,6 +780,7 @@ footer a {
   }
 
   .summary-grid,
+  .hero-strip,
   .two-column,
   .squad-grid,
   .group-grid,
@@ -759,6 +803,7 @@ footer a {
 
 @media (max-width: 620px) {
   .summary-grid,
+  .hero-strip,
   .squad-grid,
   .group-grid,
   .player-showcase {

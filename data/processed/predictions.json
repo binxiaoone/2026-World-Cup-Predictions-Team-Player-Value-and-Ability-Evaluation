@@ -3,10 +3,13 @@
     {
       "id": "wc26-49291",
       "date": "2026-06-11",
+      "kickoff_utc": "19:00",
+      "kickoff_et": "3:00 PM",
       "home_team": "Mexico",
       "away_team": "South Africa",
       "group": "A",
       "city": "Mexico City",
+      "venue": "Estadio Azteca",
       "host_country": "Mexico",
       "neutral": false,
       "probabilities": {
@@ -25,10 +28,13 @@
     {
       "id": "wc26-49292",
       "date": "2026-06-11",
+      "kickoff_utc": null,
+      "kickoff_et": null,
       "home_team": "South Korea",
       "away_team": "Czech Republic",
       "group": "A",
       "city": "Zapopan",
+      "venue": null,
       "host_country": "Mexico",
       "neutral": true,
       "probabilities": {
@@ -47,10 +53,13 @@
     {
       "id": "wc26-49294",
       "date": "2026-06-12",
+      "kickoff_utc": null,
+      "kickoff_et": null,
       "home_team": "United States",
       "away_team": "Paraguay",
       "group": "D",
       "city": "Inglewood",
+      "venue": null,
       "host_country": "United States",
       "neutral": false,
       "probabilities": {
@@ -69,10 +78,13 @@
     {
       "id": "wc26-49293",
       "date": "2026-06-12",
+      "kickoff_utc": null,
+      "kickoff_et": null,
       "home_team": "Canada",
       "away_team": "Bosnia and Herzegovina",
       "group": "B",
       "city": "Toronto",
+      "venue": null,
       "host_country": "Canada",
       "neutral": false,
       "probabilities": {
@@ -91,10 +103,13 @@
     {
       "id": "wc26-49296",
       "date": "2026-06-13",
+      "kickoff_utc": "22:00",
+      "kickoff_et": "6:00 PM",
       "home_team": "Brazil",
       "away_team": "Morocco",
       "group": "C",
       "city": "East Rutherford",
+      "venue": "MetLife Stadium",
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -113,10 +128,13 @@
     {
       "id": "wc26-49297",
       "date": "2026-06-13",
+      "kickoff_utc": null,
+      "kickoff_et": null,
       "home_team": "Haiti",
       "away_team": "Scotland",
       "group": "C",
       "city": "Foxborough",
+      "venue": null,
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -135,10 +153,13 @@
     {
       "id": "wc26-49295",
       "date": "2026-06-13",
+      "kickoff_utc": "19:00",
+      "kickoff_et": "3:00 PM",
       "home_team": "Qatar",
       "away_team": "Switzerland",
       "group": "B",
       "city": "Santa Clara",
+      "venue": "Levi's Stadium",
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -157,10 +178,13 @@
     {
       "id": "wc26-49298",
       "date": "2026-06-13",
+      "kickoff_utc": null,
+      "kickoff_et": null,
       "home_team": "Australia",
       "away_team": "Turkey",
       "group": "D",
       "city": "Vancouver",
+      "venue": null,
       "host_country": "Canada",
       "neutral": true,
       "probabilities": {
@@ -179,10 +203,13 @@
     {
       "id": "wc26-49301",
       "date": "2026-06-14",
+      "kickoff_utc": "20:00",
+      "kickoff_et": "4:00 PM",
       "home_team": "Netherlands",
       "away_team": "Japan",
       "group": "F",
       "city": "Arlington",
+      "venue": "AT&T Stadium",
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -201,10 +228,13 @@
     {
       "id": "wc26-49302",
       "date": "2026-06-14",
+      "kickoff_utc": null,
+      "kickoff_et": null,
       "home_team": "Sweden",
       "away_team": "Tunisia",
       "group": "F",
       "city": "Guadalupe",
+      "venue": null,
       "host_country": "Mexico",
       "neutral": true,
       "probabilities": {
@@ -223,10 +253,13 @@
     {
       "id": "wc26-49299",
       "date": "2026-06-14",
+      "kickoff_utc": "17:00",
+      "kickoff_et": "1:00 PM",
       "home_team": "Germany",
       "away_team": "Curaçao",
       "group": "E",
       "city": "Houston",
+      "venue": "NRG Stadium",
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -245,10 +278,13 @@
     {
       "id": "wc26-49300",
       "date": "2026-06-14",
+      "kickoff_utc": "23:00",
+      "kickoff_et": "7:00 PM",
       "home_team": "Ivory Coast",
       "away_team": "Ecuador",
       "group": "E",
       "city": "Philadelphia",
+      "venue": "Lincoln Financial Field",
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -267,10 +303,13 @@
     {
       "id": "wc26-49305",
       "date": "2026-06-15",
+      "kickoff_utc": "16:00",
+      "kickoff_et": "12:00 PM",
       "home_team": "Spain",
       "away_team": "Cape Verde",
       "group": "H",
       "city": "Atlanta",
+      "venue": "Mercedes-Benz Stadium",
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -289,10 +328,13 @@
     {
       "id": "wc26-49304",
       "date": "2026-06-15",
+      "kickoff_utc": null,
+      "kickoff_et": null,
       "home_team": "Iran",
       "away_team": "New Zealand",
       "group": "G",
       "city": "Inglewood",
+      "venue": null,
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -311,10 +353,13 @@
     {
       "id": "wc26-49306",
       "date": "2026-06-15",
+      "kickoff_utc": "22:00",
+      "kickoff_et": "6:00 PM",
       "home_team": "Saudi Arabia",
       "away_team": "Uruguay",
       "group": "H",
       "city": "Miami Gardens",
+      "venue": "Hard Rock Stadium",
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -333,10 +378,13 @@
     {
       "id": "wc26-49303",
       "date": "2026-06-15",
+      "kickoff_utc": "19:00",
+      "kickoff_et": "3:00 PM",
       "home_team": "Belgium",
       "away_team": "Egypt",
       "group": "G",
       "city": "Seattle",
+      "venue": "Lumen Field",
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -355,10 +403,13 @@
     {
       "id": "wc26-49307",
       "date": "2026-06-16",
+      "kickoff_utc": "19:00",
+      "kickoff_et": "3:00 PM",
       "home_team": "France",
       "away_team": "Senegal",
       "group": "I",
       "city": "East Rutherford",
+      "venue": "MetLife Stadium",
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -377,10 +428,13 @@
     {
       "id": "wc26-49308",
       "date": "2026-06-16",
+      "kickoff_utc": "22:00",
+      "kickoff_et": "6:00 PM",
       "home_team": "Iraq",
       "away_team": "Norway",
       "group": "I",
       "city": "Foxborough",
+      "venue": "Gillette Stadium",
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -399,10 +453,13 @@
     {
       "id": "wc26-49309",
       "date": "2026-06-16",
+      "kickoff_utc": null,
+      "kickoff_et": null,
       "home_team": "Argentina",
       "away_team": "Algeria",
       "group": "J",
       "city": "Kansas City",
+      "venue": null,
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -421,10 +478,13 @@
     {
       "id": "wc26-49310",
       "date": "2026-06-16",
+      "kickoff_utc": null,
+      "kickoff_et": null,
       "home_team": "Austria",
       "away_team": "Jordan",
       "group": "J",
       "city": "Santa Clara",
+      "venue": null,
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -443,10 +503,13 @@
     {
       "id": "wc26-49313",
       "date": "2026-06-17",
+      "kickoff_utc": "20:00",
+      "kickoff_et": "4:00 PM",
       "home_team": "England",
       "away_team": "Croatia",
       "group": "L",
       "city": "Arlington",
+      "venue": "AT&T Stadium",
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -465,10 +528,13 @@
     {
       "id": "wc26-49311",
       "date": "2026-06-17",
+      "kickoff_utc": "17:00",
+      "kickoff_et": "1:00 PM",
       "home_team": "Portugal",
       "away_team": "DR Congo",
       "group": "K",
       "city": "Houston",
+      "venue": "NRG Stadium",
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -487,10 +553,13 @@
     {
       "id": "wc26-49312",
       "date": "2026-06-17",
+      "kickoff_utc": null,
+      "kickoff_et": null,
       "home_team": "Uzbekistan",
       "away_team": "Colombia",
       "group": "K",
       "city": "Mexico City",
+      "venue": null,
       "host_country": "Mexico",
       "neutral": true,
       "probabilities": {
@@ -509,10 +578,13 @@
     {
       "id": "wc26-49314",
       "date": "2026-06-17",
+      "kickoff_utc": "23:00",
+      "kickoff_et": "7:00 PM",
       "home_team": "Ghana",
       "away_team": "Panama",
       "group": "L",
       "city": "Toronto",
+      "venue": "BMO Field",
       "host_country": "Canada",
       "neutral": true,
       "probabilities": {
@@ -531,10 +603,13 @@
     {
       "id": "wc26-49315",
       "date": "2026-06-18",
+      "kickoff_utc": "16:00",
+      "kickoff_et": "12:00 PM",
       "home_team": "Czech Republic",
       "away_team": "South Africa",
       "group": "A",
       "city": "Atlanta",
+      "venue": "Mercedes-Benz Stadium",
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -553,10 +628,13 @@
     {
       "id": "wc26-49317",
       "date": "2026-06-18",
+      "kickoff_utc": null,
+      "kickoff_et": null,
       "home_team": "Switzerland",
       "away_team": "Bosnia and Herzegovina",
       "group": "B",
       "city": "Inglewood",
+      "venue": null,
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -575,10 +653,13 @@
     {
       "id": "wc26-49318",
       "date": "2026-06-18",
+      "kickoff_utc": "22:00",
+      "kickoff_et": "6:00 PM",
       "home_team": "Canada",
       "away_team": "Qatar",
       "group": "B",
       "city": "Vancouver",
+      "venue": "BC Place",
       "host_country": "Canada",
       "neutral": false,
       "probabilities": {
@@ -597,10 +678,13 @@
     {
       "id": "wc26-49316",
       "date": "2026-06-18",
+      "kickoff_utc": null,
+      "kickoff_et": null,
       "home_team": "Mexico",
       "away_team": "South Korea",
       "group": "A",
       "city": "Zapopan",
+      "venue": null,
       "host_country": "Mexico",
       "neutral": false,
       "probabilities": {
@@ -619,10 +703,13 @@
     {
       "id": "wc26-49319",
       "date": "2026-06-19",
+      "kickoff_utc": "22:00",
+      "kickoff_et": "6:00 PM",
       "home_team": "Scotland",
       "away_team": "Morocco",
       "group": "C",
       "city": "Foxborough",
+      "venue": "Gillette Stadium",
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -641,10 +728,13 @@
     {
       "id": "wc26-49320",
       "date": "2026-06-19",
+      "kickoff_utc": null,
+      "kickoff_et": null,
       "home_team": "Brazil",
       "away_team": "Haiti",
       "group": "C",
       "city": "Philadelphia",
+      "venue": null,
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -663,10 +753,13 @@
     {
       "id": "wc26-49322",
       "date": "2026-06-19",
+      "kickoff_utc": null,
+      "kickoff_et": null,
       "home_team": "Turkey",
       "away_team": "Paraguay",
       "group": "D",
       "city": "Santa Clara",
+      "venue": null,
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -685,10 +778,13 @@
     {
       "id": "wc26-49321",
       "date": "2026-06-19",
+      "kickoff_utc": "19:00",
+      "kickoff_et": "3:00 PM",
       "home_team": "United States",
       "away_team": "Australia",
       "group": "D",
       "city": "Seattle",
+      "venue": "Lumen Field",
       "host_country": "United States",
       "neutral": false,
       "probabilities": {
@@ -707,10 +803,13 @@
     {
       "id": "wc26-49326",
       "date": "2026-06-20",
+      "kickoff_utc": null,
+      "kickoff_et": null,
       "home_team": "Tunisia",
       "away_team": "Japan",
       "group": "F",
       "city": "Guadalupe",
+      "venue": null,
       "host_country": "Mexico",
       "neutral": true,
       "probabilities": {
@@ -729,10 +828,13 @@
     {
       "id": "wc26-49325",
       "date": "2026-06-20",
+      "kickoff_utc": "17:00",
+      "kickoff_et": "1:00 PM",
       "home_team": "Netherlands",
       "away_team": "Sweden",
       "group": "F",
       "city": "Houston",
+      "venue": "NRG Stadium",
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -751,10 +853,13 @@
     {
       "id": "wc26-49324",
       "date": "2026-06-20",
+      "kickoff_utc": null,
+      "kickoff_et": null,
       "home_team": "Ecuador",
       "away_team": "Curaçao",
       "group": "E",
       "city": "Kansas City",
+      "venue": null,
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -773,10 +878,13 @@
     {
       "id": "wc26-49323",
       "date": "2026-06-20",
+      "kickoff_utc": "20:00",
+      "kickoff_et": "4:00 PM",
       "home_team": "Germany",
       "away_team": "Ivory Coast",
       "group": "E",
       "city": "Toronto",
+      "venue": "BMO Field",
       "host_country": "Canada",
       "neutral": true,
       "probabilities": {
@@ -795,10 +903,13 @@
     {
       "id": "wc26-49329",
       "date": "2026-06-21",
+      "kickoff_utc": "16:00",
+      "kickoff_et": "12:00 PM",
       "home_team": "Spain",
       "away_team": "Saudi Arabia",
       "group": "H",
       "city": "Atlanta",
+      "venue": "Mercedes-Benz Stadium",
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -817,10 +928,13 @@
     {
       "id": "wc26-49327",
       "date": "2026-06-21",
+      "kickoff_utc": "19:00",
+      "kickoff_et": "3:00 PM",
       "home_team": "Belgium",
       "away_team": "Iran",
       "group": "G",
       "city": "Inglewood",
+      "venue": "SoFi Stadium",
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -839,10 +953,13 @@
     {
       "id": "wc26-49330",
       "date": "2026-06-21",
+      "kickoff_utc": "22:00",
+      "kickoff_et": "6:00 PM",
       "home_team": "Uruguay",
       "away_team": "Cape Verde",
       "group": "H",
       "city": "Miami Gardens",
+      "venue": "Hard Rock Stadium",
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -861,10 +978,13 @@
     {
       "id": "wc26-49328",
       "date": "2026-06-21",
+      "kickoff_utc": null,
+      "kickoff_et": null,
       "home_team": "New Zealand",
       "away_team": "Egypt",
       "group": "G",
       "city": "Vancouver",
+      "venue": null,
       "host_country": "Canada",
       "neutral": true,
       "probabilities": {
@@ -883,10 +1003,13 @@
     {
       "id": "wc26-49333",
       "date": "2026-06-22",
+      "kickoff_utc": "17:00",
+      "kickoff_et": "1:00 PM",
       "home_team": "Argentina",
       "away_team": "Austria",
       "group": "J",
       "city": "Arlington",
+      "venue": "AT&T Stadium",
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -905,10 +1028,13 @@
     {
       "id": "wc26-49332",
       "date": "2026-06-22",
+      "kickoff_utc": null,
+      "kickoff_et": null,
       "home_team": "Norway",
       "away_team": "Senegal",
       "group": "I",
       "city": "East Rutherford",
+      "venue": null,
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -927,10 +1053,13 @@
     {
       "id": "wc26-49331",
       "date": "2026-06-22",
+      "kickoff_utc": "21:00",
+      "kickoff_et": "5:00 PM",
       "home_team": "France",
       "away_team": "Iraq",
       "group": "I",
       "city": "Philadelphia",
+      "venue": "Lincoln Financial Field",
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -949,10 +1078,13 @@
     {
       "id": "wc26-49334",
       "date": "2026-06-22",
+      "kickoff_utc": null,
+      "kickoff_et": null,
       "home_team": "Jordan",
       "away_team": "Algeria",
       "group": "J",
       "city": "Santa Clara",
+      "venue": null,
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -971,10 +1103,13 @@
     {
       "id": "wc26-49337",
       "date": "2026-06-23",
+      "kickoff_utc": "20:00",
+      "kickoff_et": "4:00 PM",
       "home_team": "England",
       "away_team": "Ghana",
       "group": "L",
       "city": "Foxborough",
+      "venue": "Gillette Stadium",
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -993,10 +1128,13 @@
     {
       "id": "wc26-49335",
       "date": "2026-06-23",
+      "kickoff_utc": "17:00",
+      "kickoff_et": "1:00 PM",
       "home_team": "Portugal",
       "away_team": "Uzbekistan",
       "group": "K",
       "city": "Houston",
+      "venue": "NRG Stadium",
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -1015,10 +1153,13 @@
     {
       "id": "wc26-49338",
       "date": "2026-06-23",
+      "kickoff_utc": "23:00",
+      "kickoff_et": "7:00 PM",
       "home_team": "Panama",
       "away_team": "Croatia",
       "group": "L",
       "city": "Toronto",
+      "venue": "BMO Field",
       "host_country": "Canada",
       "neutral": true,
       "probabilities": {
@@ -1037,10 +1178,13 @@
     {
       "id": "wc26-49336",
       "date": "2026-06-23",
+      "kickoff_utc": null,
+      "kickoff_et": null,
       "home_team": "Colombia",
       "away_team": "DR Congo",
       "group": "K",
       "city": "Zapopan",
+      "venue": null,
       "host_country": "Mexico",
       "neutral": true,
       "probabilities": {
@@ -1059,10 +1203,13 @@
     {
       "id": "wc26-49344",
       "date": "2026-06-24",
+      "kickoff_utc": "22:00",
+      "kickoff_et": "6:00 PM",
       "home_team": "Morocco",
       "away_team": "Haiti",
       "group": "C",
       "city": "Atlanta",
+      "venue": "Mercedes-Benz Stadium",
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -1081,10 +1228,13 @@
     {
       "id": "wc26-49340",
       "date": "2026-06-24",
+      "kickoff_utc": null,
+      "kickoff_et": null,
       "home_team": "South Africa",
       "away_team": "South Korea",
       "group": "A",
       "city": "Guadalupe",
+      "venue": null,
       "host_country": "Mexico",
       "neutral": true,
       "probabilities": {
@@ -1103,10 +1253,13 @@
     {
       "id": "wc26-49339",
       "date": "2026-06-24",
+      "kickoff_utc": null,
+      "kickoff_et": null,
       "home_team": "Mexico",
       "away_team": "Czech Republic",
       "group": "A",
       "city": "Mexico City",
+      "venue": null,
       "host_country": "Mexico",
       "neutral": false,
       "probabilities": {
@@ -1125,10 +1278,13 @@
     {
       "id": "wc26-49343",
       "date": "2026-06-24",
+      "kickoff_utc": "22:00",
+      "kickoff_et": "6:00 PM",
       "home_team": "Scotland",
       "away_team": "Brazil",
       "group": "C",
       "city": "Miami Gardens",
+      "venue": "Hard Rock Stadium",
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -1147,10 +1303,13 @@
     {
       "id": "wc26-49342",
       "date": "2026-06-24",
+      "kickoff_utc": null,
+      "kickoff_et": null,
       "home_team": "Bosnia and Herzegovina",
       "away_team": "Qatar",
       "group": "B",
       "city": "Seattle",
+      "venue": null,
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -1169,10 +1328,13 @@
     {
       "id": "wc26-49341",
       "date": "2026-06-24",
+      "kickoff_utc": null,
+      "kickoff_et": null,
       "home_team": "Canada",
       "away_team": "Switzerland",
       "group": "B",
       "city": "Vancouver",
+      "venue": null,
       "host_country": "Canada",
       "neutral": false,
       "probabilities": {
@@ -1191,10 +1353,13 @@
     {
       "id": "wc26-49349",
       "date": "2026-06-25",
+      "kickoff_utc": "23:00",
+      "kickoff_et": "7:00 PM",
       "home_team": "Japan",
       "away_team": "Sweden",
       "group": "F",
       "city": "Arlington",
+      "venue": "AT&T Stadium",
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -1213,10 +1378,13 @@
     {
       "id": "wc26-49348",
       "date": "2026-06-25",
+      "kickoff_utc": "20:00",
+      "kickoff_et": "4:00 PM",
       "home_team": "Ecuador",
       "away_team": "Germany",
       "group": "E",
       "city": "East Rutherford",
+      "venue": "MetLife Stadium",
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -1235,10 +1403,13 @@
     {
       "id": "wc26-49345",
       "date": "2026-06-25",
+      "kickoff_utc": null,
+      "kickoff_et": null,
       "home_team": "United States",
       "away_team": "Turkey",
       "group": "D",
       "city": "Inglewood",
+      "venue": null,
       "host_country": "United States",
       "neutral": false,
       "probabilities": {
@@ -1257,10 +1428,13 @@
     {
       "id": "wc26-49350",
       "date": "2026-06-25",
+      "kickoff_utc": "23:00",
+      "kickoff_et": "7:00 PM",
       "home_team": "Tunisia",
       "away_team": "Netherlands",
       "group": "F",
       "city": "Kansas City",
+      "venue": "Arrowhead Stadium",
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -1279,10 +1453,13 @@
     {
       "id": "wc26-49347",
       "date": "2026-06-25",
+      "kickoff_utc": "20:00",
+      "kickoff_et": "4:00 PM",
       "home_team": "Curaçao",
       "away_team": "Ivory Coast",
       "group": "E",
       "city": "Philadelphia",
+      "venue": "Lincoln Financial Field",
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -1301,10 +1478,13 @@
     {
       "id": "wc26-49346",
       "date": "2026-06-25",
+      "kickoff_utc": null,
+      "kickoff_et": null,
       "home_team": "Paraguay",
       "away_team": "Australia",
       "group": "D",
       "city": "Santa Clara",
+      "venue": null,
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -1323,10 +1503,13 @@
     {
       "id": "wc26-49355",
       "date": "2026-06-26",
+      "kickoff_utc": "19:00",
+      "kickoff_et": "3:00 PM",
       "home_team": "Norway",
       "away_team": "France",
       "group": "I",
       "city": "Foxborough",
+      "venue": "Gillette Stadium",
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -1345,10 +1528,13 @@
     {
       "id": "wc26-49353",
       "date": "2026-06-26",
+      "kickoff_utc": null,
+      "kickoff_et": null,
       "home_team": "Cape Verde",
       "away_team": "Saudi Arabia",
       "group": "H",
       "city": "Houston",
+      "venue": null,
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -1367,10 +1553,13 @@
     {
       "id": "wc26-49351",
       "date": "2026-06-26",
+      "kickoff_utc": null,
+      "kickoff_et": null,
       "home_team": "Egypt",
       "away_team": "Iran",
       "group": "G",
       "city": "Seattle",
+      "venue": null,
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -1389,10 +1578,13 @@
     {
       "id": "wc26-49356",
       "date": "2026-06-26",
+      "kickoff_utc": "19:00",
+      "kickoff_et": "3:00 PM",
       "home_team": "Senegal",
       "away_team": "Iraq",
       "group": "I",
       "city": "Toronto",
+      "venue": "BMO Field",
       "host_country": "Canada",
       "neutral": true,
       "probabilities": {
@@ -1411,10 +1603,13 @@
     {
       "id": "wc26-49352",
       "date": "2026-06-26",
+      "kickoff_utc": null,
+      "kickoff_et": null,
       "home_team": "New Zealand",
       "away_team": "Belgium",
       "group": "G",
       "city": "Vancouver",
+      "venue": null,
       "host_country": "Canada",
       "neutral": true,
       "probabilities": {
@@ -1433,10 +1628,13 @@
     {
       "id": "wc26-49354",
       "date": "2026-06-26",
+      "kickoff_utc": null,
+      "kickoff_et": null,
       "home_team": "Uruguay",
       "away_team": "Spain",
       "group": "H",
       "city": "Zapopan",
+      "venue": null,
       "host_country": "Mexico",
       "neutral": true,
       "probabilities": {
@@ -1455,10 +1653,13 @@
     {
       "id": "wc26-49358",
       "date": "2026-06-27",
+      "kickoff_utc": null,
+      "kickoff_et": null,
       "home_team": "Jordan",
       "away_team": "Argentina",
       "group": "J",
       "city": "Arlington",
+      "venue": null,
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -1477,10 +1678,13 @@
     {
       "id": "wc26-49360",
       "date": "2026-06-27",
+      "kickoff_utc": "23:30",
+      "kickoff_et": "7:30 PM",
       "home_team": "DR Congo",
       "away_team": "Uzbekistan",
       "group": "K",
       "city": "Atlanta",
+      "venue": "Mercedes-Benz Stadium",
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -1499,10 +1703,13 @@
     {
       "id": "wc26-49361",
       "date": "2026-06-27",
+      "kickoff_utc": "21:00",
+      "kickoff_et": "5:00 PM",
       "home_team": "Panama",
       "away_team": "England",
       "group": "L",
       "city": "East Rutherford",
+      "venue": "MetLife Stadium",
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -1521,10 +1728,13 @@
     {
       "id": "wc26-49357",
       "date": "2026-06-27",
+      "kickoff_utc": null,
+      "kickoff_et": null,
       "home_team": "Algeria",
       "away_team": "Austria",
       "group": "J",
       "city": "Kansas City",
+      "venue": null,
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -1543,10 +1753,13 @@
     {
       "id": "wc26-49359",
       "date": "2026-06-27",
+      "kickoff_utc": "23:30",
+      "kickoff_et": "7:30 PM",
       "home_team": "Colombia",
       "away_team": "Portugal",
       "group": "K",
       "city": "Miami Gardens",
+      "venue": "Hard Rock Stadium",
       "host_country": "United States",
       "neutral": true,
       "probabilities": {
@@ -1565,10 +1778,13 @@
     {
       "id": "wc26-49362",
       "date": "2026-06-27",
+      "kickoff_utc": "21:00",
+      "kickoff_et": "5:00 PM",
       "home_team": "Croatia",
       "away_team": "Ghana",
       "group": "L",
       "city": "Philadelphia",
+      "venue": "Lincoln Financial Field",
       "host_country": "United States",
       "neutral": true,
       "probabilities": {

@@ -29,6 +29,7 @@ SQUADS_URL = "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads"
 
 RESULTS_PATH = RAW_DIR / "results.csv"
 SQUADS_HTML_PATH = RAW_DIR / "wiki_squads.html"
+SCHEDULE_TIME_PATH = RAW_DIR / "worldcup_schedule_times.json"
 
 RANDOM_SEED = 20260603
 BASE_ELO = 1500.0
@@ -72,6 +73,18 @@ def clean_note(value: Any) -> str:
     text = re.sub(r"\[[^\]]+\]", "", text)
     text = re.sub(r"\s+", " ", text)
     return text.strip()
+
+
+def normalize_key(value: Any) -> str:
+    text = clean_note(value).lower()
+    text = (
+        text.replace("czech republic", "czechia")
+        .replace("curaçao", "curacao")
+        .replace("ivory coast", "cote d ivoire")
+        .replace("dr congo", "congo dr")
+    )
+    text = re.sub(r"[^a-z0-9]+", " ", text)
+    return re.sub(r"\s+", " ", text).strip()
 
 
 def parse_age(value: Any) -> int | None:
@@ -436,6 +449,17 @@ def build_fixture_predictions(
     form: dict[str, deque[float]],
     group_map: dict[str, str],
 ) -> list[dict[str, Any]]:
+    schedule_lookup: dict[tuple[str, str, str], dict[str, Any]] = {}
+    if SCHEDULE_TIME_PATH.exists():
+        schedule_rows = json.loads(SCHEDULE_TIME_PATH.read_text(encoding="utf-8"))
+        for item in schedule_rows:
+            key = (
+                str(item.get("date_utc")),
+                normalize_key(item.get("team_a")),
+                normalize_key(item.get("team_b")),
+            )
+            schedule_lookup[key] = item
+
     future = results[
         results["home_score"].isna()
         & results["away_score"].isna()
@@ -465,14 +489,18 @@ def build_fixture_predictions(
             away: probs["away_win"],
         }
         pick = max(outcome_probs, key=outcome_probs.get)
+        schedule = schedule_lookup.get((str(row["date"].date()), normalize_key(home), normalize_key(away)))
         fixtures.append(
             {
                 "id": f"wc26-{int(idx)}",
                 "date": str(row["date"].date()),
+                "kickoff_utc": schedule.get("kickoff_utc") if schedule else None,
+                "kickoff_et": schedule.get("kickoff_et") if schedule else None,
                 "home_team": home,
                 "away_team": away,
                 "group": group_map.get(home) or group_map.get(away),
-                "city": clean_note(row["city"]),
+                "city": clean_note(schedule.get("city")) if schedule else clean_note(row["city"]),
+                "venue": clean_note(schedule.get("venue")) if schedule else None,
                 "host_country": clean_note(row["country"]),
                 "neutral": bool(row["neutral"]),
                 "probabilities": {

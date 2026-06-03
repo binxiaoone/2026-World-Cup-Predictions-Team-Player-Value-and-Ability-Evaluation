@@ -1,77 +1,100 @@
 <!doctype html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="2026 FIFA World Cup prediction dashboard using public match results, squads, Elo ratings, logistic regression, and Monte Carlo simulation."
+      content="2026 FIFA World Cup prediction dashboard with squads, market values, kickoff times, player photos, and team projections."
     />
-    <title>世界杯 AI 预测仪表盘</title>
+    <title>World Cup AI Predictor</title>
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
     <header class="topbar">
       <div>
         <p class="eyebrow">2026 FIFA World Cup</p>
-        <h1 data-i18n="appTitle">世界杯 AI 预测仪表盘</h1>
+        <h1 data-i18n="appTitle">AI Prediction Dashboard</h1>
       </div>
       <div class="top-actions">
         <div class="lang-switch" aria-label="Language">
-          <button class="lang-btn is-active" type="button" data-lang="zh">中文</button>
-          <button class="lang-btn" type="button" data-lang="en">EN</button>
+          <button class="lang-btn" type="button" data-lang="zh">ZH</button>
+          <button class="lang-btn is-active" type="button" data-lang="en">EN</button>
         </div>
-        <div class="source-pill" id="generatedAt">正在加载数据...</div>
+        <div class="source-pill" id="generatedAt">Loading data...</div>
       </div>
     </header>
 
     <main>
       <section class="summary-grid" aria-label="Model summary">
         <article class="metric">
-          <span class="metric-label" data-i18n="teams">球队</span>
+          <span class="metric-label" data-i18n="teams">Teams</span>
           <strong id="teamCount">--</strong>
         </article>
         <article class="metric">
-          <span class="metric-label" data-i18n="players">球员</span>
+          <span class="metric-label" data-i18n="players">Players</span>
           <strong id="playerCount">--</strong>
         </article>
         <article class="metric">
-          <span class="metric-label" data-i18n="fixtures">赛程</span>
+          <span class="metric-label" data-i18n="fixtures">Fixtures</span>
           <strong id="fixtureCount">--</strong>
         </article>
         <article class="metric">
-          <span class="metric-label" data-i18n="validationAccuracy">验证准确率</span>
+          <span class="metric-label" data-i18n="validationAccuracy">Validation Accuracy</span>
           <strong id="modelAccuracy">--</strong>
+        </article>
+      </section>
+
+      <section class="hero-strip">
+        <article class="hero-card">
+          <span class="hero-label" data-i18n="dataSources">Data sources</span>
+          <strong id="dataSourceSummary">--</strong>
+          <p id="dataSourceDetail">--</p>
+        </article>
+        <article class="hero-card">
+          <span class="hero-label" data-i18n="scheduleFreshness">Schedule times</span>
+          <strong id="scheduleSummary">--</strong>
+          <p id="scheduleDetail">--</p>
+        </article>
+        <article class="hero-card">
+          <span class="hero-label" data-i18n="squadFreshness">Squads</span>
+          <strong id="squadSummary">--</strong>
+          <p id="squadDetail">--</p>
         </article>
       </section>
 
       <section class="toolbar" aria-label="Dashboard controls">
         <label>
-          <span data-i18n="search">搜索</span>
-          <input id="searchInput" type="search" placeholder="球队、球员、俱乐部..." data-i18n-placeholder="searchPlaceholder" />
+          <span data-i18n="search">Search</span>
+          <input
+            id="searchInput"
+            type="search"
+            placeholder="Team, player, club..."
+            data-i18n-placeholder="searchPlaceholder"
+          />
         </label>
         <label>
-          <span data-i18n="group">小组</span>
+          <span data-i18n="group">Group</span>
           <select id="groupFilter"></select>
         </label>
         <label>
-          <span data-i18n="team">球队</span>
+          <span data-i18n="team">Team</span>
           <select id="teamFilter"></select>
         </label>
       </section>
 
       <nav class="tabs" aria-label="Dashboard sections">
-        <button class="tab is-active" data-view="overview" type="button" data-i18n="overview">总览</button>
-        <button class="tab" data-view="fixtures" type="button" data-i18n="fixtures">赛程</button>
-        <button class="tab" data-view="groups" type="button" data-i18n="groups">小组</button>
-        <button class="tab" data-view="players" type="button" data-i18n="players">球员</button>
+        <button class="tab is-active" data-view="overview" type="button" data-i18n="overview">Overview</button>
+        <button class="tab" data-view="fixtures" type="button" data-i18n="fixtures">Fixtures</button>
+        <button class="tab" data-view="groups" type="button" data-i18n="groups">Groups</button>
+        <button class="tab" data-view="players" type="button" data-i18n="players">Players</button>
       </nav>
 
       <section class="view is-active" id="overview" aria-label="Overview">
         <div class="two-column">
           <section class="panel">
             <div class="panel-head">
-              <h2 data-i18n="championProbability">冠军概率</h2>
+              <h2 data-i18n="championProbability">Champion Probability</h2>
               <span id="simulationRuns"></span>
             </div>
             <div class="rank-list" id="championList"></div>
@@ -79,8 +102,8 @@
 
           <section class="panel">
             <div class="panel-head">
-              <h2 data-i18n="teamStrength">球队强度</h2>
-              <span data-i18n="eloRecent">Elo + 近期状态</span>
+              <h2 data-i18n="teamStrength">Team Strength</h2>
+              <span data-i18n="eloRecent">Elo + recent form</span>
             </div>
             <div class="rank-list" id="strengthList"></div>
           </section>
@@ -88,8 +111,8 @@
 
         <section class="panel">
           <div class="panel-head">
-            <h2 data-i18n="featuredSquads">重点球队阵容</h2>
-            <span data-i18n="topExperience">国家队经验最多</span>
+            <h2 data-i18n="featuredSquads">Featured Squads</h2>
+            <span data-i18n="topExperience">Top international experience</span>
           </div>
           <div class="squad-grid" id="featuredSquads"></div>
         </section>
@@ -98,8 +121,8 @@
       <section class="view" id="fixtures" aria-label="Fixture predictions">
         <section class="panel">
           <div class="panel-head">
-            <h2 data-i18n="matchPredictions">比赛预测</h2>
-            <span data-i18n="winDrawLoss">主胜 / 平局 / 客胜</span>
+            <h2 data-i18n="matchPredictions">Match Predictions</h2>
+            <span data-i18n="winDrawLoss">Home win / draw / away win</span>
           </div>
           <div class="fixture-list" id="fixtureList"></div>
         </section>
@@ -114,24 +137,24 @@
 
         <section class="panel">
           <div class="panel-head">
-            <h2 data-i18n="playerDatabase">球员数据库</h2>
+            <h2 data-i18n="playerDatabase">Player Database</h2>
             <span id="playerResultCount"></span>
           </div>
           <div class="table-wrap">
             <table>
               <thead>
                 <tr>
-                  <th data-i18n="photo">照片</th>
-                  <th data-i18n="player">球员</th>
-                  <th data-i18n="team">球队</th>
-                  <th data-i18n="position">位置</th>
-                  <th data-i18n="overall">综合</th>
-                  <th data-i18n="marketValue">身价</th>
-                  <th data-i18n="age">年龄</th>
-                  <th data-i18n="caps">出场</th>
-                  <th data-i18n="goals">进球</th>
-                  <th data-i18n="club">俱乐部</th>
-                  <th data-i18n="links">链接</th>
+                  <th data-i18n="photo">Photo</th>
+                  <th data-i18n="player">Player</th>
+                  <th data-i18n="team">Team</th>
+                  <th data-i18n="position">Pos</th>
+                  <th data-i18n="overall">Overall</th>
+                  <th data-i18n="marketValue">Market Value</th>
+                  <th data-i18n="age">Age</th>
+                  <th data-i18n="caps">Caps</th>
+                  <th data-i18n="goals">Goals</th>
+                  <th data-i18n="club">Club</th>
+                  <th data-i18n="links">Links</th>
                 </tr>
               </thead>
               <tbody id="playerTable"></tbody>
@@ -143,7 +166,7 @@
 
     <footer>
       <p>
-        <span data-i18n="footerText">教育演示预测，不构成投注建议。数据来源见</span>
+        <span data-i18n="footerText">Educational forecast only. Not betting advice. Data sources are listed in</span>
         <a href="data/processed/manifest.json">manifest.json</a>
       </p>
     </footer>
