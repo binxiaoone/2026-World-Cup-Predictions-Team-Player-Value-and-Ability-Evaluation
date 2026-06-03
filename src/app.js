@@ -1,6 +1,7 @@
 const state = {
   teams: [],
   players: [],
+  media: {},
   fixtures: [],
   groups: {},
   manifest: {},
@@ -29,15 +30,17 @@ function loadJson(path) {
 }
 
 async function bootstrap() {
-  const [teams, players, predictions, manifest] = await Promise.all([
+  const [teams, players, predictions, manifest, media] = await Promise.all([
     loadJson("data/processed/teams.json"),
     loadJson("data/processed/players.json"),
     loadJson("data/processed/predictions.json"),
     loadJson("data/processed/manifest.json"),
+    loadJson("data/processed/player_media.json").catch(() => ({ media: [] })),
   ]);
 
   state.teams = teams.teams;
   state.players = players.players;
+  state.media = Object.fromEntries((media.media || []).map((item) => [item.key, item]));
   state.fixtures = predictions.fixtures;
   state.groups = predictions.groups;
   state.predictionsMeta = predictions;
@@ -96,6 +99,24 @@ function playerPasses(player) {
   if (!state.search) return true;
   const haystack = [player.player, player.team, player.club, player.position].map(normalize).join(" ");
   return haystack.includes(normalize(state.search));
+}
+
+function playerKey(player) {
+  return `${player.team}::${player.player}`;
+}
+
+function mediaFor(player) {
+  return state.media[playerKey(player)] || {};
+}
+
+function initials(name) {
+  return String(name || "")
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((part) => part[0])
+    .join("")
+    .toUpperCase();
 }
 
 function fixturePasses(fixture) {
@@ -297,18 +318,21 @@ function renderPlayers() {
     .sort((a, b) => b.goals * 4 + b.caps - (a.goals * 4 + a.caps))
     .slice(0, 250);
 
+  renderPlayerCards(players.slice(0, 6));
   $("#playerResultCount").textContent = `${number(players.length)} shown`;
   $("#playerTable").innerHTML = players.length
     ? players
         .map(
           (player) => `
             <tr>
+              <td>${playerAvatar(player, "thumb")}</td>
               <td>
                 <strong class="player-name">${escapeHtml(player.player)}</strong>
                 ${player.captain ? '<span class="captain">C</span>' : ""}
               </td>
               <td>${escapeHtml(player.team)}</td>
               <td>${escapeHtml(player.position)}</td>
+              <td><strong>${player.abilities?.overall ?? "--"}</strong></td>
               <td>${player.age ?? "--"}</td>
               <td>${number(player.caps)}</td>
               <td>${number(player.goals)}</td>
@@ -317,7 +341,103 @@ function renderPlayers() {
           `,
         )
         .join("")
-    : `<tr><td colspan="7">${empty("No players match the current filters.")}</td></tr>`;
+    : `<tr><td colspan="9">${empty("No players match the current filters.")}</td></tr>`;
+}
+
+function renderPlayerCards(players) {
+  $("#playerCards").innerHTML = players.length
+    ? players.map(playerCard).join("")
+    : empty("No players match the current filters.");
+}
+
+function playerCard(player) {
+  const media = mediaFor(player);
+  const pageLink = media.page_url
+    ? `<a href="${escapeHtml(media.page_url)}" target="_blank" rel="noreferrer">Source</a>`
+    : `<span>Fallback image</span>`;
+  return `
+    <article class="player-card">
+      <div class="player-card-media">
+        ${playerAvatar(player, "large")}
+        <div>
+          <span class="subtext">Group ${escapeHtml(player.group)} | ${escapeHtml(player.position)}</span>
+          <h3>${escapeHtml(player.player)}${player.captain ? '<span class="captain">C</span>' : ""}</h3>
+          <p>${escapeHtml(player.team)} | ${escapeHtml(player.club)}</p>
+          <div class="overall">Overall <strong>${player.abilities?.overall ?? "--"}</strong><span>/ 6</span></div>
+          <div class="media-source">${pageLink}</div>
+        </div>
+      </div>
+      ${radarSvg(player.abilities?.scores)}
+      <p class="rating-note">6-star model estimate from caps, goals, age, position, team Elo, and recent form.</p>
+    </article>
+  `;
+}
+
+function playerAvatar(player, size) {
+  const media = mediaFor(player);
+  const label = `${player.player} photo`;
+  if (media.image_url) {
+    return `<img class="avatar avatar-${size}" src="${escapeHtml(media.image_url)}" alt="${escapeHtml(label)}" loading="lazy" referrerpolicy="no-referrer" />`;
+  }
+  return `<div class="avatar avatar-${size} avatar-fallback" aria-label="${escapeHtml(label)}">${escapeHtml(initials(player.player))}</div>`;
+}
+
+function radarSvg(scores = {}) {
+  const labels = [
+    ["attack", "ATK"],
+    ["creativity", "CRE"],
+    ["defense", "DEF"],
+    ["experience", "EXP"],
+    ["physical", "PHY"],
+    ["impact", "IMP"],
+  ];
+  const cx = 110;
+  const cy = 100;
+  const maxR = 70;
+  const angle = (index) => -Math.PI / 2 + (Math.PI * 2 * index) / labels.length;
+  const point = (index, radius) => {
+    const a = angle(index);
+    return [cx + Math.cos(a) * radius, cy + Math.sin(a) * radius];
+  };
+  const polygon = labels
+    .map(([key], index) => {
+      const value = Math.max(1, Math.min(6, Number(scores[key] || 1)));
+      return point(index, (value / 6) * maxR).map((v) => v.toFixed(1)).join(",");
+    })
+    .join(" ");
+  const grid = [2, 4, 6]
+    .map((level) => {
+      const points = labels.map((_, index) => point(index, (level / 6) * maxR).map((v) => v.toFixed(1)).join(",")).join(" ");
+      return `<polygon points="${points}" class="radar-grid" />`;
+    })
+    .join("");
+  const axes = labels
+    .map(([key, label], index) => {
+      const [x, y] = point(index, maxR + 18);
+      const [x2, y2] = point(index, maxR);
+      return `
+        <line x1="${cx}" y1="${cy}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}" class="radar-axis" />
+        <text x="${x.toFixed(1)}" y="${y.toFixed(1)}" text-anchor="middle" dominant-baseline="middle">${label}</text>
+      `;
+    })
+    .join("");
+  const dots = labels
+    .map(([key], index) => {
+      const value = Math.max(1, Math.min(6, Number(scores[key] || 1)));
+      const [x, y] = point(index, (value / 6) * maxR);
+      return `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="3" class="radar-dot"><title>${key}: ${value.toFixed(1)}/6</title></circle>`;
+    })
+    .join("");
+
+  return `
+    <svg class="radar" viewBox="0 0 220 200" role="img" aria-label="Six star ability radar">
+      ${grid}
+      ${axes}
+      <polygon points="${polygon}" class="radar-fill" />
+      <polyline points="${polygon} ${polygon.split(" ")[0]}" class="radar-line" />
+      ${dots}
+    </svg>
+  `;
 }
 
 function empty(message) {

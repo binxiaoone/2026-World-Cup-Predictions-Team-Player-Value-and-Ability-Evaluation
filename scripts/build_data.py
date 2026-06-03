@@ -79,6 +79,73 @@ def parse_age(value: Any) -> int | None:
     return int(match.group(1)) if match else None
 
 
+def clamp(value: float, low: float = 1.0, high: float = 6.0) -> float:
+    return max(low, min(high, value))
+
+
+def ability_scores(player: dict[str, Any], team_elo: float, team_form: float) -> dict[str, Any]:
+    """Estimate six star-style attributes from public squad/team metadata.
+
+    These are proxy scores for the dashboard, not official player ratings.
+    """
+    position = player["position"]
+    age = player["age"] or 27
+    caps = player["caps"]
+    goals = player["goals"]
+
+    cap_score = clamp(1.0 + math.log1p(caps) / math.log(160) * 5.0)
+    goal_score = clamp(1.0 + math.log1p(goals) / math.log(80) * 5.0)
+    team_score = clamp(1.0 + ((team_elo - 1350.0) / 850.0) * 5.0)
+    form_score = clamp(1.0 + (team_form / 3.0) * 5.0)
+    prime_score = clamp(6.0 - abs(age - 27) * 0.22)
+    youth_pace = clamp(6.2 - max(0, age - 22) * 0.12 + max(0, 24 - age) * 0.08)
+
+    if position == "GK":
+        attack = clamp(1.0 + goal_score * 0.08 + cap_score * 0.08)
+        creativity = clamp(1.6 + cap_score * 0.18 + team_score * 0.12)
+        defense = clamp(3.1 + cap_score * 0.35 + team_score * 0.18)
+        experience = clamp(1.0 + cap_score * 0.78 + (0.25 if player["captain"] else 0.0))
+        physical = clamp(2.5 + prime_score * 0.35 + youth_pace * 0.16)
+        impact = clamp(2.1 + team_score * 0.3 + form_score * 0.25 + cap_score * 0.2)
+    elif position == "DF":
+        attack = clamp(1.4 + goal_score * 0.22 + team_score * 0.1)
+        creativity = clamp(1.8 + cap_score * 0.2 + team_score * 0.16)
+        defense = clamp(2.4 + cap_score * 0.36 + team_score * 0.22 + prime_score * 0.1)
+        experience = clamp(1.0 + cap_score * 0.75 + (0.25 if player["captain"] else 0.0))
+        physical = clamp(2.4 + prime_score * 0.36 + youth_pace * 0.16)
+        impact = clamp(1.8 + team_score * 0.32 + form_score * 0.24 + cap_score * 0.18)
+    elif position == "MF":
+        attack = clamp(1.7 + goal_score * 0.32 + team_score * 0.12)
+        creativity = clamp(2.3 + cap_score * 0.32 + team_score * 0.25 + form_score * 0.08)
+        defense = clamp(1.8 + cap_score * 0.24 + team_score * 0.18 + prime_score * 0.08)
+        experience = clamp(1.0 + cap_score * 0.78 + (0.25 if player["captain"] else 0.0))
+        physical = clamp(2.0 + prime_score * 0.32 + youth_pace * 0.18)
+        impact = clamp(2.0 + team_score * 0.3 + form_score * 0.25 + cap_score * 0.22 + goal_score * 0.08)
+    else:
+        attack = clamp(2.3 + goal_score * 0.44 + team_score * 0.12)
+        creativity = clamp(1.8 + cap_score * 0.22 + team_score * 0.2 + goal_score * 0.08)
+        defense = clamp(1.1 + cap_score * 0.12 + team_score * 0.08)
+        experience = clamp(1.0 + cap_score * 0.72 + (0.25 if player["captain"] else 0.0))
+        physical = clamp(2.1 + prime_score * 0.28 + youth_pace * 0.22)
+        impact = clamp(2.1 + team_score * 0.28 + form_score * 0.22 + goal_score * 0.22 + cap_score * 0.14)
+
+    scores = {
+        "attack": round(attack, 1),
+        "creativity": round(creativity, 1),
+        "defense": round(defense, 1),
+        "experience": round(experience, 1),
+        "physical": round(physical, 1),
+        "impact": round(impact, 1),
+    }
+    overall = round(float(np.mean(list(scores.values()))), 1)
+    return {
+        "overall": overall,
+        "scale": 6,
+        "scores": scores,
+        "method": "Estimated from public caps, goals, age, position, team Elo, and recent team form.",
+    }
+
+
 def to_int(value: Any) -> int:
     text = clean_note(value).replace(",", "")
     match = re.search(r"-?\d+", text)
@@ -281,7 +348,11 @@ def probabilities_for(
     }
 
 
-def parse_groups_and_players(html: str) -> tuple[dict[str, str], list[dict[str, Any]], dict[str, dict[str, Any]]]:
+def parse_groups_and_players(
+    html: str,
+    ratings: dict[str, float],
+    form: dict[str, deque[float]],
+) -> tuple[dict[str, str], list[dict[str, Any]], dict[str, dict[str, Any]]]:
     soup = BeautifulSoup(html, "html.parser")
     team_order: list[tuple[str, str]] = []
     current_group: str | None = None
@@ -325,6 +396,7 @@ def parse_groups_and_players(html: str) -> tuple[dict[str, str], list[dict[str, 
                 "goals": to_int(row.get("Goals", 0)),
                 "club": clean_note(row.get("Club", "")),
             }
+            item["abilities"] = ability_scores(item, ratings[team], form_value(form[team]))
             players.append(item)
             team_players.append(item)
 
@@ -632,8 +704,8 @@ def build(force_download: bool, simulations: int) -> None:
     results["date"] = pd.to_datetime(results["date"])
     html = SQUADS_HTML_PATH.read_text(encoding="utf-8")
 
-    group_map, players, squad_stats = parse_groups_and_players(html)
     model, ratings, form, records, model_metadata = train_model(results)
+    group_map, players, squad_stats = parse_groups_and_players(html, ratings, form)
     fixtures = build_fixture_predictions(results, model, ratings, form, group_map)
     group_tables = expected_group_tables(fixtures, sorted(group_map.keys()))
     sim = simulate_tournament(fixtures, group_map, ratings, form, simulations)

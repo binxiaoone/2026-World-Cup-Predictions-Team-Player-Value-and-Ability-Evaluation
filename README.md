@@ -10,6 +10,8 @@ The app is intentionally simple to publish: generated JSON lives in `data/proces
 - Expected group tables for Groups A-L
 - Team strength rankings and champion probabilities from Monte Carlo simulation
 - Player database for the 48 squads, with caps, goals, clubs, positions, and captains
+- Player photo cards with Wikimedia/Wikipedia thumbnail URLs when available
+- Six-attribute, 6-star radar charts for player attack, creativity, defense, experience, physical profile, and impact
 - Public, reproducible data build script
 - GitHub Pages friendly static frontend
 
@@ -31,12 +33,19 @@ The data script trains a lightweight educational model:
 
 This is a portfolio/demo forecast. It is not betting advice.
 
+## Player Images And Ability Radars
+
+`players.json` includes estimated 6-star attributes for every player. The scores are derived from public metadata: caps, goals, age, position, team Elo, and recent team form. They are not EA, FIFA, Opta, or official ratings.
+
+`player_media.json` stores Wikimedia/Wikipedia thumbnail URLs resolved from player page links. The repository does not download or commit image binaries. Players without a reliable thumbnail use an initials-based fallback avatar in the frontend.
+
 ## Run Locally
 
 ```powershell
 cd D:\worldcup-ai-predictor
 python -m pip install -r requirements.txt
 python scripts\build_data.py --force-download --simulations 5000
+python scripts\enrich_player_media.py --strategy rest --top-ranked --limit 120 --delay 0.7 --retries 2
 python -m http.server 8016
 ```
 
@@ -50,9 +59,12 @@ http://localhost:8016
 
 ```powershell
 python scripts\build_data.py --force-download --simulations 5000
+python scripts\enrich_player_media.py --strategy rest --top-ranked --limit 120 --delay 0.7 --retries 2
 ```
 
 If a source page changes structure, the script will continue to use local cached files when available. For long-term production use, consider replacing the Wikipedia squad parser with an official licensed feed.
+
+To keep enriching more player images later, increase `--limit` or run chunks with `--offset`. The script keeps existing media records and only queries unresolved players.
 
 ## Publish To GitHub
 
@@ -78,21 +90,23 @@ Then enable GitHub Pages:
 
 ```text
 .
-├── data
-│   ├── processed
-│   │   ├── manifest.json
-│   │   ├── players.json
-│   │   ├── predictions.json
-│   │   └── teams.json
-│   └── raw
-├── scripts
-│   └── build_data.py
-├── src
-│   ├── app.js
-│   └── styles.css
-├── index.html
-├── requirements.txt
-└── README.md
+|-- data
+|   |-- processed
+|   |   |-- manifest.json
+|   |   |-- player_media.json
+|   |   |-- players.json
+|   |   |-- predictions.json
+|   |   `-- teams.json
+|   `-- raw
+|-- scripts
+|   |-- build_data.py
+|   `-- enrich_player_media.py
+|-- src
+|   |-- app.js
+|   `-- styles.css
+|-- index.html
+|-- requirements.txt
+`-- README.md
 ```
 
 ## Notes
