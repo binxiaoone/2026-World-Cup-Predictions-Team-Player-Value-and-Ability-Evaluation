@@ -14,7 +14,78 @@ const state = {
 };
 
 const I18N = {
-  zh: null,
+  zh: {
+    documentTitle: "世界杯 AI 预测仪表盘",
+    appTitle: "世界杯 AI 预测仪表盘",
+    loadingData: "正在加载数据...",
+    generated: "生成时间",
+    teams: "球队",
+    players: "球员",
+    fixtures: "赛程",
+    validationAccuracy: "验证准确率",
+    search: "搜索",
+    searchPlaceholder: "球队、球员、俱乐部...",
+    group: "小组",
+    groups: "小组",
+    team: "球队",
+    overview: "总览",
+    championProbability: "冠军概率",
+    teamStrength: "球队强度",
+    eloRecent: "Elo + 近期状态",
+    dataSources: "数据来源",
+    scheduleFreshness: "赛程时间",
+    squadFreshness: "大名单",
+    featuredSquads: "重点球队阵容",
+    topExperience: "国家队经验最多",
+    matchPredictions: "比赛预测",
+    winDrawLoss: "主胜 / 平局 / 客胜",
+    playerDatabase: "球员数据库",
+    photo: "照片",
+    player: "球员",
+    position: "位置",
+    overall: "综合",
+    marketValue: "身价",
+    squadValue: "总身价",
+    valueCoverage: "覆盖率",
+    noValue: "暂无",
+    age: "年龄",
+    caps: "出场",
+    goals: "进球",
+    club: "俱乐部",
+    links: "链接",
+    all: "全部",
+    simulations: "次模拟",
+    champion: "冠军",
+    form: "状态",
+    avgAge: "平均年龄",
+    shown: "条展示",
+    noTeams: "没有球队匹配当前筛选。",
+    noSquads: "没有阵容匹配当前筛选。",
+    noFixtures: "没有赛程匹配当前筛选。",
+    noGroups: "没有小组匹配当前筛选。",
+    noPlayers: "没有球员匹配当前筛选。",
+    source: "百科",
+    hupu: "虎扑",
+    fallbackImage: "备用头像",
+    ratingNote: "6 星能力为模型估算，基于出场、进球、年龄、位置、球队 Elo 和近期状态。",
+    photoAlt: "照片",
+    pick: "预测",
+    draw: "平局",
+    footerText: "教育演示预测，不构成投注建议。数据来源见",
+    dataLoadFailed: "数据加载失败",
+    attack: "进攻",
+    creativity: "创造",
+    defense: "防守",
+    experience: "经验",
+    physical: "身体",
+    impact: "影响",
+    atk: "进",
+    cre: "创",
+    def: "防",
+    exp: "经",
+    phy: "体",
+    imp: "影",
+  },
   en: {
     documentTitle: "World Cup AI Predictor",
     appTitle: "AI Prediction Dashboard",
@@ -308,8 +379,7 @@ function renderHeroFacts() {
     ? new Date(state.manifest.generated_at).toLocaleDateString(state.lang === "zh" ? "zh-CN" : "en-US")
     : "--";
 
-  $("#dataSourceSummary").textContent = `${number(sources.length)} ${state.lang === "zh" ? "??????" : "public sources"}`;
-  $("#dataSourceSummary").textContent = `${number(sources.length)} public sources`;
+  $("#dataSourceSummary").textContent = `${number(sources.length)} ${state.lang === "zh" ? "个公开数据源" : "public sources"}`;
   $("#dataSourceDetail").textContent = sourceNames.join(" / ");
 
   $("#scheduleSummary").textContent = firstMatch
@@ -317,10 +387,15 @@ function renderHeroFacts() {
     : "--";
   $("#scheduleDetail").textContent = firstMatch
     ? `${firstMatch.home_team} vs ${firstMatch.away_team} | ${firstMatch.venue || firstMatch.city || "--"}`
-    : "Kickoff times unavailable";
+    : state.lang === "zh"
+      ? "未找到开球时间"
+      : "Kickoff times unavailable";
 
-  $("#squadSummary").textContent = "Final 48-team FIFA squads";
-  $("#squadDetail").textContent = `Current page data generated on ${squadUpdated}`;
+  $("#squadSummary").textContent = state.lang === "zh" ? "FIFA 最终 48 队名单" : "Final 48-team FIFA squads";
+  $("#squadDetail").textContent =
+    state.lang === "zh"
+      ? `当前页面数据生成于 ${squadUpdated}`
+      : `Current page data generated on ${squadUpdated}`;
 }
 
 function renderFilteredViews() {
