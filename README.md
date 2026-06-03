@@ -12,6 +12,8 @@ The app is intentionally simple to publish: generated JSON lives in `data/proces
 - Player database for the 48 squads, with caps, goals, clubs, positions, and captains
 - Player photo cards with Wikimedia/Wikipedia thumbnail URLs when available
 - Six-attribute, 6-star radar charts for player attack, creativity, defense, experience, physical profile, and impact
+- Clickable player links to Wikipedia source pages and Hupu search pages
+- Chinese/English language toggle in the browser
 - Public, reproducible data build script
 - GitHub Pages friendly static frontend
 
@@ -38,6 +40,8 @@ This is a portfolio/demo forecast. It is not betting advice.
 `players.json` includes estimated 6-star attributes for every player. The scores are derived from public metadata: caps, goals, age, position, team Elo, and recent team form. They are not EA, FIFA, Opta, or official ratings.
 
 `player_media.json` stores Wikimedia/Wikipedia thumbnail URLs resolved from player page links. The repository does not download or commit image binaries. Players without a reliable thumbnail use an initials-based fallback avatar in the frontend.
+
+Player cards and table rows also include generated Hupu search links such as `https://bbs.hupu.com/search?q=C%E7%BD%97`. The app links out to public Hupu search pages instead of bulk-scraping Hupu posts into the repository, because Hupu content is forum-based and can be rate-limited or change structure.
 
 ## Run Locally
 

@@ -97,6 +97,42 @@ main {
   text-align: right;
 }
 
+.top-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.lang-switch {
+  display: inline-flex;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.lang-btn {
+  min-width: 54px;
+  height: 38px;
+  border: 0;
+  border-right: 1px solid var(--line);
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font-weight: 850;
+}
+
+.lang-btn:last-child {
+  border-right: 0;
+}
+
+.lang-btn.is-active {
+  background: var(--green);
+  color: #fff;
+}
+
 .summary-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -441,7 +477,7 @@ tr:last-child td {
 }
 
 .table-wrap table {
-  min-width: 920px;
+  min-width: 1040px;
   background: #fbfcfb;
 }
 
@@ -550,9 +586,55 @@ tr:last-child td {
   font-size: 0.78rem;
 }
 
-.media-source a {
+.media-source a,
+.table-player-link {
   color: var(--green-2);
   font-weight: 800;
+}
+
+.table-player-link {
+  text-decoration: none;
+}
+
+.table-player-link:hover,
+.media-source a:hover,
+.link-chip:hover {
+  text-decoration: underline;
+}
+
+.external-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 8px;
+}
+
+.link-chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 30px;
+  border: 1px solid rgba(15, 122, 79, 0.24);
+  border-radius: 8px;
+  padding: 5px 9px;
+  background: rgba(15, 122, 79, 0.08);
+  color: var(--green-2);
+  font-size: 0.78rem;
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.link-chip.hupu {
+  border-color: rgba(184, 70, 60, 0.24);
+  background: rgba(184, 70, 60, 0.08);
+  color: var(--red);
+}
+
+.link-chip.compact {
+  min-height: 28px;
+  padding: 4px 7px;
+  white-space: nowrap;
 }
 
 .rating-note {
@@ -632,6 +714,11 @@ footer a {
   .source-pill {
     width: 100%;
     text-align: left;
+  }
+
+  .top-actions {
+    width: 100%;
+    justify-content: flex-start;
   }
 
   .summary-grid,
