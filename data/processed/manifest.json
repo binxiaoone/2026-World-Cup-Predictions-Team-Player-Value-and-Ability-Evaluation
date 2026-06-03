@@ -1,0 +1,41 @@
+{
+  "generated_at": "2026-06-03T06:00:22+00:00",
+  "data_sources": [
+    {
+      "name": "International football results by martj42",
+      "url": "https://raw.githubusercontent.com/martj42/international_results/master/results.csv",
+      "cached_file": "data/raw/results.csv",
+      "downloaded_this_run": false
+    },
+    {
+      "name": "2026 FIFA World Cup squads on Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
+      "cached_file": "data/raw/wiki_squads.html",
+      "downloaded_this_run": false
+    }
+  ],
+  "model": {
+    "type": "Elo ratings + multinomial logistic regression + Monte Carlo simulation",
+    "home_advantage_elo_points": 65.0,
+    "random_seed": 20260603,
+    "training_matches": 19679,
+    "validation_matches": 5551,
+    "validation_accuracy": 0.544,
+    "validation_log_loss": 0.941,
+    "feature_names": [
+      "elo_diff_with_home_advantage",
+      "recent_form_points_diff",
+      "neutral_site",
+      "is_world_cup",
+      "is_qualifier",
+      "tournament_weight"
+    ]
+  },
+  "counts": {
+    "teams": 48,
+    "players": 1246,
+    "fixtures_predicted": 72,
+    "historical_rows": 49363
+  },
+  "disclaimer": "This is an educational forecasting model for a portfolio/GitHub project. It is not betting advice and does not use private team information."
+}

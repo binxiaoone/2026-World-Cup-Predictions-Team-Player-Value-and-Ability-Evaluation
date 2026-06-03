@@ -1,0 +1,22 @@
+__pycache__/
+.pytest_cache/
+.venv/
+venv/
+node_modules/
+.DS_Store
+Thumbs.db
+.server.pid
+
+# Local secrets. Do not commit Kaggle or API credentials.
+.env
+kaggle.json
+
+# Download cache. Recreate it with: python scripts/build_data.py --force-download
+data/raw/*
+!data/raw/.gitkeep
+
+# Keep generated processed JSON in the repo for GitHub Pages, but ignore large
+# temporary exports if you experiment later.
+*.sqlite
+*.db
+*.parquet

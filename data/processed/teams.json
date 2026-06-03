@@ -1,0 +1,3508 @@
+{
+  "teams": [
+    {
+      "team": "Spain",
+      "group": "H",
+      "elo": 2202.3,
+      "rank": 1,
+      "recent_form_points": 2.348,
+      "record": {
+        "matches": 781,
+        "wins": 460,
+        "draws": 181,
+        "losses": 140,
+        "goals_for": 1598,
+        "goals_against": 701,
+        "points": 1561,
+        "last_match": "2026-03-31"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 26.2,
+        "total_caps": 708,
+        "total_goals": 114,
+        "top_players": [
+          {
+            "player": "Mikel Oyarzabal",
+            "position": "FW",
+            "club": "Real Sociedad",
+            "caps": 52,
+            "goals": 24,
+            "captain": false
+          },
+          {
+            "player": "Ferran Torres",
+            "position": "FW",
+            "club": "Barcelona",
+            "caps": 55,
+            "goals": 23,
+            "captain": false
+          },
+          {
+            "player": "Dani Olmo",
+            "position": "FW",
+            "club": "Barcelona",
+            "caps": 48,
+            "goals": 12,
+            "captain": false
+          },
+          {
+            "player": "Mikel Merino",
+            "position": "MF",
+            "club": "Arsenal",
+            "caps": 41,
+            "goals": 10,
+            "captain": false
+          },
+          {
+            "player": "Rodri",
+            "position": "MF",
+            "club": "Manchester City",
+            "caps": 61,
+            "goals": 4,
+            "captain": true
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.9937,
+        "advance_r16": 0.8017,
+        "quarterfinal": 0.5807,
+        "semifinal": 0.4017,
+        "final": 0.272,
+        "champion": 0.1853
+      }
+    },
+    {
+      "team": "Argentina",
+      "group": "J",
+      "elo": 2168.1,
+      "rank": 2,
+      "recent_form_points": 2.548,
+      "record": {
+        "matches": 1066,
+        "wins": 590,
+        "draws": 257,
+        "losses": 219,
+        "goals_for": 2023,
+        "goals_against": 1074,
+        "points": 2027,
+        "last_match": "2026-03-31"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 28.6,
+        "total_caps": 1224,
+        "total_goals": 218,
+        "top_players": [
+          {
+            "player": "Lionel Messi",
+            "position": "FW",
+            "club": "Inter Miami CF",
+            "caps": 198,
+            "goals": 116,
+            "captain": true
+          },
+          {
+            "player": "Lautaro Martínez",
+            "position": "FW",
+            "club": "Inter Milan",
+            "caps": 75,
+            "goals": 36,
+            "captain": false
+          },
+          {
+            "player": "Nicolás Otamendi",
+            "position": "DF",
+            "club": "Benfica",
+            "caps": 130,
+            "goals": 8,
+            "captain": false
+          },
+          {
+            "player": "Julián Alvarez",
+            "position": "FW",
+            "club": "Atlético Madrid",
+            "caps": 51,
+            "goals": 14,
+            "captain": false
+          },
+          {
+            "player": "Leandro Paredes",
+            "position": "MF",
+            "club": "Boca Juniors",
+            "caps": 77,
+            "goals": 5,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.9777,
+        "advance_r16": 0.7703,
+        "quarterfinal": 0.548,
+        "semifinal": 0.3797,
+        "final": 0.254,
+        "champion": 0.157
+      }
+    },
+    {
+      "team": "France",
+      "group": "I",
+      "elo": 2127.3,
+      "rank": 3,
+      "recent_form_points": 2.593,
+      "record": {
+        "matches": 933,
+        "wins": 476,
+        "draws": 195,
+        "losses": 262,
+        "goals_for": 1711,
+        "goals_against": 1206,
+        "points": 1623,
+        "last_match": "2026-03-29"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 26.6,
+        "total_caps": 763,
+        "total_goals": 96,
+        "top_players": [
+          {
+            "player": "Kylian Mbappé",
+            "position": "FW",
+            "club": "Real Madrid",
+            "caps": 96,
+            "goals": 56,
+            "captain": true
+          },
+          {
+            "player": "Ousmane Dembélé",
+            "position": "FW",
+            "club": "Paris Saint-Germain",
+            "caps": 58,
+            "goals": 7,
+            "captain": false
+          },
+          {
+            "player": "Adrien Rabiot",
+            "position": "MF",
+            "club": "Milan",
+            "caps": 57,
+            "goals": 7,
+            "captain": false
+          },
+          {
+            "player": "N'Golo Kanté",
+            "position": "MF",
+            "club": "Fenerbahçe",
+            "caps": 67,
+            "goals": 2,
+            "captain": false
+          },
+          {
+            "player": "Lucas Digne",
+            "position": "DF",
+            "club": "Aston Villa",
+            "caps": 56,
+            "goals": 0,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.9487,
+        "advance_r16": 0.711,
+        "quarterfinal": 0.4853,
+        "semifinal": 0.306,
+        "final": 0.1917,
+        "champion": 0.1173
+      }
+    },
+    {
+      "team": "England",
+      "group": "L",
+      "elo": 2071.2,
+      "rank": 4,
+      "recent_form_points": 2.126,
+      "record": {
+        "matches": 1088,
+        "wins": 623,
+        "draws": 258,
+        "losses": 207,
+        "goals_for": 2377,
+        "goals_against": 1041,
+        "points": 2127,
+        "last_match": "2026-03-31"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 26.6,
+        "total_caps": 799,
+        "total_goals": 145,
+        "top_players": [
+          {
+            "player": "Harry Kane",
+            "position": "FW",
+            "club": "Bayern Munich",
+            "caps": 112,
+            "goals": 78,
+            "captain": true
+          },
+          {
+            "player": "Marcus Rashford",
+            "position": "FW",
+            "club": "Barcelona",
+            "caps": 70,
+            "goals": 18,
+            "captain": false
+          },
+          {
+            "player": "Bukayo Saka",
+            "position": "FW",
+            "club": "Arsenal",
+            "caps": 48,
+            "goals": 14,
+            "captain": false
+          },
+          {
+            "player": "Jordan Henderson",
+            "position": "MF",
+            "club": "Brentford",
+            "caps": 89,
+            "goals": 3,
+            "captain": false
+          },
+          {
+            "player": "John Stones",
+            "position": "DF",
+            "club": "Manchester City",
+            "caps": 87,
+            "goals": 3,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.955,
+        "advance_r16": 0.627,
+        "quarterfinal": 0.3787,
+        "semifinal": 0.219,
+        "final": 0.1187,
+        "champion": 0.056
+      }
+    },
+    {
+      "team": "Brazil",
+      "group": "C",
+      "elo": 2051.2,
+      "rank": 5,
+      "recent_form_points": 1.889,
+      "record": {
+        "matches": 1058,
+        "wins": 671,
+        "draws": 216,
+        "losses": 171,
+        "goals_for": 2303,
+        "goals_against": 956,
+        "points": 2229,
+        "last_match": "2026-05-31"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 28.7,
+        "total_caps": 899,
+        "total_goals": 150,
+        "top_players": [
+          {
+            "player": "Neymar",
+            "position": "FW",
+            "club": "Santos",
+            "caps": 128,
+            "goals": 79,
+            "captain": false
+          },
+          {
+            "player": "Marquinhos",
+            "position": "DF",
+            "club": "Paris Saint-Germain",
+            "caps": 104,
+            "goals": 7,
+            "captain": true
+          },
+          {
+            "player": "Casemiro",
+            "position": "MF",
+            "club": "Manchester United",
+            "caps": 85,
+            "goals": 9,
+            "captain": false
+          },
+          {
+            "player": "Lucas Paquetá",
+            "position": "MF",
+            "club": "Flamengo",
+            "caps": 62,
+            "goals": 13,
+            "captain": false
+          },
+          {
+            "player": "Vinícius Júnior",
+            "position": "FW",
+            "club": "Real Madrid",
+            "caps": 48,
+            "goals": 9,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.946,
+        "advance_r16": 0.589,
+        "quarterfinal": 0.3377,
+        "semifinal": 0.1827,
+        "final": 0.083,
+        "champion": 0.0403
+      }
+    },
+    {
+      "team": "Colombia",
+      "group": "K",
+      "elo": 2044.0,
+      "rank": 6,
+      "recent_form_points": 1.941,
+      "record": {
+        "matches": 637,
+        "wins": 257,
+        "draws": 176,
+        "losses": 204,
+        "goals_for": 821,
+        "goals_against": 736,
+        "points": 947,
+        "last_match": "2026-06-01"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 29.6,
+        "total_caps": 1020,
+        "total_goals": 106,
+        "top_players": [
+          {
+            "player": "James Rodríguez",
+            "position": "MF",
+            "club": "Minnesota United FC",
+            "caps": 125,
+            "goals": 31,
+            "captain": true
+          },
+          {
+            "player": "Luis Díaz",
+            "position": "FW",
+            "club": "Bayern Munich",
+            "caps": 73,
+            "goals": 22,
+            "captain": false
+          },
+          {
+            "player": "David Ospina",
+            "position": "GK",
+            "club": "Atlético Nacional",
+            "caps": 130,
+            "goals": 0,
+            "captain": false
+          },
+          {
+            "player": "Davinson Sánchez",
+            "position": "DF",
+            "club": "Galatasaray",
+            "caps": 78,
+            "goals": 4,
+            "captain": false
+          },
+          {
+            "player": "Yerry Mina",
+            "position": "DF",
+            "club": "Cagliari",
+            "caps": 53,
+            "goals": 8,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.91,
+        "advance_r16": 0.5567,
+        "quarterfinal": 0.3037,
+        "semifinal": 0.1597,
+        "final": 0.0817,
+        "champion": 0.0357
+      }
+    },
+    {
+      "team": "Portugal",
+      "group": "K",
+      "elo": 2025.8,
+      "rank": 7,
+      "recent_form_points": 2.059,
+      "record": {
+        "matches": 693,
+        "wins": 347,
+        "draws": 159,
+        "losses": 187,
+        "goals_for": 1223,
+        "goals_against": 776,
+        "points": 1200,
+        "last_match": "2026-03-31"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 27.5,
+        "total_caps": 1119,
+        "total_goals": 255,
+        "top_players": [
+          {
+            "player": "Cristiano Ronaldo",
+            "position": "FW",
+            "club": "Al-Nassr",
+            "caps": 226,
+            "goals": 143,
+            "captain": true
+          },
+          {
+            "player": "Bruno Fernandes",
+            "position": "MF",
+            "club": "Manchester United",
+            "caps": 87,
+            "goals": 28,
+            "captain": false
+          },
+          {
+            "player": "Bernardo Silva",
+            "position": "MF",
+            "club": "Manchester City",
+            "caps": 107,
+            "goals": 14,
+            "captain": false
+          },
+          {
+            "player": "João Cancelo",
+            "position": "DF",
+            "club": "Barcelona",
+            "caps": 66,
+            "goals": 12,
+            "captain": false
+          },
+          {
+            "player": "João Félix",
+            "position": "FW",
+            "club": "Al-Nassr",
+            "caps": 52,
+            "goals": 12,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.8867,
+        "advance_r16": 0.536,
+        "quarterfinal": 0.2953,
+        "semifinal": 0.153,
+        "final": 0.074,
+        "champion": 0.0343
+      }
+    },
+    {
+      "team": "Netherlands",
+      "group": "F",
+      "elo": 2019.4,
+      "rank": 8,
+      "recent_form_points": 2.348,
+      "record": {
+        "matches": 877,
+        "wins": 452,
+        "draws": 198,
+        "losses": 227,
+        "goals_for": 1839,
+        "goals_against": 1074,
+        "points": 1554,
+        "last_match": "2026-03-31"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 27.3,
+        "total_caps": 828,
+        "total_goals": 151,
+        "top_players": [
+          {
+            "player": "Memphis Depay",
+            "position": "FW",
+            "club": "Corinthians",
+            "caps": 108,
+            "goals": 55,
+            "captain": false
+          },
+          {
+            "player": "Virgil van Dijk",
+            "position": "DF",
+            "club": "Liverpool",
+            "caps": 90,
+            "goals": 12,
+            "captain": true
+          },
+          {
+            "player": "Cody Gakpo",
+            "position": "FW",
+            "club": "Liverpool",
+            "caps": 48,
+            "goals": 19,
+            "captain": false
+          },
+          {
+            "player": "Denzel Dumfries",
+            "position": "DF",
+            "club": "Inter Milan",
+            "caps": 71,
+            "goals": 11,
+            "captain": false
+          },
+          {
+            "player": "Wout Weghorst",
+            "position": "FW",
+            "club": "Ajax",
+            "caps": 51,
+            "goals": 14,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.9,
+        "advance_r16": 0.5653,
+        "quarterfinal": 0.3223,
+        "semifinal": 0.1697,
+        "final": 0.0923,
+        "champion": 0.046
+      }
+    },
+    {
+      "team": "Germany",
+      "group": "E",
+      "elo": 2005.3,
+      "rank": 9,
+      "recent_form_points": 2.578,
+      "record": {
+        "matches": 1030,
+        "wins": 598,
+        "draws": 213,
+        "losses": 219,
+        "goals_for": 2318,
+        "goals_against": 1197,
+        "points": 2007,
+        "last_match": "2026-05-31"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 27.5,
+        "total_caps": 827,
+        "total_goals": 102,
+        "top_players": [
+          {
+            "player": "Joshua Kimmich",
+            "position": "DF",
+            "club": "Bayern Munich",
+            "caps": 109,
+            "goals": 10,
+            "captain": true
+          },
+          {
+            "player": "Kai Havertz",
+            "position": "FW",
+            "club": "Arsenal",
+            "caps": 57,
+            "goals": 21,
+            "captain": false
+          },
+          {
+            "player": "Leroy Sané",
+            "position": "MF",
+            "club": "Galatasaray",
+            "caps": 75,
+            "goals": 16,
+            "captain": false
+          },
+          {
+            "player": "Leon Goretzka",
+            "position": "MF",
+            "club": "Bayern Munich",
+            "caps": 69,
+            "goals": 15,
+            "captain": false
+          },
+          {
+            "player": "Manuel Neuer",
+            "position": "GK",
+            "club": "Bayern Munich",
+            "caps": 124,
+            "goals": 0,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.9273,
+        "advance_r16": 0.603,
+        "quarterfinal": 0.341,
+        "semifinal": 0.18,
+        "final": 0.0947,
+        "champion": 0.045
+      }
+    },
+    {
+      "team": "Ecuador",
+      "group": "E",
+      "elo": 2003.4,
+      "rank": 10,
+      "recent_form_points": 1.652,
+      "record": {
+        "matches": 590,
+        "wins": 182,
+        "draws": 157,
+        "losses": 251,
+        "goals_for": 714,
+        "goals_against": 903,
+        "points": 703,
+        "last_match": "2026-05-30"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 25.6,
+        "total_caps": 750,
+        "total_goals": 92,
+        "top_players": [
+          {
+            "player": "Enner Valencia",
+            "position": "FW",
+            "club": "Pachuca",
+            "caps": 105,
+            "goals": 49,
+            "captain": true
+          },
+          {
+            "player": "Gonzalo Plata",
+            "position": "FW",
+            "club": "Flamengo",
+            "caps": 49,
+            "goals": 8,
+            "captain": false
+          },
+          {
+            "player": "Moisés Caicedo",
+            "position": "MF",
+            "club": "Chelsea",
+            "caps": 60,
+            "goals": 3,
+            "captain": false
+          },
+          {
+            "player": "Pervis Estupiñán",
+            "position": "DF",
+            "club": "Milan",
+            "caps": 53,
+            "goals": 4,
+            "captain": false
+          },
+          {
+            "player": "Félix Torres",
+            "position": "DF",
+            "club": "Internacional",
+            "caps": 48,
+            "goals": 5,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.9403,
+        "advance_r16": 0.5357,
+        "quarterfinal": 0.2687,
+        "semifinal": 0.1223,
+        "final": 0.047,
+        "champion": 0.0173
+      }
+    },
+    {
+      "team": "Japan",
+      "group": "F",
+      "elo": 1991.6,
+      "rank": 11,
+      "recent_form_points": 2.43,
+      "record": {
+        "matches": 790,
+        "wins": 390,
+        "draws": 165,
+        "losses": 235,
+        "goals_for": 1443,
+        "goals_against": 910,
+        "points": 1335,
+        "last_match": "2026-05-31"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 27.2,
+        "total_caps": 855,
+        "total_goals": 109,
+        "top_players": [
+          {
+            "player": "Yūto Nagatomo",
+            "position": "DF",
+            "club": "FC Tokyo",
+            "caps": 145,
+            "goals": 4,
+            "captain": false
+          },
+          {
+            "player": "Junya Itō",
+            "position": "MF",
+            "club": "Genk",
+            "caps": 69,
+            "goals": 15,
+            "captain": false
+          },
+          {
+            "player": "Ritsu Dōan",
+            "position": "MF",
+            "club": "Eintracht Frankfurt",
+            "caps": 65,
+            "goals": 11,
+            "captain": false
+          },
+          {
+            "player": "Ayase Ueda",
+            "position": "FW",
+            "club": "Feyenoord",
+            "caps": 39,
+            "goals": 16,
+            "captain": false
+          },
+          {
+            "player": "Daichi Kamada",
+            "position": "MF",
+            "club": "Crystal Palace",
+            "caps": 49,
+            "goals": 12,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.917,
+        "advance_r16": 0.5647,
+        "quarterfinal": 0.3247,
+        "semifinal": 0.1727,
+        "final": 0.087,
+        "champion": 0.037
+      }
+    },
+    {
+      "team": "Morocco",
+      "group": "C",
+      "elo": 1984.6,
+      "rank": 12,
+      "recent_form_points": 2.407,
+      "record": {
+        "matches": 615,
+        "wins": 305,
+        "draws": 171,
+        "losses": 139,
+        "goals_for": 911,
+        "goals_against": 493,
+        "points": 1086,
+        "last_match": "2026-05-26"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 25.9,
+        "total_caps": 738,
+        "total_goals": 85,
+        "top_players": [
+          {
+            "player": "Ayoub El Kaabi",
+            "position": "FW",
+            "club": "Olympiacos",
+            "caps": 57,
+            "goals": 22,
+            "captain": false
+          },
+          {
+            "player": "Achraf Hakimi",
+            "position": "DF",
+            "club": "Paris Saint-Germain",
+            "caps": 95,
+            "goals": 11,
+            "captain": true
+          },
+          {
+            "player": "Yassine Bounou",
+            "position": "GK",
+            "club": "Al-Hilal",
+            "caps": 89,
+            "goals": 0,
+            "captain": false
+          },
+          {
+            "player": "Azzedine Ounahi",
+            "position": "MF",
+            "club": "Girona",
+            "caps": 47,
+            "goals": 9,
+            "captain": false
+          },
+          {
+            "player": "Soufiane Rahimi",
+            "position": "FW",
+            "club": "Al-Ain",
+            "caps": 35,
+            "goals": 11,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.909,
+        "advance_r16": 0.5653,
+        "quarterfinal": 0.3087,
+        "semifinal": 0.165,
+        "final": 0.079,
+        "champion": 0.036
+      }
+    },
+    {
+      "team": "Croatia",
+      "group": "L",
+      "elo": 1975.0,
+      "rank": 13,
+      "recent_form_points": 2.407,
+      "record": {
+        "matches": 394,
+        "wins": 208,
+        "draws": 104,
+        "losses": 82,
+        "goals_for": 686,
+        "goals_against": 397,
+        "points": 728,
+        "last_match": "2026-03-31"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 27.9,
+        "total_caps": 1142,
+        "total_goals": 151,
+        "top_players": [
+          {
+            "player": "Luka Modrić",
+            "position": "MF",
+            "club": "Milan",
+            "caps": 197,
+            "goals": 28,
+            "captain": true
+          },
+          {
+            "player": "Ivan Perišić",
+            "position": "FW",
+            "club": "PSV Eindhoven",
+            "caps": 153,
+            "goals": 38,
+            "captain": false
+          },
+          {
+            "player": "Andrej Kramarić",
+            "position": "FW",
+            "club": "TSG Hoffenheim",
+            "caps": 115,
+            "goals": 36,
+            "captain": false
+          },
+          {
+            "player": "Mateo Kovačić",
+            "position": "MF",
+            "club": "Manchester City",
+            "caps": 112,
+            "goals": 5,
+            "captain": false
+          },
+          {
+            "player": "Mario Pašalić",
+            "position": "MF",
+            "club": "Atalanta",
+            "caps": 84,
+            "goals": 11,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.9077,
+        "advance_r16": 0.544,
+        "quarterfinal": 0.287,
+        "semifinal": 0.1437,
+        "final": 0.0667,
+        "champion": 0.031
+      }
+    },
+    {
+      "team": "Uruguay",
+      "group": "H",
+      "elo": 1957.4,
+      "rank": 14,
+      "recent_form_points": 1.526,
+      "record": {
+        "matches": 970,
+        "wins": 428,
+        "draws": 240,
+        "losses": 302,
+        "goals_for": 1534,
+        "goals_against": 1178,
+        "points": 1524,
+        "last_match": "2026-03-31"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 28.2,
+        "total_caps": 933,
+        "total_goals": 74,
+        "top_players": [
+          {
+            "player": "Fernando Muslera",
+            "position": "GK",
+            "club": "Estudiantes",
+            "caps": 134,
+            "goals": 0,
+            "captain": false
+          },
+          {
+            "player": "José María Giménez",
+            "position": "DF",
+            "club": "Atlético Madrid",
+            "caps": 99,
+            "goals": 8,
+            "captain": true
+          },
+          {
+            "player": "Giorgian de Arrascaeta",
+            "position": "MF",
+            "club": "Flamengo",
+            "caps": 60,
+            "goals": 13,
+            "captain": false
+          },
+          {
+            "player": "Federico Valverde",
+            "position": "MF",
+            "club": "Real Madrid",
+            "caps": 73,
+            "goals": 9,
+            "captain": false
+          },
+          {
+            "player": "Darwin Núñez",
+            "position": "FW",
+            "club": "Al-Hilal",
+            "caps": 38,
+            "goals": 13,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.8843,
+        "advance_r16": 0.4297,
+        "quarterfinal": 0.1877,
+        "semifinal": 0.0773,
+        "final": 0.0337,
+        "champion": 0.0113
+      }
+    },
+    {
+      "team": "Mexico",
+      "group": "A",
+      "elo": 1957.4,
+      "rank": 15,
+      "recent_form_points": 2.015,
+      "record": {
+        "matches": 1002,
+        "wins": 513,
+        "draws": 231,
+        "losses": 258,
+        "goals_for": 1762,
+        "goals_against": 1053,
+        "points": 1770,
+        "last_match": "2026-05-30"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 27.5,
+        "total_caps": 1195,
+        "total_goals": 114,
+        "top_players": [
+          {
+            "player": "Raúl Jiménez",
+            "position": "FW",
+            "club": "Fulham",
+            "caps": 123,
+            "goals": 44,
+            "captain": false
+          },
+          {
+            "player": "Guillermo Ochoa",
+            "position": "GK",
+            "club": "AEL Limassol",
+            "caps": 152,
+            "goals": 0,
+            "captain": false
+          },
+          {
+            "player": "Orbelín Pineda",
+            "position": "MF",
+            "club": "AEK Athens",
+            "caps": 91,
+            "goals": 12,
+            "captain": false
+          },
+          {
+            "player": "Jesús Gallardo",
+            "position": "DF",
+            "club": "Toluca",
+            "caps": 120,
+            "goals": 3,
+            "captain": false
+          },
+          {
+            "player": "Edson Álvarez",
+            "position": "DF",
+            "club": "Fenerbahçe",
+            "caps": 97,
+            "goals": 7,
+            "captain": true
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.947,
+        "advance_r16": 0.5277,
+        "quarterfinal": 0.2603,
+        "semifinal": 0.1193,
+        "final": 0.046,
+        "champion": 0.0157
+      }
+    },
+    {
+      "team": "Norway",
+      "group": "I",
+      "elo": 1953.7,
+      "rank": 16,
+      "recent_form_points": 2.2,
+      "record": {
+        "matches": 871,
+        "wins": 328,
+        "draws": 195,
+        "losses": 348,
+        "goals_for": 1350,
+        "goals_against": 1415,
+        "points": 1179,
+        "last_match": "2026-06-01"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 26.3,
+        "total_caps": 781,
+        "total_goals": 120,
+        "top_players": [
+          {
+            "player": "Erling Haaland",
+            "position": "FW",
+            "club": "Manchester City",
+            "caps": 49,
+            "goals": 55,
+            "captain": false
+          },
+          {
+            "player": "Alexander Sørloth",
+            "position": "FW",
+            "club": "Atlético Madrid",
+            "caps": 71,
+            "goals": 26,
+            "captain": false
+          },
+          {
+            "player": "Martin Ødegaard",
+            "position": "MF",
+            "club": "Arsenal",
+            "caps": 67,
+            "goals": 4,
+            "captain": true
+          },
+          {
+            "player": "Ørjan Nyland",
+            "position": "GK",
+            "club": "Sevilla",
+            "caps": 70,
+            "goals": 0,
+            "captain": false
+          },
+          {
+            "player": "Sander Berge",
+            "position": "MF",
+            "club": "Fulham",
+            "caps": 65,
+            "goals": 1,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.76,
+        "advance_r16": 0.405,
+        "quarterfinal": 0.2073,
+        "semifinal": 0.099,
+        "final": 0.0423,
+        "champion": 0.0173
+      }
+    },
+    {
+      "team": "Switzerland",
+      "group": "B",
+      "elo": 1949.5,
+      "rank": 17,
+      "recent_form_points": 1.978,
+      "record": {
+        "matches": 883,
+        "wins": 316,
+        "draws": 203,
+        "losses": 364,
+        "goals_for": 1319,
+        "goals_against": 1444,
+        "points": 1151,
+        "last_match": "2026-05-31"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 27.8,
+        "total_caps": 1111,
+        "total_goals": 123,
+        "top_players": [
+          {
+            "player": "Granit Xhaka",
+            "position": "MF",
+            "club": "Sunderland",
+            "caps": 145,
+            "goals": 17,
+            "captain": true
+          },
+          {
+            "player": "Breel Embolo",
+            "position": "FW",
+            "club": "Rennes",
+            "caps": 86,
+            "goals": 24,
+            "captain": false
+          },
+          {
+            "player": "Ricardo Rodriguez",
+            "position": "DF",
+            "club": "Real Betis",
+            "caps": 137,
+            "goals": 9,
+            "captain": false
+          },
+          {
+            "player": "Remo Freuler",
+            "position": "MF",
+            "club": "Bologna",
+            "caps": 87,
+            "goals": 11,
+            "captain": false
+          },
+          {
+            "player": "Rubén Vargas",
+            "position": "FW",
+            "club": "Sevilla",
+            "caps": 61,
+            "goals": 11,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.9477,
+        "advance_r16": 0.519,
+        "quarterfinal": 0.2387,
+        "semifinal": 0.1023,
+        "final": 0.0423,
+        "champion": 0.0173
+      }
+    },
+    {
+      "team": "Turkey",
+      "group": "D",
+      "elo": 1944.2,
+      "rank": 18,
+      "recent_form_points": 2.333,
+      "record": {
+        "matches": 641,
+        "wins": 258,
+        "draws": 152,
+        "losses": 231,
+        "goals_for": 897,
+        "goals_against": 903,
+        "points": 926,
+        "last_match": "2026-06-01"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 27.2,
+        "total_caps": 951,
+        "total_goals": 95,
+        "top_players": [
+          {
+            "player": "Hakan Çalhanoğlu",
+            "position": "MF",
+            "club": "Inter Milan",
+            "caps": 104,
+            "goals": 22,
+            "captain": true
+          },
+          {
+            "player": "Kerem Aktürkoğlu",
+            "position": "FW",
+            "club": "Fenerbahçe",
+            "caps": 51,
+            "goals": 15,
+            "captain": false
+          },
+          {
+            "player": "Kaan Ayhan",
+            "position": "MF",
+            "club": "Galatasaray",
+            "caps": 73,
+            "goals": 5,
+            "captain": false
+          },
+          {
+            "player": "Merih Demiral",
+            "position": "DF",
+            "club": "Al-Ahli",
+            "caps": 61,
+            "goals": 6,
+            "captain": false
+          },
+          {
+            "player": "Zeki Çelik",
+            "position": "DF",
+            "club": "Roma",
+            "caps": 60,
+            "goals": 3,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.768,
+        "advance_r16": 0.425,
+        "quarterfinal": 0.2257,
+        "semifinal": 0.1027,
+        "final": 0.0437,
+        "champion": 0.02
+      }
+    },
+    {
+      "team": "Belgium",
+      "group": "G",
+      "elo": 1933.8,
+      "rank": 19,
+      "recent_form_points": 2.185,
+      "record": {
+        "matches": 851,
+        "wins": 380,
+        "draws": 181,
+        "losses": 290,
+        "goals_for": 1543,
+        "goals_against": 1290,
+        "points": 1321,
+        "last_match": "2026-03-31"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 27.1,
+        "total_caps": 1066,
+        "total_goals": 209,
+        "top_players": [
+          {
+            "player": "Romelu Lukaku",
+            "position": "FW",
+            "club": "Napoli",
+            "caps": 125,
+            "goals": 90,
+            "captain": false
+          },
+          {
+            "player": "Kevin De Bruyne",
+            "position": "MF",
+            "club": "Napoli",
+            "caps": 118,
+            "goals": 36,
+            "captain": false
+          },
+          {
+            "player": "Axel Witsel",
+            "position": "MF",
+            "club": "Girona",
+            "caps": 137,
+            "goals": 12,
+            "captain": false
+          },
+          {
+            "player": "Youri Tielemans",
+            "position": "MF",
+            "club": "Aston Villa",
+            "caps": 84,
+            "goals": 13,
+            "captain": true
+          },
+          {
+            "player": "Thomas Meunier",
+            "position": "DF",
+            "club": "Lille",
+            "caps": 79,
+            "goals": 10,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.828,
+        "advance_r16": 0.4413,
+        "quarterfinal": 0.2,
+        "semifinal": 0.088,
+        "final": 0.032,
+        "champion": 0.0117
+      }
+    },
+    {
+      "team": "Senegal",
+      "group": "I",
+      "elo": 1902.8,
+      "rank": 20,
+      "recent_form_points": 2.119,
+      "record": {
+        "matches": 637,
+        "wins": 298,
+        "draws": 168,
+        "losses": 171,
+        "goals_for": 882,
+        "goals_against": 599,
+        "points": 1062,
+        "last_match": "2026-05-31"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 26.6,
+        "total_caps": 965,
+        "total_goals": 131,
+        "top_players": [
+          {
+            "player": "Sadio Mané",
+            "position": "FW",
+            "club": "Al-Nassr",
+            "caps": 127,
+            "goals": 55,
+            "captain": false
+          },
+          {
+            "player": "Idrissa Gueye",
+            "position": "MF",
+            "club": "Everton",
+            "caps": 130,
+            "goals": 7,
+            "captain": false
+          },
+          {
+            "player": "Ismaïla Sarr",
+            "position": "FW",
+            "club": "Crystal Palace",
+            "caps": 82,
+            "goals": 19,
+            "captain": false
+          },
+          {
+            "player": "Kalidou Koulibaly",
+            "position": "DF",
+            "club": "Al-Hilal",
+            "caps": 102,
+            "goals": 2,
+            "captain": true
+          },
+          {
+            "player": "Krépin Diatta",
+            "position": "DF",
+            "club": "Monaco",
+            "caps": 60,
+            "goals": 2,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.688,
+        "advance_r16": 0.3243,
+        "quarterfinal": 0.151,
+        "semifinal": 0.0613,
+        "final": 0.0273,
+        "champion": 0.0063
+      }
+    },
+    {
+      "team": "Canada",
+      "group": "B",
+      "elo": 1895.8,
+      "rank": 21,
+      "recent_form_points": 1.711,
+      "record": {
+        "matches": 468,
+        "wins": 179,
+        "draws": 107,
+        "losses": 182,
+        "goals_for": 607,
+        "goals_against": 611,
+        "points": 644,
+        "last_match": "2026-06-01"
+      },
+      "squad": {
+        "squad_size": 25,
+        "avg_age": 26.6,
+        "total_caps": 924,
+        "total_goals": 130,
+        "top_players": [
+          {
+            "player": "Jonathan David",
+            "position": "FW",
+            "club": "Juventus",
+            "caps": 76,
+            "goals": 39,
+            "captain": false
+          },
+          {
+            "player": "Cyle Larin",
+            "position": "FW",
+            "club": "Southampton",
+            "caps": 89,
+            "goals": 30,
+            "captain": false
+          },
+          {
+            "player": "Jonathan Osorio",
+            "position": "MF",
+            "club": "Toronto FC",
+            "caps": 90,
+            "goals": 10,
+            "captain": false
+          },
+          {
+            "player": "Alphonso Davies",
+            "position": "DF",
+            "club": "Bayern Munich",
+            "caps": 58,
+            "goals": 15,
+            "captain": true
+          },
+          {
+            "player": "Tajon Buchanan",
+            "position": "FW",
+            "club": "Villarreal",
+            "caps": 59,
+            "goals": 8,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.9413,
+        "advance_r16": 0.4527,
+        "quarterfinal": 0.1847,
+        "semifinal": 0.067,
+        "final": 0.0203,
+        "champion": 0.007
+      }
+    },
+    {
+      "team": "Paraguay",
+      "group": "D",
+      "elo": 1894.9,
+      "rank": 22,
+      "recent_form_points": 1.378,
+      "record": {
+        "matches": 782,
+        "wins": 274,
+        "draws": 208,
+        "losses": 300,
+        "goals_for": 999,
+        "goals_against": 1113,
+        "points": 1030,
+        "last_match": "2026-03-31"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 28.5,
+        "total_caps": 668,
+        "total_goals": 49,
+        "top_players": [
+          {
+            "player": "Miguel Almirón",
+            "position": "MF",
+            "club": "Atlanta United FC",
+            "caps": 75,
+            "goals": 9,
+            "captain": false
+          },
+          {
+            "player": "Gustavo Gómez",
+            "position": "DF",
+            "club": "Palmeiras",
+            "caps": 88,
+            "goals": 4,
+            "captain": true
+          },
+          {
+            "player": "Júnior Alonso",
+            "position": "DF",
+            "club": "Atlético Mineiro",
+            "caps": 70,
+            "goals": 3,
+            "captain": false
+          },
+          {
+            "player": "Antonio Sanabria",
+            "position": "FW",
+            "club": "Cremonese",
+            "caps": 47,
+            "goals": 7,
+            "captain": false
+          },
+          {
+            "player": "Fabián Balbuena",
+            "position": "DF",
+            "club": "Grêmio",
+            "caps": 47,
+            "goals": 2,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.6883,
+        "advance_r16": 0.2833,
+        "quarterfinal": 0.108,
+        "semifinal": 0.0367,
+        "final": 0.0123,
+        "champion": 0.004
+      }
+    },
+    {
+      "team": "Australia",
+      "group": "D",
+      "elo": 1891.9,
+      "rank": 23,
+      "recent_form_points": 1.667,
+      "record": {
+        "matches": 580,
+        "wins": 296,
+        "draws": 122,
+        "losses": 162,
+        "goals_for": 1166,
+        "goals_against": 618,
+        "points": 1010,
+        "last_match": "2026-05-30"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 26.9,
+        "total_caps": 713,
+        "total_goals": 73,
+        "top_players": [
+          {
+            "player": "Jackson Irvine",
+            "position": "MF",
+            "club": "FC St. Pauli",
+            "caps": 81,
+            "goals": 14,
+            "captain": false
+          },
+          {
+            "player": "Mathew Leckie",
+            "position": "FW",
+            "club": "Melbourne City",
+            "caps": 79,
+            "goals": 14,
+            "captain": false
+          },
+          {
+            "player": "Mathew Ryan",
+            "position": "GK",
+            "club": "Levante",
+            "caps": 104,
+            "goals": 0,
+            "captain": true
+          },
+          {
+            "player": "Aziz Behich",
+            "position": "DF",
+            "club": "Melbourne City",
+            "caps": 83,
+            "goals": 3,
+            "captain": false
+          },
+          {
+            "player": "Harry Souttar",
+            "position": "DF",
+            "club": "Leicester City",
+            "caps": 37,
+            "goals": 11,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.6627,
+        "advance_r16": 0.2813,
+        "quarterfinal": 0.111,
+        "semifinal": 0.045,
+        "final": 0.0163,
+        "champion": 0.0047
+      }
+    },
+    {
+      "team": "Austria",
+      "group": "J",
+      "elo": 1889.7,
+      "rank": 24,
+      "recent_form_points": 2.489,
+      "record": {
+        "matches": 860,
+        "wins": 367,
+        "draws": 184,
+        "losses": 309,
+        "goals_for": 1541,
+        "goals_against": 1315,
+        "points": 1285,
+        "last_match": "2026-06-01"
+      },
+      "squad": {
+        "squad_size": 25,
+        "avg_age": 28.2,
+        "total_caps": 994,
+        "total_goals": 148,
+        "top_players": [
+          {
+            "player": "Marko Arnautović",
+            "position": "FW",
+            "club": "Red Star Belgrade",
+            "caps": 133,
+            "goals": 47,
+            "captain": false
+          },
+          {
+            "player": "Marcel Sabitzer",
+            "position": "MF",
+            "club": "Borussia Dortmund",
+            "caps": 98,
+            "goals": 26,
+            "captain": false
+          },
+          {
+            "player": "David Alaba",
+            "position": "DF",
+            "club": "Real Madrid",
+            "caps": 113,
+            "goals": 15,
+            "captain": true
+          },
+          {
+            "player": "Michael Gregoritsch",
+            "position": "FW",
+            "club": "FC Augsburg",
+            "caps": 75,
+            "goals": 24,
+            "captain": false
+          },
+          {
+            "player": "Konrad Laimer",
+            "position": "MF",
+            "club": "Bayern Munich",
+            "caps": 57,
+            "goals": 7,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.689,
+        "advance_r16": 0.3633,
+        "quarterfinal": 0.1633,
+        "semifinal": 0.068,
+        "final": 0.028,
+        "champion": 0.0117
+      }
+    },
+    {
+      "team": "Iran",
+      "group": "G",
+      "elo": 1884.6,
+      "rank": 25,
+      "recent_form_points": 1.593,
+      "record": {
+        "matches": 611,
+        "wins": 348,
+        "draws": 144,
+        "losses": 119,
+        "goals_for": 1153,
+        "goals_against": 483,
+        "points": 1188,
+        "last_match": "2026-05-29"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 29.8,
+        "total_caps": 1149,
+        "total_goals": 148,
+        "top_players": [
+          {
+            "player": "Mehdi Taremi",
+            "position": "FW",
+            "club": "Olympiacos",
+            "caps": 104,
+            "goals": 60,
+            "captain": false
+          },
+          {
+            "player": "Ehsan Hajsafi",
+            "position": "DF",
+            "club": "Sepahan",
+            "caps": 145,
+            "goals": 7,
+            "captain": true
+          },
+          {
+            "player": "Alireza Jahanbakhsh",
+            "position": "MF",
+            "club": "Dender",
+            "caps": 98,
+            "goals": 17,
+            "captain": false
+          },
+          {
+            "player": "Ramin Rezaeian",
+            "position": "DF",
+            "club": "Foolad",
+            "caps": 73,
+            "goals": 7,
+            "captain": false
+          },
+          {
+            "player": "Mohammad Mohebi",
+            "position": "MF",
+            "club": "Rostov",
+            "caps": 36,
+            "goals": 14,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.8213,
+        "advance_r16": 0.356,
+        "quarterfinal": 0.1447,
+        "semifinal": 0.0543,
+        "final": 0.0177,
+        "champion": 0.0063
+      }
+    },
+    {
+      "team": "South Korea",
+      "group": "A",
+      "elo": 1869.7,
+      "rank": 26,
+      "recent_form_points": 1.837,
+      "record": {
+        "matches": 1006,
+        "wins": 537,
+        "draws": 252,
+        "losses": 217,
+        "goals_for": 1791,
+        "goals_against": 914,
+        "points": 1863,
+        "last_match": "2026-05-30"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 27.5,
+        "total_caps": 937,
+        "total_goals": 142,
+        "top_players": [
+          {
+            "player": "Son Heung-min",
+            "position": "FW",
+            "club": "Los Angeles FC",
+            "caps": 143,
+            "goals": 56,
+            "captain": true
+          },
+          {
+            "player": "Lee Jae-sung",
+            "position": "MF",
+            "club": "Mainz 05",
+            "caps": 104,
+            "goals": 15,
+            "captain": false
+          },
+          {
+            "player": "Hwang Hee-chan",
+            "position": "MF",
+            "club": "Wolverhampton Wanderers",
+            "caps": 78,
+            "goals": 17,
+            "captain": false
+          },
+          {
+            "player": "Hwang In-beom",
+            "position": "MF",
+            "club": "Feyenoord",
+            "caps": 72,
+            "goals": 6,
+            "captain": false
+          },
+          {
+            "player": "Kim Min-jae",
+            "position": "DF",
+            "club": "Bayern Munich",
+            "caps": 78,
+            "goals": 4,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.7997,
+        "advance_r16": 0.3617,
+        "quarterfinal": 0.1393,
+        "semifinal": 0.0537,
+        "final": 0.0207,
+        "champion": 0.0067
+      }
+    },
+    {
+      "team": "United States",
+      "group": "D",
+      "elo": 1854.8,
+      "rank": 27,
+      "recent_form_points": 1.667,
+      "record": {
+        "matches": 789,
+        "wins": 351,
+        "draws": 161,
+        "losses": 277,
+        "goals_for": 1199,
+        "goals_against": 1046,
+        "points": 1214,
+        "last_match": "2026-05-31"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 26.4,
+        "total_caps": 941,
+        "total_goals": 124,
+        "top_players": [
+          {
+            "player": "Christian Pulisic",
+            "position": "FW",
+            "club": "Milan",
+            "caps": 85,
+            "goals": 33,
+            "captain": false
+          },
+          {
+            "player": "Weston McKennie",
+            "position": "MF",
+            "club": "Juventus",
+            "caps": 65,
+            "goals": 12,
+            "captain": false
+          },
+          {
+            "player": "Brenden Aaronson",
+            "position": "FW",
+            "club": "Leeds United",
+            "caps": 57,
+            "goals": 9,
+            "captain": false
+          },
+          {
+            "player": "Ricardo Pepi",
+            "position": "FW",
+            "club": "PSV Eindhoven",
+            "caps": 36,
+            "goals": 13,
+            "captain": false
+          },
+          {
+            "player": "Tim Ream",
+            "position": "DF",
+            "club": "Charlotte FC",
+            "caps": 81,
+            "goals": 1,
+            "captain": true
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.6057,
+        "advance_r16": 0.24,
+        "quarterfinal": 0.0883,
+        "semifinal": 0.0287,
+        "final": 0.0073,
+        "champion": 0.001
+      }
+    },
+    {
+      "team": "Algeria",
+      "group": "J",
+      "elo": 1851.2,
+      "rank": 28,
+      "recent_form_points": 2.215,
+      "record": {
+        "matches": 615,
+        "wins": 286,
+        "draws": 162,
+        "losses": 167,
+        "goals_for": 948,
+        "goals_against": 613,
+        "points": 1020,
+        "last_match": "2026-03-31"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 26.5,
+        "total_caps": 719,
+        "total_goals": 115,
+        "top_players": [
+          {
+            "player": "Riyad Mahrez",
+            "position": "FW",
+            "club": "Al-Ahli",
+            "caps": 113,
+            "goals": 38,
+            "captain": true
+          },
+          {
+            "player": "Aïssa Mandi",
+            "position": "DF",
+            "club": "Lille",
+            "caps": 116,
+            "goals": 7,
+            "captain": false
+          },
+          {
+            "player": "Mohamed Amoura",
+            "position": "FW",
+            "club": "VfL Wolfsburg",
+            "caps": 44,
+            "goals": 19,
+            "captain": false
+          },
+          {
+            "player": "Ramy Bensebaini",
+            "position": "DF",
+            "club": "Borussia Dortmund",
+            "caps": 81,
+            "goals": 7,
+            "captain": false
+          },
+          {
+            "player": "Nabil Bentaleb",
+            "position": "MF",
+            "club": "Lille",
+            "caps": 58,
+            "goals": 6,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.616,
+        "advance_r16": 0.2647,
+        "quarterfinal": 0.109,
+        "semifinal": 0.0433,
+        "final": 0.0163,
+        "champion": 0.0057
+      }
+    },
+    {
+      "team": "Panama",
+      "group": "L",
+      "elo": 1832.8,
+      "rank": 29,
+      "recent_form_points": 1.526,
+      "record": {
+        "matches": 537,
+        "wins": 182,
+        "draws": 132,
+        "losses": 223,
+        "goals_for": 674,
+        "goals_against": 819,
+        "points": 678,
+        "last_match": "2026-05-31"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 30.0,
+        "total_caps": 1504,
+        "total_goals": 123,
+        "top_players": [
+          {
+            "player": "Aníbal Godoy",
+            "position": "MF",
+            "club": "San Diego FC",
+            "caps": 159,
+            "goals": 4,
+            "captain": true
+          },
+          {
+            "player": "Alberto Quintero",
+            "position": "MF",
+            "club": "Plaza Amador",
+            "caps": 140,
+            "goals": 7,
+            "captain": false
+          },
+          {
+            "player": "Yoel Bárcenas",
+            "position": "MF",
+            "club": "Mazatlán",
+            "caps": 102,
+            "goals": 10,
+            "captain": false
+          },
+          {
+            "player": "Eric Davis",
+            "position": "DF",
+            "club": "Plaza Amador",
+            "caps": 105,
+            "goals": 9,
+            "captain": false
+          },
+          {
+            "player": "José Fajardo",
+            "position": "FW",
+            "club": "Universidad Católica",
+            "caps": 66,
+            "goals": 17,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.6583,
+        "advance_r16": 0.2167,
+        "quarterfinal": 0.0693,
+        "semifinal": 0.021,
+        "final": 0.009,
+        "champion": 0.0023
+      }
+    },
+    {
+      "team": "Uzbekistan",
+      "group": "K",
+      "elo": 1820.5,
+      "rank": 30,
+      "recent_form_points": 1.519,
+      "record": {
+        "matches": 353,
+        "wins": 169,
+        "draws": 73,
+        "losses": 111,
+        "goals_for": 612,
+        "goals_against": 392,
+        "points": 580,
+        "last_match": "2026-06-01"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 28.0,
+        "total_caps": 889,
+        "total_goals": 126,
+        "top_players": [
+          {
+            "player": "Eldor Shomurodov",
+            "position": "FW",
+            "club": "İstanbul Başakşehir",
+            "caps": 91,
+            "goals": 44,
+            "captain": true
+          },
+          {
+            "player": "Igor Sergeev",
+            "position": "FW",
+            "club": "Persepolis",
+            "caps": 82,
+            "goals": 24,
+            "captain": false
+          },
+          {
+            "player": "Jaloliddin Masharipov",
+            "position": "MF",
+            "club": "Esteghlal",
+            "caps": 74,
+            "goals": 12,
+            "captain": false
+          },
+          {
+            "player": "Otabek Shukurov",
+            "position": "MF",
+            "club": "Baniyas",
+            "caps": 83,
+            "goals": 9,
+            "captain": false
+          },
+          {
+            "player": "Oston Urunov",
+            "position": "MF",
+            "club": "Persepolis",
+            "caps": 41,
+            "goals": 10,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.582,
+        "advance_r16": 0.2037,
+        "quarterfinal": 0.0607,
+        "semifinal": 0.0197,
+        "final": 0.0077,
+        "champion": 0.002
+      }
+    },
+    {
+      "team": "Scotland",
+      "group": "C",
+      "elo": 1817.7,
+      "rank": 31,
+      "recent_form_points": 1.807,
+      "record": {
+        "matches": 850,
+        "wins": 401,
+        "draws": 182,
+        "losses": 267,
+        "goals_for": 1450,
+        "goals_against": 1050,
+        "points": 1385,
+        "last_match": "2026-05-30"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 28.7,
+        "total_caps": 952,
+        "total_goals": 94,
+        "top_players": [
+          {
+            "player": "John McGinn",
+            "position": "MF",
+            "club": "Aston Villa",
+            "caps": 85,
+            "goals": 20,
+            "captain": false
+          },
+          {
+            "player": "Scott McTominay",
+            "position": "MF",
+            "club": "Napoli",
+            "caps": 69,
+            "goals": 14,
+            "captain": false
+          },
+          {
+            "player": "Andy Robertson",
+            "position": "DF",
+            "club": "Liverpool",
+            "caps": 93,
+            "goals": 4,
+            "captain": true
+          },
+          {
+            "player": "Ryan Christie",
+            "position": "MF",
+            "club": "Bournemouth",
+            "caps": 67,
+            "goals": 10,
+            "captain": false
+          },
+          {
+            "player": "Lyndon Dykes",
+            "position": "FW",
+            "club": "Charlton Athletic",
+            "caps": 51,
+            "goals": 10,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.5727,
+        "advance_r16": 0.2007,
+        "quarterfinal": 0.0743,
+        "semifinal": 0.024,
+        "final": 0.006,
+        "champion": 0.002
+      }
+    },
+    {
+      "team": "Egypt",
+      "group": "G",
+      "elo": 1806.6,
+      "rank": 32,
+      "recent_form_points": 2.052,
+      "record": {
+        "matches": 755,
+        "wins": 379,
+        "draws": 185,
+        "losses": 191,
+        "goals_for": 1224,
+        "goals_against": 764,
+        "points": 1322,
+        "last_match": "2026-05-28"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 28.7,
+        "total_caps": 801,
+        "total_goals": 125,
+        "top_players": [
+          {
+            "player": "Mohamed Salah",
+            "position": "FW",
+            "club": "Liverpool",
+            "caps": 115,
+            "goals": 67,
+            "captain": true
+          },
+          {
+            "player": "Trézéguet",
+            "position": "FW",
+            "club": "Al Ahly",
+            "caps": 95,
+            "goals": 23,
+            "captain": false
+          },
+          {
+            "player": "Omar Marmoush",
+            "position": "FW",
+            "club": "Manchester City",
+            "caps": 48,
+            "goals": 11,
+            "captain": false
+          },
+          {
+            "player": "Zizo",
+            "position": "FW",
+            "club": "Al Ahly",
+            "caps": 62,
+            "goals": 5,
+            "captain": false
+          },
+          {
+            "player": "Mohamed El Shenawy",
+            "position": "GK",
+            "club": "Al Ahly",
+            "caps": 76,
+            "goals": 0,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.638,
+        "advance_r16": 0.246,
+        "quarterfinal": 0.0883,
+        "semifinal": 0.028,
+        "final": 0.0073,
+        "champion": 0.0017
+      }
+    },
+    {
+      "team": "Ivory Coast",
+      "group": "E",
+      "elo": 1790.2,
+      "rank": 33,
+      "recent_form_points": 2.23,
+      "record": {
+        "matches": 635,
+        "wins": 324,
+        "draws": 162,
+        "losses": 149,
+        "goals_for": 1040,
+        "goals_against": 633,
+        "points": 1134,
+        "last_match": "2026-03-31"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 25.3,
+        "total_caps": 682,
+        "total_goals": 81,
+        "top_players": [
+          {
+            "player": "Franck Kessié",
+            "position": "MF",
+            "club": "Al-Ahli",
+            "caps": 102,
+            "goals": 15,
+            "captain": true
+          },
+          {
+            "player": "Ibrahim Sangaré",
+            "position": "MF",
+            "club": "Nottingham Forest",
+            "caps": 57,
+            "goals": 12,
+            "captain": false
+          },
+          {
+            "player": "Nicolas Pépé",
+            "position": "FW",
+            "club": "Villarreal",
+            "caps": 54,
+            "goals": 12,
+            "captain": false
+          },
+          {
+            "player": "Jean Michaël Seri",
+            "position": "MF",
+            "club": "Maribor",
+            "caps": 65,
+            "goals": 4,
+            "captain": false
+          },
+          {
+            "player": "Seko Fofana",
+            "position": "MF",
+            "club": "Porto",
+            "caps": 31,
+            "goals": 7,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.6597,
+        "advance_r16": 0.2333,
+        "quarterfinal": 0.0787,
+        "semifinal": 0.0287,
+        "final": 0.0073,
+        "champion": 0.002
+      }
+    },
+    {
+      "team": "Czech Republic",
+      "group": "A",
+      "elo": 1782.6,
+      "rank": 34,
+      "recent_form_points": 1.681,
+      "record": {
+        "matches": 359,
+        "wins": 190,
+        "draws": 72,
+        "losses": 97,
+        "goals_for": 638,
+        "goals_against": 367,
+        "points": 642,
+        "last_match": "2026-05-31"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 27.2,
+        "total_caps": 702,
+        "total_goals": 95,
+        "top_players": [
+          {
+            "player": "Tomáš Souček",
+            "position": "MF",
+            "club": "West Ham United",
+            "caps": 89,
+            "goals": 17,
+            "captain": false
+          },
+          {
+            "player": "Patrik Schick",
+            "position": "FW",
+            "club": "Bayer Leverkusen",
+            "caps": 52,
+            "goals": 25,
+            "captain": false
+          },
+          {
+            "player": "Vladimír Darida",
+            "position": "MF",
+            "club": "Hradec Králové",
+            "caps": 78,
+            "goals": 8,
+            "captain": false
+          },
+          {
+            "player": "Vladimír Coufal",
+            "position": "DF",
+            "club": "TSG Hoffenheim",
+            "caps": 61,
+            "goals": 2,
+            "captain": false
+          },
+          {
+            "player": "Adam Hložek",
+            "position": "FW",
+            "club": "TSG Hoffenheim",
+            "caps": 42,
+            "goals": 5,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.6193,
+        "advance_r16": 0.2087,
+        "quarterfinal": 0.0587,
+        "semifinal": 0.0147,
+        "final": 0.0033,
+        "champion": 0.0
+      }
+    },
+    {
+      "team": "Jordan",
+      "group": "J",
+      "elo": 1769.6,
+      "rank": 35,
+      "recent_form_points": 1.578,
+      "record": {
+        "matches": 484,
+        "wins": 180,
+        "draws": 134,
+        "losses": 170,
+        "goals_for": 619,
+        "goals_against": 539,
+        "points": 674,
+        "last_match": "2026-05-31"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 28.1,
+        "total_caps": 1048,
+        "total_goals": 93,
+        "top_players": [
+          {
+            "player": "Musa Al-Taamari",
+            "position": "FW",
+            "club": "Rennes",
+            "caps": 91,
+            "goals": 24,
+            "captain": false
+          },
+          {
+            "player": "Ali Olwan",
+            "position": "FW",
+            "club": "Al-Sailiya",
+            "caps": 65,
+            "goals": 29,
+            "captain": false
+          },
+          {
+            "player": "Mahmoud Al-Mardi",
+            "position": "FW",
+            "club": "Al-Hussein",
+            "caps": 88,
+            "goals": 9,
+            "captain": false
+          },
+          {
+            "player": "Ihsan Haddad",
+            "position": "DF",
+            "club": "Al-Hussein",
+            "caps": 91,
+            "goals": 2,
+            "captain": true
+          },
+          {
+            "player": "Yazan Al-Arab",
+            "position": "DF",
+            "club": "FC Seoul",
+            "caps": 79,
+            "goals": 3,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.3573,
+        "advance_r16": 0.1077,
+        "quarterfinal": 0.0343,
+        "semifinal": 0.0093,
+        "final": 0.0017,
+        "champion": 0.0007
+      }
+    },
+    {
+      "team": "Sweden",
+      "group": "F",
+      "elo": 1769.3,
+      "rank": 36,
+      "recent_form_points": 1.119,
+      "record": {
+        "matches": 1100,
+        "wins": 541,
+        "draws": 232,
+        "losses": 327,
+        "goals_for": 2169,
+        "goals_against": 1419,
+        "points": 1855,
+        "last_match": "2026-06-01"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 27.0,
+        "total_caps": 498,
+        "total_goals": 63,
+        "top_players": [
+          {
+            "player": "Alexander Isak",
+            "position": "FW",
+            "club": "Liverpool",
+            "caps": 57,
+            "goals": 17,
+            "captain": false
+          },
+          {
+            "player": "Viktor Gyökeres",
+            "position": "FW",
+            "club": "Arsenal",
+            "caps": 32,
+            "goals": 19,
+            "captain": false
+          },
+          {
+            "player": "Victor Lindelöf",
+            "position": "DF",
+            "club": "Aston Villa",
+            "caps": 76,
+            "goals": 3,
+            "captain": true
+          },
+          {
+            "player": "Ken Sema",
+            "position": "MF",
+            "club": "Pafos",
+            "caps": 33,
+            "goals": 5,
+            "captain": false
+          },
+          {
+            "player": "Anthony Elanga",
+            "position": "FW",
+            "club": "Newcastle United",
+            "caps": 29,
+            "goals": 6,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.4717,
+        "advance_r16": 0.1307,
+        "quarterfinal": 0.035,
+        "semifinal": 0.0093,
+        "final": 0.0023,
+        "champion": 0.0013
+      }
+    },
+    {
+      "team": "DR Congo",
+      "group": "K",
+      "elo": 1751.7,
+      "rank": 37,
+      "recent_form_points": 2.259,
+      "record": {
+        "matches": 522,
+        "wins": 206,
+        "draws": 143,
+        "losses": 173,
+        "goals_for": 778,
+        "goals_against": 625,
+        "points": 761,
+        "last_match": "2026-03-31"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 28.5,
+        "total_caps": 762,
+        "total_goals": 81,
+        "top_players": [
+          {
+            "player": "Cédric Bakambu",
+            "position": "FW",
+            "club": "Real Betis",
+            "caps": 68,
+            "goals": 21,
+            "captain": false
+          },
+          {
+            "player": "Chancel Mbemba",
+            "position": "DF",
+            "club": "Lille",
+            "caps": 107,
+            "goals": 7,
+            "captain": true
+          },
+          {
+            "player": "Meschak Elia",
+            "position": "FW",
+            "club": "Alanyaspor",
+            "caps": 68,
+            "goals": 12,
+            "captain": false
+          },
+          {
+            "player": "Yoane Wissa",
+            "position": "FW",
+            "club": "Newcastle United",
+            "caps": 36,
+            "goals": 9,
+            "captain": false
+          },
+          {
+            "player": "Théo Bongonda",
+            "position": "MF",
+            "club": "Spartak Moscow",
+            "caps": 37,
+            "goals": 7,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.311,
+        "advance_r16": 0.108,
+        "quarterfinal": 0.038,
+        "semifinal": 0.0113,
+        "final": 0.0037,
+        "champion": 0.0013
+      }
+    },
+    {
+      "team": "New Zealand",
+      "group": "G",
+      "elo": 1750.3,
+      "rank": 38,
+      "recent_form_points": 0.704,
+      "record": {
+        "matches": 414,
+        "wins": 172,
+        "draws": 73,
+        "losses": 169,
+        "goals_for": 729,
+        "goals_against": 619,
+        "points": 589,
+        "last_match": "2026-03-30"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 27.6,
+        "total_caps": 800,
+        "total_goals": 109,
+        "top_players": [
+          {
+            "player": "Chris Wood",
+            "position": "FW",
+            "club": "Nottingham Forest",
+            "caps": 88,
+            "goals": 45,
+            "captain": true
+          },
+          {
+            "player": "Kosta Barbarouses",
+            "position": "FW",
+            "club": "Western Sydney Wanderers",
+            "caps": 74,
+            "goals": 10,
+            "captain": false
+          },
+          {
+            "player": "Elijah Just",
+            "position": "MF",
+            "club": "Motherwell",
+            "caps": 42,
+            "goals": 9,
+            "captain": false
+          },
+          {
+            "player": "Ben Waine",
+            "position": "FW",
+            "club": "Port Vale",
+            "caps": 30,
+            "goals": 9,
+            "captain": false
+          },
+          {
+            "player": "Michael Boxall",
+            "position": "DF",
+            "club": "Minnesota United FC",
+            "caps": 61,
+            "goals": 1,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.4377,
+        "advance_r16": 0.1033,
+        "quarterfinal": 0.026,
+        "semifinal": 0.0047,
+        "final": 0.0007,
+        "champion": 0.0003
+      }
+    },
+    {
+      "team": "Iraq",
+      "group": "I",
+      "elo": 1740.4,
+      "rank": 39,
+      "recent_form_points": 2.0,
+      "record": {
+        "matches": 653,
+        "wins": 304,
+        "draws": 187,
+        "losses": 162,
+        "goals_for": 1004,
+        "goals_against": 606,
+        "points": 1099,
+        "last_match": "2026-05-29"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 26.7,
+        "total_caps": 797,
+        "total_goals": 88,
+        "top_players": [
+          {
+            "player": "Aymen Hussein",
+            "position": "FW",
+            "club": "Al-Karma",
+            "caps": 93,
+            "goals": 33,
+            "captain": false
+          },
+          {
+            "player": "Mohanad Ali",
+            "position": "FW",
+            "club": "Dibba",
+            "caps": 71,
+            "goals": 27,
+            "captain": false
+          },
+          {
+            "player": "Ibrahim Bayesh",
+            "position": "MF",
+            "club": "Al-Dhafra",
+            "caps": 74,
+            "goals": 8,
+            "captain": false
+          },
+          {
+            "player": "Jalal Hassan",
+            "position": "GK",
+            "club": "Al-Zawraa",
+            "caps": 100,
+            "goals": 0,
+            "captain": true
+          },
+          {
+            "player": "Amir Al-Ammari",
+            "position": "MF",
+            "club": "Cracovia",
+            "caps": 49,
+            "goals": 3,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.2957,
+        "advance_r16": 0.0957,
+        "quarterfinal": 0.0283,
+        "semifinal": 0.0087,
+        "final": 0.0017,
+        "champion": 0.0013
+      }
+    },
+    {
+      "team": "Tunisia",
+      "group": "F",
+      "elo": 1737.2,
+      "rank": 40,
+      "recent_form_points": 1.281,
+      "record": {
+        "matches": 677,
+        "wins": 296,
+        "draws": 189,
+        "losses": 192,
+        "goals_for": 974,
+        "goals_against": 685,
+        "points": 1077,
+        "last_match": "2026-06-01"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 26.2,
+        "total_caps": 566,
+        "total_goals": 43,
+        "top_players": [
+          {
+            "player": "Ellyes Skhiri",
+            "position": "MF",
+            "club": "Eintracht Frankfurt",
+            "caps": 82,
+            "goals": 4,
+            "captain": true
+          },
+          {
+            "player": "Montassar Talbi",
+            "position": "DF",
+            "club": "Lorient",
+            "caps": 63,
+            "goals": 4,
+            "captain": false
+          },
+          {
+            "player": "Ali Abdi",
+            "position": "DF",
+            "club": "Nice",
+            "caps": 46,
+            "goals": 7,
+            "captain": false
+          },
+          {
+            "player": "Dylan Bronn",
+            "position": "DF",
+            "club": "Servette",
+            "caps": 52,
+            "goals": 2,
+            "captain": false
+          },
+          {
+            "player": "Anis Ben Slimane",
+            "position": "MF",
+            "club": "Norwich City",
+            "caps": 40,
+            "goals": 4,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.3737,
+        "advance_r16": 0.0883,
+        "quarterfinal": 0.0223,
+        "semifinal": 0.0037,
+        "final": 0.0003,
+        "champion": 0.0
+      }
+    },
+    {
+      "team": "Saudi Arabia",
+      "group": "H",
+      "elo": 1682.0,
+      "rank": 41,
+      "recent_form_points": 1.022,
+      "record": {
+        "matches": 739,
+        "wins": 350,
+        "draws": 169,
+        "losses": 220,
+        "goals_for": 1135,
+        "goals_against": 777,
+        "points": 1219,
+        "last_match": "2026-05-30"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 28.0,
+        "total_caps": 858,
+        "total_goals": 90,
+        "top_players": [
+          {
+            "player": "Salem Al-Dawsari",
+            "position": "FW",
+            "club": "Al-Hilal",
+            "caps": 108,
+            "goals": 26,
+            "captain": true
+          },
+          {
+            "player": "Firas Al-Buraikan",
+            "position": "FW",
+            "club": "Al-Ahli",
+            "caps": 69,
+            "goals": 15,
+            "captain": false
+          },
+          {
+            "player": "Saleh Al-Shehri",
+            "position": "FW",
+            "club": "Al-Ittihad",
+            "caps": 55,
+            "goals": 18,
+            "captain": false
+          },
+          {
+            "player": "Mohamed Kanno",
+            "position": "MF",
+            "club": "Al-Hilal",
+            "caps": 75,
+            "goals": 8,
+            "captain": false
+          },
+          {
+            "player": "Abdullah Al-Hamdan",
+            "position": "FW",
+            "club": "Al-Nassr",
+            "caps": 48,
+            "goals": 11,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.3973,
+        "advance_r16": 0.0727,
+        "quarterfinal": 0.0153,
+        "semifinal": 0.003,
+        "final": 0.0,
+        "champion": 0.0
+      }
+    },
+    {
+      "team": "Cape Verde",
+      "group": "H",
+      "elo": 1674.5,
+      "rank": 42,
+      "recent_form_points": 1.652,
+      "record": {
+        "matches": 234,
+        "wins": 89,
+        "draws": 56,
+        "losses": 89,
+        "goals_for": 258,
+        "goals_against": 262,
+        "points": 323,
+        "last_match": "2026-05-31"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 29.2,
+        "total_caps": 790,
+        "total_goals": 71,
+        "top_players": [
+          {
+            "player": "Ryan Mendes",
+            "position": "FW",
+            "club": "Iğdır",
+            "caps": 97,
+            "goals": 22,
+            "captain": true
+          },
+          {
+            "player": "Garry Rodrigues",
+            "position": "MF",
+            "club": "Apollon Limassol",
+            "caps": 59,
+            "goals": 9,
+            "captain": false
+          },
+          {
+            "player": "Vozinha",
+            "position": "GK",
+            "club": "Chaves",
+            "caps": 86,
+            "goals": 0,
+            "captain": false
+          },
+          {
+            "player": "Stopira",
+            "position": "DF",
+            "club": "Torreense",
+            "caps": 61,
+            "goals": 4,
+            "captain": false
+          },
+          {
+            "player": "Jamiro Monteiro",
+            "position": "MF",
+            "club": "PEC Zwolle",
+            "caps": 54,
+            "goals": 5,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.2737,
+        "advance_r16": 0.066,
+        "quarterfinal": 0.0137,
+        "semifinal": 0.0013,
+        "final": 0.0,
+        "champion": 0.0
+      }
+    },
+    {
+      "team": "Haiti",
+      "group": "C",
+      "elo": 1666.9,
+      "rank": 43,
+      "recent_form_points": 1.348,
+      "record": {
+        "matches": 508,
+        "wins": 215,
+        "draws": 110,
+        "losses": 183,
+        "goals_for": 833,
+        "goals_against": 684,
+        "points": 755,
+        "last_match": "2026-03-31"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 27.1,
+        "total_caps": 586,
+        "total_goals": 110,
+        "top_players": [
+          {
+            "player": "Duckens Nazon",
+            "position": "FW",
+            "club": "Esteghlal",
+            "caps": 76,
+            "goals": 44,
+            "captain": false
+          },
+          {
+            "player": "Frantzdy Pierrot",
+            "position": "FW",
+            "club": "Çaykur Rizespor",
+            "caps": 49,
+            "goals": 33,
+            "captain": false
+          },
+          {
+            "player": "Johny Placide",
+            "position": "GK",
+            "club": "Bastia",
+            "caps": 79,
+            "goals": 0,
+            "captain": true
+          },
+          {
+            "player": "Derrick Etienne Jr.",
+            "position": "FW",
+            "club": "Toronto FC",
+            "caps": 46,
+            "goals": 8,
+            "captain": false
+          },
+          {
+            "player": "Louicius Deedson",
+            "position": "FW",
+            "club": "FC Dallas",
+            "caps": 30,
+            "goals": 10,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.229,
+        "advance_r16": 0.0373,
+        "quarterfinal": 0.009,
+        "semifinal": 0.002,
+        "final": 0.0,
+        "champion": 0.0
+      }
+    },
+    {
+      "team": "South Africa",
+      "group": "A",
+      "elo": 1654.0,
+      "rank": 44,
+      "recent_form_points": 1.363,
+      "record": {
+        "matches": 478,
+        "wins": 213,
+        "draws": 145,
+        "losses": 120,
+        "goals_for": 648,
+        "goals_against": 454,
+        "points": 784,
+        "last_match": "2026-05-29"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 26.3,
+        "total_caps": 464,
+        "total_goals": 61,
+        "top_players": [
+          {
+            "player": "Themba Zwane",
+            "position": "MF",
+            "club": "Mamelodi Sundowns",
+            "caps": 53,
+            "goals": 12,
+            "captain": false
+          },
+          {
+            "player": "Teboho Mokoena",
+            "position": "MF",
+            "club": "Mamelodi Sundowns",
+            "caps": 51,
+            "goals": 9,
+            "captain": false
+          },
+          {
+            "player": "Lyle Foster",
+            "position": "FW",
+            "club": "Burnley",
+            "caps": 26,
+            "goals": 10,
+            "captain": false
+          },
+          {
+            "player": "Ronwen Williams",
+            "position": "GK",
+            "club": "Mamelodi Sundowns",
+            "caps": 62,
+            "goals": 0,
+            "captain": true
+          },
+          {
+            "player": "Oswin Appollis",
+            "position": "FW",
+            "club": "Orlando Pirates",
+            "caps": 25,
+            "goals": 8,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.3113,
+        "advance_r16": 0.0607,
+        "quarterfinal": 0.014,
+        "semifinal": 0.002,
+        "final": 0.0003,
+        "champion": 0.0
+      }
+    },
+    {
+      "team": "Bosnia and Herzegovina",
+      "group": "B",
+      "elo": 1644.8,
+      "rank": 45,
+      "recent_form_points": 1.4,
+      "record": {
+        "matches": 282,
+        "wins": 104,
+        "draws": 66,
+        "losses": 112,
+        "goals_for": 387,
+        "goals_against": 387,
+        "points": 378,
+        "last_match": "2026-05-29"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 25.9,
+        "total_caps": 571,
+        "total_goals": 92,
+        "top_players": [
+          {
+            "player": "Edin Džeko",
+            "position": "FW",
+            "club": "Schalke 04",
+            "caps": 148,
+            "goals": 73,
+            "captain": true
+          },
+          {
+            "player": "Sead Kolašinac",
+            "position": "DF",
+            "club": "Atalanta",
+            "caps": 64,
+            "goals": 0,
+            "captain": false
+          },
+          {
+            "player": "Ermedin Demirović",
+            "position": "FW",
+            "club": "VfB Stuttgart",
+            "caps": 39,
+            "goals": 4,
+            "captain": false
+          },
+          {
+            "player": "Amir Hadžiahmetović",
+            "position": "MF",
+            "club": "Hull City",
+            "caps": 35,
+            "goals": 0,
+            "captain": false
+          },
+          {
+            "player": "Benjamin Tahirović",
+            "position": "MF",
+            "club": "Brøndby",
+            "caps": 27,
+            "goals": 2,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.394,
+        "advance_r16": 0.0713,
+        "quarterfinal": 0.015,
+        "semifinal": 0.0047,
+        "final": 0.0007,
+        "champion": 0.0
+      }
+    },
+    {
+      "team": "Ghana",
+      "group": "L",
+      "elo": 1618.7,
+      "rank": 46,
+      "recent_form_points": 1.074,
+      "record": {
+        "matches": 670,
+        "wins": 311,
+        "draws": 174,
+        "losses": 185,
+        "goals_for": 1051,
+        "goals_against": 699,
+        "points": 1107,
+        "last_match": "2026-05-22"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 26.4,
+        "total_caps": 541,
+        "total_goals": 65,
+        "top_players": [
+          {
+            "player": "Jordan Ayew",
+            "position": "FW",
+            "club": "Leicester City",
+            "caps": 117,
+            "goals": 33,
+            "captain": true
+          },
+          {
+            "player": "Thomas Partey",
+            "position": "MF",
+            "club": "Villarreal",
+            "caps": 56,
+            "goals": 15,
+            "captain": false
+          },
+          {
+            "player": "Abdul Rahman Baba",
+            "position": "DF",
+            "club": "PAOK",
+            "caps": 52,
+            "goals": 1,
+            "captain": false
+          },
+          {
+            "player": "Antoine Semenyo",
+            "position": "MF",
+            "club": "Manchester City",
+            "caps": 34,
+            "goals": 3,
+            "captain": false
+          },
+          {
+            "player": "Gideon Mensah",
+            "position": "DF",
+            "club": "Auxerre",
+            "caps": 39,
+            "goals": 0,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.16,
+        "advance_r16": 0.031,
+        "quarterfinal": 0.0063,
+        "semifinal": 0.0,
+        "final": 0.0,
+        "champion": 0.0
+      }
+    },
+    {
+      "team": "Curaçao",
+      "group": "E",
+      "elo": 1596.1,
+      "rank": 47,
+      "recent_form_points": 1.104,
+      "record": {
+        "matches": 384,
+        "wins": 142,
+        "draws": 100,
+        "losses": 142,
+        "goals_for": 631,
+        "goals_against": 608,
+        "points": 526,
+        "last_match": "2026-05-30"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 27.5,
+        "total_caps": 596,
+        "total_goals": 69,
+        "top_players": [
+          {
+            "player": "Leandro Bacuna",
+            "position": "MF",
+            "club": "Iğdır",
+            "caps": 71,
+            "goals": 16,
+            "captain": true
+          },
+          {
+            "player": "Juninho Bacuna",
+            "position": "MF",
+            "club": "Volendam",
+            "caps": 48,
+            "goals": 14,
+            "captain": false
+          },
+          {
+            "player": "Eloy Room",
+            "position": "GK",
+            "club": "Miami FC",
+            "caps": 71,
+            "goals": 0,
+            "captain": false
+          },
+          {
+            "player": "Gervane Kastaneer",
+            "position": "FW",
+            "club": "Terengganu",
+            "caps": 28,
+            "goals": 9,
+            "captain": false
+          },
+          {
+            "player": "Juriën Gaari",
+            "position": "DF",
+            "club": "Abha",
+            "caps": 59,
+            "goals": 1,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.1623,
+        "advance_r16": 0.031,
+        "quarterfinal": 0.0053,
+        "semifinal": 0.0013,
+        "final": 0.0,
+        "champion": 0.0
+      }
+    },
+    {
+      "team": "Qatar",
+      "group": "B",
+      "elo": 1583.4,
+      "rank": 48,
+      "recent_form_points": 0.637,
+      "record": {
+        "matches": 634,
+        "wins": 260,
+        "draws": 154,
+        "losses": 220,
+        "goals_for": 895,
+        "goals_against": 767,
+        "points": 934,
+        "last_match": "2026-05-28"
+      },
+      "squad": {
+        "squad_size": 26,
+        "avg_age": 28.9,
+        "total_caps": 1397,
+        "total_goals": 208,
+        "top_players": [
+          {
+            "player": "Hassan Al-Haydos",
+            "position": "FW",
+            "club": "Al-Sadd",
+            "caps": 185,
+            "goals": 41,
+            "captain": true
+          },
+          {
+            "player": "Almoez Ali",
+            "position": "FW",
+            "club": "Al-Duhail",
+            "caps": 115,
+            "goals": 55,
+            "captain": false
+          },
+          {
+            "player": "Akram Afif",
+            "position": "FW",
+            "club": "Al-Sadd",
+            "caps": 124,
+            "goals": 39,
+            "captain": false
+          },
+          {
+            "player": "Boualem Khoukhi",
+            "position": "DF",
+            "club": "Al-Sadd",
+            "caps": 115,
+            "goals": 20,
+            "captain": false
+          },
+          {
+            "player": "Abdulaziz Hatem",
+            "position": "MF",
+            "club": "Al-Rayyan",
+            "caps": 117,
+            "goals": 11,
+            "captain": false
+          }
+        ]
+      },
+      "simulation": {
+        "advance_r32": 0.3293,
+        "advance_r16": 0.0427,
+        "quarterfinal": 0.0067,
+        "semifinal": 0.001,
+        "final": 0.0,
+        "champion": 0.0
+      }
+    }
+  ]
+}

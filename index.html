@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="2026 FIFA World Cup prediction dashboard using public match results, squads, Elo ratings, logistic regression, and Monte Carlo simulation."
+    />
+    <title>World Cup AI Predictor</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">2026 FIFA World Cup</p>
+        <h1>AI Prediction Dashboard</h1>
+      </div>
+      <div class="source-pill" id="generatedAt">Loading data...</div>
+    </header>
+
+    <main>
+      <section class="summary-grid" aria-label="Model summary">
+        <article class="metric">
+          <span class="metric-label">Teams</span>
+          <strong id="teamCount">--</strong>
+        </article>
+        <article class="metric">
+          <span class="metric-label">Players</span>
+          <strong id="playerCount">--</strong>
+        </article>
+        <article class="metric">
+          <span class="metric-label">Fixtures</span>
+          <strong id="fixtureCount">--</strong>
+        </article>
+        <article class="metric">
+          <span class="metric-label">Validation Accuracy</span>
+          <strong id="modelAccuracy">--</strong>
+        </article>
+      </section>
+
+      <section class="toolbar" aria-label="Dashboard controls">
+        <label>
+          Search
+          <input id="searchInput" type="search" placeholder="Team, player, club..." />
+        </label>
+        <label>
+          Group
+          <select id="groupFilter"></select>
+        </label>
+        <label>
+          Team
+          <select id="teamFilter"></select>
+        </label>
+      </section>
+
+      <nav class="tabs" aria-label="Dashboard sections">
+        <button class="tab is-active" data-view="overview" type="button">Overview</button>
+        <button class="tab" data-view="fixtures" type="button">Fixtures</button>
+        <button class="tab" data-view="groups" type="button">Groups</button>
+        <button class="tab" data-view="players" type="button">Players</button>
+      </nav>
+
+      <section class="view is-active" id="overview" aria-label="Overview">
+        <div class="two-column">
+          <section class="panel">
+            <div class="panel-head">
+              <h2>Champion Probability</h2>
+              <span id="simulationRuns"></span>
+            </div>
+            <div class="rank-list" id="championList"></div>
+          </section>
+
+          <section class="panel">
+            <div class="panel-head">
+              <h2>Team Strength</h2>
+              <span>Elo + recent form</span>
+            </div>
+            <div class="rank-list" id="strengthList"></div>
+          </section>
+        </div>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h2>Featured Squads</h2>
+            <span>Top international experience</span>
+          </div>
+          <div class="squad-grid" id="featuredSquads"></div>
+        </section>
+      </section>
+
+      <section class="view" id="fixtures" aria-label="Fixture predictions">
+        <section class="panel">
+          <div class="panel-head">
+            <h2>Match Predictions</h2>
+            <span>Home win / draw / away win</span>
+          </div>
+          <div class="fixture-list" id="fixtureList"></div>
+        </section>
+      </section>
+
+      <section class="view" id="groups" aria-label="Expected group tables">
+        <div class="group-grid" id="groupTables"></div>
+      </section>
+
+      <section class="view" id="players" aria-label="Player database">
+        <section class="panel">
+          <div class="panel-head">
+            <h2>Player Database</h2>
+            <span id="playerResultCount"></span>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Player</th>
+                  <th>Team</th>
+                  <th>Pos</th>
+                  <th>Age</th>
+                  <th>Caps</th>
+                  <th>Goals</th>
+                  <th>Club</th>
+                </tr>
+              </thead>
+              <tbody id="playerTable"></tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        Educational forecast only. Not betting advice. Data sources are listed in
+        <a href="data/processed/manifest.json">manifest.json</a>.
+      </p>
+    </footer>
+
+    <script type="module" src="src/app.js"></script>
+  </body>
+</html>

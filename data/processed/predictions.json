@@ -1,0 +1,2096 @@
+{
+  "fixtures": [
+    {
+      "id": "wc26-49291",
+      "date": "2026-06-11",
+      "home_team": "Mexico",
+      "away_team": "South Africa",
+      "group": "A",
+      "city": "Mexico City",
+      "host_country": "Mexico",
+      "neutral": false,
+      "probabilities": {
+        "home_win": 0.7059,
+        "draw": 0.2278,
+        "away_win": 0.0663
+      },
+      "expected_points": {
+        "Mexico": 2.345,
+        "South Africa": 0.427
+      },
+      "pick": "Mexico",
+      "confidence": 0.7059,
+      "rating_gap": 303.4
+    },
+    {
+      "id": "wc26-49292",
+      "date": "2026-06-11",
+      "home_team": "South Korea",
+      "away_team": "Czech Republic",
+      "group": "A",
+      "city": "Zapopan",
+      "host_country": "Mexico",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.3529,
+        "draw": 0.3293,
+        "away_win": 0.3178
+      },
+      "expected_points": {
+        "South Korea": 1.388,
+        "Czech Republic": 1.283
+      },
+      "pick": "South Korea",
+      "confidence": 0.3529,
+      "rating_gap": 87.1
+    },
+    {
+      "id": "wc26-49294",
+      "date": "2026-06-12",
+      "home_team": "United States",
+      "away_team": "Paraguay",
+      "group": "D",
+      "city": "Inglewood",
+      "host_country": "United States",
+      "neutral": false,
+      "probabilities": {
+        "home_win": 0.2996,
+        "draw": 0.3514,
+        "away_win": 0.349
+      },
+      "expected_points": {
+        "United States": 1.25,
+        "Paraguay": 1.398
+      },
+      "pick": "Draw",
+      "confidence": 0.3514,
+      "rating_gap": -40.1
+    },
+    {
+      "id": "wc26-49293",
+      "date": "2026-06-12",
+      "home_team": "Canada",
+      "away_team": "Bosnia and Herzegovina",
+      "group": "B",
+      "city": "Toronto",
+      "host_country": "Canada",
+      "neutral": false,
+      "probabilities": {
+        "home_win": 0.6578,
+        "draw": 0.2545,
+        "away_win": 0.0878
+      },
+      "expected_points": {
+        "Canada": 2.228,
+        "Bosnia and Herzegovina": 0.518
+      },
+      "pick": "Canada",
+      "confidence": 0.6578,
+      "rating_gap": 251.0
+    },
+    {
+      "id": "wc26-49296",
+      "date": "2026-06-13",
+      "home_team": "Brazil",
+      "away_team": "Morocco",
+      "group": "C",
+      "city": "East Rutherford",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.3399,
+        "draw": 0.3307,
+        "away_win": 0.3294
+      },
+      "expected_points": {
+        "Brazil": 1.35,
+        "Morocco": 1.319
+      },
+      "pick": "Brazil",
+      "confidence": 0.3399,
+      "rating_gap": 66.6
+    },
+    {
+      "id": "wc26-49297",
+      "date": "2026-06-13",
+      "home_team": "Haiti",
+      "away_team": "Scotland",
+      "group": "C",
+      "city": "Foxborough",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.1225,
+        "draw": 0.2739,
+        "away_win": 0.6036
+      },
+      "expected_points": {
+        "Haiti": 0.641,
+        "Scotland": 2.085
+      },
+      "pick": "Scotland",
+      "confidence": 0.6036,
+      "rating_gap": -150.7
+    },
+    {
+      "id": "wc26-49295",
+      "date": "2026-06-13",
+      "home_team": "Qatar",
+      "away_team": "Switzerland",
+      "group": "B",
+      "city": "Santa Clara",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.0358,
+        "draw": 0.1734,
+        "away_win": 0.7908
+      },
+      "expected_points": {
+        "Qatar": 0.281,
+        "Switzerland": 2.546
+      },
+      "pick": "Switzerland",
+      "confidence": 0.7908,
+      "rating_gap": -366.1
+    },
+    {
+      "id": "wc26-49298",
+      "date": "2026-06-13",
+      "home_team": "Australia",
+      "away_team": "Turkey",
+      "group": "D",
+      "city": "Vancouver",
+      "host_country": "Canada",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.2071,
+        "draw": 0.3146,
+        "away_win": 0.4783
+      },
+      "expected_points": {
+        "Australia": 0.936,
+        "Turkey": 1.749
+      },
+      "pick": "Turkey",
+      "confidence": 0.4783,
+      "rating_gap": -52.3
+    },
+    {
+      "id": "wc26-49301",
+      "date": "2026-06-14",
+      "home_team": "Netherlands",
+      "away_team": "Japan",
+      "group": "F",
+      "city": "Arlington",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.2842,
+        "draw": 0.3284,
+        "away_win": 0.3874
+      },
+      "expected_points": {
+        "Netherlands": 1.181,
+        "Japan": 1.49
+      },
+      "pick": "Japan",
+      "confidence": 0.3874,
+      "rating_gap": 27.8
+    },
+    {
+      "id": "wc26-49302",
+      "date": "2026-06-14",
+      "home_team": "Sweden",
+      "away_team": "Tunisia",
+      "group": "F",
+      "city": "Guadalupe",
+      "host_country": "Mexico",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.2909,
+        "draw": 0.3291,
+        "away_win": 0.38
+      },
+      "expected_points": {
+        "Sweden": 1.202,
+        "Tunisia": 1.469
+      },
+      "pick": "Tunisia",
+      "confidence": 0.38,
+      "rating_gap": 32.2
+    },
+    {
+      "id": "wc26-49299",
+      "date": "2026-06-14",
+      "home_team": "Germany",
+      "away_team": "Curaçao",
+      "group": "E",
+      "city": "Houston",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.7199,
+        "draw": 0.2114,
+        "away_win": 0.0688
+      },
+      "expected_points": {
+        "Germany": 2.371,
+        "Curaçao": 0.418
+      },
+      "pick": "Germany",
+      "confidence": 0.7199,
+      "rating_gap": 409.2
+    },
+    {
+      "id": "wc26-49300",
+      "date": "2026-06-14",
+      "home_team": "Ivory Coast",
+      "away_team": "Ecuador",
+      "group": "E",
+      "city": "Philadelphia",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.0777,
+        "draw": 0.2331,
+        "away_win": 0.6892
+      },
+      "expected_points": {
+        "Ivory Coast": 0.466,
+        "Ecuador": 2.301
+      },
+      "pick": "Ecuador",
+      "confidence": 0.6892,
+      "rating_gap": -213.1
+    },
+    {
+      "id": "wc26-49305",
+      "date": "2026-06-15",
+      "home_team": "Spain",
+      "away_team": "Cape Verde",
+      "group": "H",
+      "city": "Atlanta",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.823,
+        "draw": 0.1473,
+        "away_win": 0.0296
+      },
+      "expected_points": {
+        "Spain": 2.616,
+        "Cape Verde": 0.236
+      },
+      "pick": "Spain",
+      "confidence": 0.823,
+      "rating_gap": 527.8
+    },
+    {
+      "id": "wc26-49304",
+      "date": "2026-06-15",
+      "home_team": "Iran",
+      "away_team": "New Zealand",
+      "group": "G",
+      "city": "Inglewood",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.3996,
+        "draw": 0.3242,
+        "away_win": 0.2761
+      },
+      "expected_points": {
+        "Iran": 1.523,
+        "New Zealand": 1.153
+      },
+      "pick": "Iran",
+      "confidence": 0.3996,
+      "rating_gap": 134.3
+    },
+    {
+      "id": "wc26-49306",
+      "date": "2026-06-15",
+      "home_team": "Saudi Arabia",
+      "away_team": "Uruguay",
+      "group": "H",
+      "city": "Miami Gardens",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.0588,
+        "draw": 0.211,
+        "away_win": 0.7301
+      },
+      "expected_points": {
+        "Saudi Arabia": 0.387,
+        "Uruguay": 2.401
+      },
+      "pick": "Uruguay",
+      "confidence": 0.7301,
+      "rating_gap": -275.4
+    },
+    {
+      "id": "wc26-49303",
+      "date": "2026-06-15",
+      "home_team": "Belgium",
+      "away_team": "Egypt",
+      "group": "G",
+      "city": "Seattle",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.4054,
+        "draw": 0.3244,
+        "away_win": 0.2702
+      },
+      "expected_points": {
+        "Belgium": 1.541,
+        "Egypt": 1.135
+      },
+      "pick": "Belgium",
+      "confidence": 0.4054,
+      "rating_gap": 127.2
+    },
+    {
+      "id": "wc26-49307",
+      "date": "2026-06-16",
+      "home_team": "France",
+      "away_team": "Senegal",
+      "group": "I",
+      "city": "East Rutherford",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.5267,
+        "draw": 0.2963,
+        "away_win": 0.177
+      },
+      "expected_points": {
+        "France": 1.876,
+        "Senegal": 0.827
+      },
+      "pick": "France",
+      "confidence": 0.5267,
+      "rating_gap": 224.5
+    },
+    {
+      "id": "wc26-49308",
+      "date": "2026-06-16",
+      "home_team": "Iraq",
+      "away_team": "Norway",
+      "group": "I",
+      "city": "Foxborough",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.0835,
+        "draw": 0.2403,
+        "away_win": 0.6763
+      },
+      "expected_points": {
+        "Iraq": 0.491,
+        "Norway": 2.269
+      },
+      "pick": "Norway",
+      "confidence": 0.6763,
+      "rating_gap": -213.3
+    },
+    {
+      "id": "wc26-49309",
+      "date": "2026-06-16",
+      "home_team": "Argentina",
+      "away_team": "Algeria",
+      "group": "J",
+      "city": "Kansas City",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.6416,
+        "draw": 0.2518,
+        "away_win": 0.1066
+      },
+      "expected_points": {
+        "Argentina": 2.177,
+        "Algeria": 0.571
+      },
+      "pick": "Argentina",
+      "confidence": 0.6416,
+      "rating_gap": 316.8
+    },
+    {
+      "id": "wc26-49310",
+      "date": "2026-06-16",
+      "home_team": "Austria",
+      "away_team": "Jordan",
+      "group": "J",
+      "city": "Santa Clara",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.3804,
+        "draw": 0.3263,
+        "away_win": 0.2932
+      },
+      "expected_points": {
+        "Austria": 1.468,
+        "Jordan": 1.206
+      },
+      "pick": "Austria",
+      "confidence": 0.3804,
+      "rating_gap": 120.0
+    },
+    {
+      "id": "wc26-49313",
+      "date": "2026-06-17",
+      "home_team": "England",
+      "away_team": "Croatia",
+      "group": "L",
+      "city": "Arlington",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.3731,
+        "draw": 0.3286,
+        "away_win": 0.2983
+      },
+      "expected_points": {
+        "England": 1.448,
+        "Croatia": 1.224
+      },
+      "pick": "England",
+      "confidence": 0.3731,
+      "rating_gap": 96.1
+    },
+    {
+      "id": "wc26-49311",
+      "date": "2026-06-17",
+      "home_team": "Portugal",
+      "away_team": "DR Congo",
+      "group": "K",
+      "city": "Houston",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.6013,
+        "draw": 0.2698,
+        "away_win": 0.1289
+      },
+      "expected_points": {
+        "Portugal": 2.074,
+        "DR Congo": 0.657
+      },
+      "pick": "Portugal",
+      "confidence": 0.6013,
+      "rating_gap": 274.1
+    },
+    {
+      "id": "wc26-49312",
+      "date": "2026-06-17",
+      "home_team": "Uzbekistan",
+      "away_team": "Colombia",
+      "group": "K",
+      "city": "Mexico City",
+      "host_country": "Mexico",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.0802,
+        "draw": 0.2371,
+        "away_win": 0.6828
+      },
+      "expected_points": {
+        "Uzbekistan": 0.478,
+        "Colombia": 2.285
+      },
+      "pick": "Colombia",
+      "confidence": 0.6828,
+      "rating_gap": -223.5
+    },
+    {
+      "id": "wc26-49314",
+      "date": "2026-06-17",
+      "home_team": "Ghana",
+      "away_team": "Panama",
+      "group": "L",
+      "city": "Toronto",
+      "host_country": "Canada",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.085,
+        "draw": 0.2422,
+        "away_win": 0.6728
+      },
+      "expected_points": {
+        "Ghana": 0.497,
+        "Panama": 2.261
+      },
+      "pick": "Panama",
+      "confidence": 0.6728,
+      "rating_gap": -214.1
+    },
+    {
+      "id": "wc26-49315",
+      "date": "2026-06-18",
+      "home_team": "Czech Republic",
+      "away_team": "South Africa",
+      "group": "A",
+      "city": "Atlanta",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.4036,
+        "draw": 0.3244,
+        "away_win": 0.272
+      },
+      "expected_points": {
+        "Czech Republic": 1.535,
+        "South Africa": 1.14
+      },
+      "pick": "Czech Republic",
+      "confidence": 0.4036,
+      "rating_gap": 128.6
+    },
+    {
+      "id": "wc26-49317",
+      "date": "2026-06-18",
+      "home_team": "Switzerland",
+      "away_team": "Bosnia and Herzegovina",
+      "group": "B",
+      "city": "Inglewood",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.6236,
+        "draw": 0.2597,
+        "away_win": 0.1167
+      },
+      "expected_points": {
+        "Switzerland": 2.13,
+        "Bosnia and Herzegovina": 0.61
+      },
+      "pick": "Switzerland",
+      "confidence": 0.6236,
+      "rating_gap": 304.7
+    },
+    {
+      "id": "wc26-49318",
+      "date": "2026-06-18",
+      "home_team": "Canada",
+      "away_team": "Qatar",
+      "group": "B",
+      "city": "Vancouver",
+      "host_country": "Canada",
+      "neutral": false,
+      "probabilities": {
+        "home_win": 0.7085,
+        "draw": 0.2261,
+        "away_win": 0.0655
+      },
+      "expected_points": {
+        "Canada": 2.351,
+        "Qatar": 0.422
+      },
+      "pick": "Canada",
+      "confidence": 0.7085,
+      "rating_gap": 312.4
+    },
+    {
+      "id": "wc26-49316",
+      "date": "2026-06-18",
+      "home_team": "Mexico",
+      "away_team": "South Korea",
+      "group": "A",
+      "city": "Zapopan",
+      "host_country": "Mexico",
+      "neutral": false,
+      "probabilities": {
+        "home_win": 0.4631,
+        "draw": 0.3316,
+        "away_win": 0.2054
+      },
+      "expected_points": {
+        "Mexico": 1.721,
+        "South Korea": 0.948
+      },
+      "pick": "Mexico",
+      "confidence": 0.4631,
+      "rating_gap": 87.7
+    },
+    {
+      "id": "wc26-49319",
+      "date": "2026-06-19",
+      "home_team": "Scotland",
+      "away_team": "Morocco",
+      "group": "C",
+      "city": "Foxborough",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.1133,
+        "draw": 0.2673,
+        "away_win": 0.6194
+      },
+      "expected_points": {
+        "Scotland": 0.607,
+        "Morocco": 2.126
+      },
+      "pick": "Morocco",
+      "confidence": 0.6194,
+      "rating_gap": -166.9
+    },
+    {
+      "id": "wc26-49320",
+      "date": "2026-06-19",
+      "home_team": "Brazil",
+      "away_team": "Haiti",
+      "group": "C",
+      "city": "Philadelphia",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.7093,
+        "draw": 0.2177,
+        "away_win": 0.073
+      },
+      "expected_points": {
+        "Brazil": 2.345,
+        "Haiti": 0.437
+      },
+      "pick": "Brazil",
+      "confidence": 0.7093,
+      "rating_gap": 384.2
+    },
+    {
+      "id": "wc26-49322",
+      "date": "2026-06-19",
+      "home_team": "Turkey",
+      "away_team": "Paraguay",
+      "group": "D",
+      "city": "Santa Clara",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.2908,
+        "draw": 0.3275,
+        "away_win": 0.3817
+      },
+      "expected_points": {
+        "Turkey": 1.2,
+        "Paraguay": 1.472
+      },
+      "pick": "Paraguay",
+      "confidence": 0.3817,
+      "rating_gap": 49.3
+    },
+    {
+      "id": "wc26-49321",
+      "date": "2026-06-19",
+      "home_team": "United States",
+      "away_team": "Australia",
+      "group": "D",
+      "city": "Seattle",
+      "host_country": "United States",
+      "neutral": false,
+      "probabilities": {
+        "home_win": 0.3084,
+        "draw": 0.352,
+        "away_win": 0.3396
+      },
+      "expected_points": {
+        "United States": 1.277,
+        "Australia": 1.371
+      },
+      "pick": "Draw",
+      "confidence": 0.352,
+      "rating_gap": -37.2
+    },
+    {
+      "id": "wc26-49326",
+      "date": "2026-06-20",
+      "home_team": "Tunisia",
+      "away_team": "Japan",
+      "group": "F",
+      "city": "Guadalupe",
+      "host_country": "Mexico",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.0712,
+        "draw": 0.2278,
+        "away_win": 0.7009
+      },
+      "expected_points": {
+        "Tunisia": 0.442,
+        "Japan": 2.331
+      },
+      "pick": "Japan",
+      "confidence": 0.7009,
+      "rating_gap": -254.4
+    },
+    {
+      "id": "wc26-49325",
+      "date": "2026-06-20",
+      "home_team": "Netherlands",
+      "away_team": "Sweden",
+      "group": "F",
+      "city": "Houston",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.5449,
+        "draw": 0.2896,
+        "away_win": 0.1655
+      },
+      "expected_points": {
+        "Netherlands": 1.924,
+        "Sweden": 0.786
+      },
+      "pick": "Netherlands",
+      "confidence": 0.5449,
+      "rating_gap": 250.1
+    },
+    {
+      "id": "wc26-49324",
+      "date": "2026-06-20",
+      "home_team": "Ecuador",
+      "away_team": "Curaçao",
+      "group": "E",
+      "city": "Kansas City",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.731,
+        "draw": 0.2056,
+        "away_win": 0.0635
+      },
+      "expected_points": {
+        "Ecuador": 2.398,
+        "Curaçao": 0.396
+      },
+      "pick": "Ecuador",
+      "confidence": 0.731,
+      "rating_gap": 407.2
+    },
+    {
+      "id": "wc26-49323",
+      "date": "2026-06-20",
+      "home_team": "Germany",
+      "away_team": "Ivory Coast",
+      "group": "E",
+      "city": "Toronto",
+      "host_country": "Canada",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.517,
+        "draw": 0.2994,
+        "away_win": 0.1836
+      },
+      "expected_points": {
+        "Germany": 1.85,
+        "Ivory Coast": 0.85
+      },
+      "pick": "Germany",
+      "confidence": 0.517,
+      "rating_gap": 215.0
+    },
+    {
+      "id": "wc26-49329",
+      "date": "2026-06-21",
+      "home_team": "Spain",
+      "away_team": "Saudi Arabia",
+      "group": "H",
+      "city": "Atlanta",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.8119,
+        "draw": 0.1548,
+        "away_win": 0.0333
+      },
+      "expected_points": {
+        "Spain": 2.59,
+        "Saudi Arabia": 0.255
+      },
+      "pick": "Spain",
+      "confidence": 0.8119,
+      "rating_gap": 520.2
+    },
+    {
+      "id": "wc26-49327",
+      "date": "2026-06-21",
+      "home_team": "Belgium",
+      "away_team": "Iran",
+      "group": "G",
+      "city": "Inglewood",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.2973,
+        "draw": 0.3285,
+        "away_win": 0.3742
+      },
+      "expected_points": {
+        "Belgium": 1.22,
+        "Iran": 1.451
+      },
+      "pick": "Iran",
+      "confidence": 0.3742,
+      "rating_gap": 49.2
+    },
+    {
+      "id": "wc26-49330",
+      "date": "2026-06-21",
+      "home_team": "Uruguay",
+      "away_team": "Cape Verde",
+      "group": "H",
+      "city": "Miami Gardens",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.6105,
+        "draw": 0.2659,
+        "away_win": 0.1236
+      },
+      "expected_points": {
+        "Uruguay": 2.097,
+        "Cape Verde": 0.637
+      },
+      "pick": "Uruguay",
+      "confidence": 0.6105,
+      "rating_gap": 283.0
+    },
+    {
+      "id": "wc26-49328",
+      "date": "2026-06-21",
+      "home_team": "New Zealand",
+      "away_team": "Egypt",
+      "group": "G",
+      "city": "Vancouver",
+      "host_country": "Canada",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.2136,
+        "draw": 0.3175,
+        "away_win": 0.4689
+      },
+      "expected_points": {
+        "New Zealand": 0.958,
+        "Egypt": 1.724
+      },
+      "pick": "Egypt",
+      "confidence": 0.4689,
+      "rating_gap": -56.3
+    },
+    {
+      "id": "wc26-49333",
+      "date": "2026-06-22",
+      "home_team": "Argentina",
+      "away_team": "Austria",
+      "group": "J",
+      "city": "Arlington",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.6018,
+        "draw": 0.2694,
+        "away_win": 0.1288
+      },
+      "expected_points": {
+        "Argentina": 2.075,
+        "Austria": 0.656
+      },
+      "pick": "Argentina",
+      "confidence": 0.6018,
+      "rating_gap": 278.4
+    },
+    {
+      "id": "wc26-49332",
+      "date": "2026-06-22",
+      "home_team": "Norway",
+      "away_team": "Senegal",
+      "group": "I",
+      "city": "East Rutherford",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.3089,
+        "draw": 0.3297,
+        "away_win": 0.3614
+      },
+      "expected_points": {
+        "Norway": 1.256,
+        "Senegal": 1.414
+      },
+      "pick": "Senegal",
+      "confidence": 0.3614,
+      "rating_gap": 50.8
+    },
+    {
+      "id": "wc26-49331",
+      "date": "2026-06-22",
+      "home_team": "France",
+      "away_team": "Iraq",
+      "group": "I",
+      "city": "Philadelphia",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.7111,
+        "draw": 0.2166,
+        "away_win": 0.0722
+      },
+      "expected_points": {
+        "France": 2.35,
+        "Iraq": 0.433
+      },
+      "pick": "France",
+      "confidence": 0.7111,
+      "rating_gap": 386.9
+    },
+    {
+      "id": "wc26-49334",
+      "date": "2026-06-22",
+      "home_team": "Jordan",
+      "away_team": "Algeria",
+      "group": "J",
+      "city": "Santa Clara",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.179,
+        "draw": 0.3046,
+        "away_win": 0.5164
+      },
+      "expected_points": {
+        "Jordan": 0.842,
+        "Algeria": 1.854
+      },
+      "pick": "Algeria",
+      "confidence": 0.5164,
+      "rating_gap": -81.6
+    },
+    {
+      "id": "wc26-49337",
+      "date": "2026-06-23",
+      "home_team": "England",
+      "away_team": "Ghana",
+      "group": "L",
+      "city": "Foxborough",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.7639,
+        "draw": 0.1858,
+        "away_win": 0.0503
+      },
+      "expected_points": {
+        "England": 2.478,
+        "Ghana": 0.337
+      },
+      "pick": "England",
+      "confidence": 0.7639,
+      "rating_gap": 452.5
+    },
+    {
+      "id": "wc26-49335",
+      "date": "2026-06-23",
+      "home_team": "Portugal",
+      "away_team": "Uzbekistan",
+      "group": "K",
+      "city": "Houston",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.5005,
+        "draw": 0.304,
+        "away_win": 0.1956
+      },
+      "expected_points": {
+        "Portugal": 1.805,
+        "Uzbekistan": 0.891
+      },
+      "pick": "Portugal",
+      "confidence": 0.5005,
+      "rating_gap": 205.3
+    },
+    {
+      "id": "wc26-49338",
+      "date": "2026-06-23",
+      "home_team": "Panama",
+      "away_team": "Croatia",
+      "group": "L",
+      "city": "Toronto",
+      "host_country": "Canada",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.1331,
+        "draw": 0.2815,
+        "away_win": 0.5854
+      },
+      "expected_points": {
+        "Panama": 0.681,
+        "Croatia": 2.038
+      },
+      "pick": "Croatia",
+      "confidence": 0.5854,
+      "rating_gap": -142.2
+    },
+    {
+      "id": "wc26-49336",
+      "date": "2026-06-23",
+      "home_team": "Colombia",
+      "away_team": "DR Congo",
+      "group": "K",
+      "city": "Zapopan",
+      "host_country": "Mexico",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.6248,
+        "draw": 0.2599,
+        "away_win": 0.1153
+      },
+      "expected_points": {
+        "Colombia": 2.134,
+        "DR Congo": 0.606
+      },
+      "pick": "Colombia",
+      "confidence": 0.6248,
+      "rating_gap": 292.3
+    },
+    {
+      "id": "wc26-49344",
+      "date": "2026-06-24",
+      "home_team": "Morocco",
+      "away_team": "Haiti",
+      "group": "C",
+      "city": "Atlanta",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.6302,
+        "draw": 0.2565,
+        "away_win": 0.1134
+      },
+      "expected_points": {
+        "Morocco": 2.147,
+        "Haiti": 0.597
+      },
+      "pick": "Morocco",
+      "confidence": 0.6302,
+      "rating_gap": 317.6
+    },
+    {
+      "id": "wc26-49340",
+      "date": "2026-06-24",
+      "home_team": "South Africa",
+      "away_team": "South Korea",
+      "group": "A",
+      "city": "Guadalupe",
+      "host_country": "Mexico",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.0844,
+        "draw": 0.2416,
+        "away_win": 0.674
+      },
+      "expected_points": {
+        "South Africa": 0.495,
+        "South Korea": 2.264
+      },
+      "pick": "South Korea",
+      "confidence": 0.674,
+      "rating_gap": -215.7
+    },
+    {
+      "id": "wc26-49339",
+      "date": "2026-06-24",
+      "home_team": "Mexico",
+      "away_team": "Czech Republic",
+      "group": "A",
+      "city": "Mexico City",
+      "host_country": "Mexico",
+      "neutral": false,
+      "probabilities": {
+        "home_win": 0.5702,
+        "draw": 0.2953,
+        "away_win": 0.1345
+      },
+      "expected_points": {
+        "Mexico": 2.006,
+        "Czech Republic": 0.699
+      },
+      "pick": "Mexico",
+      "confidence": 0.5702,
+      "rating_gap": 174.8
+    },
+    {
+      "id": "wc26-49343",
+      "date": "2026-06-24",
+      "home_team": "Scotland",
+      "away_team": "Brazil",
+      "group": "C",
+      "city": "Miami Gardens",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.0731,
+        "draw": 0.2287,
+        "away_win": 0.6982
+      },
+      "expected_points": {
+        "Scotland": 0.448,
+        "Brazil": 2.323
+      },
+      "pick": "Brazil",
+      "confidence": 0.6982,
+      "rating_gap": -233.5
+    },
+    {
+      "id": "wc26-49342",
+      "date": "2026-06-24",
+      "home_team": "Bosnia and Herzegovina",
+      "away_team": "Qatar",
+      "group": "B",
+      "city": "Seattle",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.309,
+        "draw": 0.3288,
+        "away_win": 0.3622
+      },
+      "expected_points": {
+        "Bosnia and Herzegovina": 1.256,
+        "Qatar": 1.416
+      },
+      "pick": "Qatar",
+      "confidence": 0.3622,
+      "rating_gap": 61.4
+    },
+    {
+      "id": "wc26-49341",
+      "date": "2026-06-24",
+      "home_team": "Canada",
+      "away_team": "Switzerland",
+      "group": "B",
+      "city": "Vancouver",
+      "host_country": "Canada",
+      "neutral": false,
+      "probabilities": {
+        "home_win": 0.2937,
+        "draw": 0.3519,
+        "away_win": 0.3544
+      },
+      "expected_points": {
+        "Canada": 1.233,
+        "Switzerland": 1.415
+      },
+      "pick": "Switzerland",
+      "confidence": 0.3544,
+      "rating_gap": -53.7
+    },
+    {
+      "id": "wc26-49349",
+      "date": "2026-06-25",
+      "home_team": "Japan",
+      "away_team": "Sweden",
+      "group": "F",
+      "city": "Arlington",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.5074,
+        "draw": 0.3012,
+        "away_win": 0.1914
+      },
+      "expected_points": {
+        "Japan": 1.823,
+        "Sweden": 0.875
+      },
+      "pick": "Japan",
+      "confidence": 0.5074,
+      "rating_gap": 222.3
+    },
+    {
+      "id": "wc26-49348",
+      "date": "2026-06-25",
+      "home_team": "Ecuador",
+      "away_team": "Germany",
+      "group": "E",
+      "city": "East Rutherford",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.2649,
+        "draw": 0.3274,
+        "away_win": 0.4076
+      },
+      "expected_points": {
+        "Ecuador": 1.122,
+        "Germany": 1.55
+      },
+      "pick": "Germany",
+      "confidence": 0.4076,
+      "rating_gap": -1.9
+    },
+    {
+      "id": "wc26-49345",
+      "date": "2026-06-25",
+      "home_team": "United States",
+      "away_team": "Turkey",
+      "group": "D",
+      "city": "Inglewood",
+      "host_country": "United States",
+      "neutral": false,
+      "probabilities": {
+        "home_win": 0.26,
+        "draw": 0.3494,
+        "away_win": 0.3906
+      },
+      "expected_points": {
+        "United States": 1.129,
+        "Turkey": 1.521
+      },
+      "pick": "Turkey",
+      "confidence": 0.3906,
+      "rating_gap": -89.4
+    },
+    {
+      "id": "wc26-49350",
+      "date": "2026-06-25",
+      "home_team": "Tunisia",
+      "away_team": "Netherlands",
+      "group": "F",
+      "city": "Kansas City",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.0595,
+        "draw": 0.2127,
+        "away_win": 0.7277
+      },
+      "expected_points": {
+        "Tunisia": 0.391,
+        "Netherlands": 2.396
+      },
+      "pick": "Netherlands",
+      "confidence": 0.7277,
+      "rating_gap": -282.2
+    },
+    {
+      "id": "wc26-49347",
+      "date": "2026-06-25",
+      "home_team": "Curaçao",
+      "away_team": "Ivory Coast",
+      "group": "E",
+      "city": "Philadelphia",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.1016,
+        "draw": 0.2586,
+        "away_win": 0.6397
+      },
+      "expected_points": {
+        "Curaçao": 0.564,
+        "Ivory Coast": 2.178
+      },
+      "pick": "Ivory Coast",
+      "confidence": 0.6397,
+      "rating_gap": -194.1
+    },
+    {
+      "id": "wc26-49346",
+      "date": "2026-06-25",
+      "home_team": "Paraguay",
+      "away_team": "Australia",
+      "group": "D",
+      "city": "Santa Clara",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.2593,
+        "draw": 0.3257,
+        "away_win": 0.415
+      },
+      "expected_points": {
+        "Paraguay": 1.104,
+        "Australia": 1.571
+      },
+      "pick": "Australia",
+      "confidence": 0.415,
+      "rating_gap": 2.9
+    },
+    {
+      "id": "wc26-49355",
+      "date": "2026-06-26",
+      "home_team": "Norway",
+      "away_team": "France",
+      "group": "I",
+      "city": "Foxborough",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.107,
+        "draw": 0.2622,
+        "away_win": 0.6308
+      },
+      "expected_points": {
+        "Norway": 0.583,
+        "France": 2.155
+      },
+      "pick": "France",
+      "confidence": 0.6308,
+      "rating_gap": -173.6
+    },
+    {
+      "id": "wc26-49353",
+      "date": "2026-06-26",
+      "home_team": "Cape Verde",
+      "away_team": "Saudi Arabia",
+      "group": "H",
+      "city": "Houston",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.2323,
+        "draw": 0.3193,
+        "away_win": 0.4483
+      },
+      "expected_points": {
+        "Cape Verde": 1.016,
+        "Saudi Arabia": 1.664
+      },
+      "pick": "Saudi Arabia",
+      "confidence": 0.4483,
+      "rating_gap": -7.6
+    },
+    {
+      "id": "wc26-49351",
+      "date": "2026-06-26",
+      "home_team": "Egypt",
+      "away_team": "Iran",
+      "group": "G",
+      "city": "Seattle",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.1673,
+        "draw": 0.298,
+        "away_win": 0.5347
+      },
+      "expected_points": {
+        "Egypt": 0.8,
+        "Iran": 1.902
+      },
+      "pick": "Iran",
+      "confidence": 0.5347,
+      "rating_gap": -78.0
+    },
+    {
+      "id": "wc26-49356",
+      "date": "2026-06-26",
+      "home_team": "Senegal",
+      "away_team": "Iraq",
+      "group": "I",
+      "city": "Toronto",
+      "host_country": "Canada",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.4524,
+        "draw": 0.3162,
+        "away_win": 0.2314
+      },
+      "expected_points": {
+        "Senegal": 1.673,
+        "Iraq": 1.01
+      },
+      "pick": "Senegal",
+      "confidence": 0.4524,
+      "rating_gap": 162.5
+    },
+    {
+      "id": "wc26-49352",
+      "date": "2026-06-26",
+      "home_team": "New Zealand",
+      "away_team": "Belgium",
+      "group": "G",
+      "city": "Vancouver",
+      "host_country": "Canada",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.1115,
+        "draw": 0.2671,
+        "away_win": 0.6214
+      },
+      "expected_points": {
+        "New Zealand": 0.602,
+        "Belgium": 2.131
+      },
+      "pick": "Belgium",
+      "confidence": 0.6214,
+      "rating_gap": -183.5
+    },
+    {
+      "id": "wc26-49354",
+      "date": "2026-06-26",
+      "home_team": "Uruguay",
+      "away_team": "Spain",
+      "group": "H",
+      "city": "Zapopan",
+      "host_country": "Mexico",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.0732,
+        "draw": 0.2298,
+        "away_win": 0.697
+      },
+      "expected_points": {
+        "Uruguay": 0.449,
+        "Spain": 2.321
+      },
+      "pick": "Spain",
+      "confidence": 0.697,
+      "rating_gap": -244.8
+    },
+    {
+      "id": "wc26-49358",
+      "date": "2026-06-27",
+      "home_team": "Jordan",
+      "away_team": "Argentina",
+      "group": "J",
+      "city": "Arlington",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.0278,
+        "draw": 0.1554,
+        "away_win": 0.8168
+      },
+      "expected_points": {
+        "Jordan": 0.239,
+        "Argentina": 2.606
+      },
+      "pick": "Argentina",
+      "confidence": 0.8168,
+      "rating_gap": -398.5
+    },
+    {
+      "id": "wc26-49360",
+      "date": "2026-06-27",
+      "home_team": "DR Congo",
+      "away_team": "Uzbekistan",
+      "group": "K",
+      "city": "Atlanta",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.1715,
+        "draw": 0.2995,
+        "away_win": 0.529
+      },
+      "expected_points": {
+        "DR Congo": 0.814,
+        "Uzbekistan": 1.887
+      },
+      "pick": "Uzbekistan",
+      "confidence": 0.529,
+      "rating_gap": -68.8
+    },
+    {
+      "id": "wc26-49361",
+      "date": "2026-06-27",
+      "home_team": "Panama",
+      "away_team": "England",
+      "group": "L",
+      "city": "East Rutherford",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.0746,
+        "draw": 0.2311,
+        "away_win": 0.6943
+      },
+      "expected_points": {
+        "Panama": 0.455,
+        "England": 2.314
+      },
+      "pick": "England",
+      "confidence": 0.6943,
+      "rating_gap": -238.3
+    },
+    {
+      "id": "wc26-49357",
+      "date": "2026-06-27",
+      "home_team": "Algeria",
+      "away_team": "Austria",
+      "group": "J",
+      "city": "Kansas City",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.2149,
+        "draw": 0.3163,
+        "away_win": 0.4688
+      },
+      "expected_points": {
+        "Algeria": 0.961,
+        "Austria": 1.723
+      },
+      "pick": "Austria",
+      "confidence": 0.4688,
+      "rating_gap": -38.4
+    },
+    {
+      "id": "wc26-49359",
+      "date": "2026-06-27",
+      "home_team": "Colombia",
+      "away_team": "Portugal",
+      "group": "K",
+      "city": "Miami Gardens",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.2738,
+        "draw": 0.3274,
+        "away_win": 0.3989
+      },
+      "expected_points": {
+        "Colombia": 1.149,
+        "Portugal": 1.524
+      },
+      "pick": "Portugal",
+      "confidence": 0.3989,
+      "rating_gap": 18.2
+    },
+    {
+      "id": "wc26-49362",
+      "date": "2026-06-27",
+      "home_team": "Croatia",
+      "away_team": "Ghana",
+      "group": "L",
+      "city": "Philadelphia",
+      "host_country": "United States",
+      "neutral": true,
+      "probabilities": {
+        "home_win": 0.6686,
+        "draw": 0.2383,
+        "away_win": 0.0931
+      },
+      "expected_points": {
+        "Croatia": 2.244,
+        "Ghana": 0.518
+      },
+      "pick": "Croatia",
+      "confidence": 0.6686,
+      "rating_gap": 356.3
+    }
+  ],
+  "groups": {
+    "A": [
+      {
+        "team": "Mexico",
+        "group": "A",
+        "played": 3,
+        "expected_points": 6.072,
+        "expected_wins": 1.739,
+        "expected_draws": 0.855,
+        "expected_losses": 0.406,
+        "rank": 1
+      },
+      {
+        "team": "South Korea",
+        "group": "A",
+        "played": 3,
+        "expected_points": 4.599,
+        "expected_wins": 1.232,
+        "expected_draws": 0.903,
+        "expected_losses": 0.865,
+        "rank": 2
+      },
+      {
+        "team": "Czech Republic",
+        "group": "A",
+        "played": 3,
+        "expected_points": 3.517,
+        "expected_wins": 0.856,
+        "expected_draws": 0.949,
+        "expected_losses": 1.195,
+        "rank": 3
+      },
+      {
+        "team": "South Africa",
+        "group": "A",
+        "played": 3,
+        "expected_points": 2.062,
+        "expected_wins": 0.423,
+        "expected_draws": 0.794,
+        "expected_losses": 1.784,
+        "rank": 4
+      }
+    ],
+    "B": [
+      {
+        "team": "Switzerland",
+        "group": "B",
+        "played": 3,
+        "expected_points": 6.091,
+        "expected_wins": 1.769,
+        "expected_draws": 0.785,
+        "expected_losses": 0.446,
+        "rank": 1
+      },
+      {
+        "team": "Canada",
+        "group": "B",
+        "played": 3,
+        "expected_points": 5.813,
+        "expected_wins": 1.66,
+        "expected_draws": 0.833,
+        "expected_losses": 0.508,
+        "rank": 2
+      },
+      {
+        "team": "Bosnia and Herzegovina",
+        "group": "B",
+        "played": 3,
+        "expected_points": 2.383,
+        "expected_wins": 0.514,
+        "expected_draws": 0.843,
+        "expected_losses": 1.644,
+        "rank": 3
+      },
+      {
+        "team": "Qatar",
+        "group": "B",
+        "played": 3,
+        "expected_points": 2.119,
+        "expected_wins": 0.464,
+        "expected_draws": 0.728,
+        "expected_losses": 1.808,
+        "rank": 4
+      }
+    ],
+    "C": [
+      {
+        "team": "Brazil",
+        "group": "C",
+        "played": 3,
+        "expected_points": 6.019,
+        "expected_wins": 1.747,
+        "expected_draws": 0.777,
+        "expected_losses": 0.476,
+        "rank": 1
+      },
+      {
+        "team": "Morocco",
+        "group": "C",
+        "played": 3,
+        "expected_points": 5.591,
+        "expected_wins": 1.579,
+        "expected_draws": 0.855,
+        "expected_losses": 0.567,
+        "rank": 2
+      },
+      {
+        "team": "Scotland",
+        "group": "C",
+        "played": 3,
+        "expected_points": 3.14,
+        "expected_wins": 0.79,
+        "expected_draws": 0.77,
+        "expected_losses": 1.44,
+        "rank": 3
+      },
+      {
+        "team": "Haiti",
+        "group": "C",
+        "played": 3,
+        "expected_points": 1.675,
+        "expected_wins": 0.309,
+        "expected_draws": 0.748,
+        "expected_losses": 1.943,
+        "rank": 4
+      }
+    ],
+    "D": [
+      {
+        "team": "Turkey",
+        "group": "D",
+        "played": 3,
+        "expected_points": 4.471,
+        "expected_wins": 1.16,
+        "expected_draws": 0.992,
+        "expected_losses": 0.849,
+        "rank": 1
+      },
+      {
+        "team": "Paraguay",
+        "group": "D",
+        "played": 3,
+        "expected_points": 3.975,
+        "expected_wins": 0.99,
+        "expected_draws": 1.005,
+        "expected_losses": 1.005,
+        "rank": 2
+      },
+      {
+        "team": "Australia",
+        "group": "D",
+        "played": 3,
+        "expected_points": 3.877,
+        "expected_wins": 0.962,
+        "expected_draws": 0.992,
+        "expected_losses": 1.046,
+        "rank": 3
+      },
+      {
+        "team": "United States",
+        "group": "D",
+        "played": 3,
+        "expected_points": 3.657,
+        "expected_wins": 0.868,
+        "expected_draws": 1.053,
+        "expected_losses": 1.079,
+        "rank": 4
+      }
+    ],
+    "E": [
+      {
+        "team": "Ecuador",
+        "group": "E",
+        "played": 3,
+        "expected_points": 5.821,
+        "expected_wins": 1.685,
+        "expected_draws": 0.766,
+        "expected_losses": 0.549,
+        "rank": 1
+      },
+      {
+        "team": "Germany",
+        "group": "E",
+        "played": 3,
+        "expected_points": 5.772,
+        "expected_wins": 1.644,
+        "expected_draws": 0.838,
+        "expected_losses": 0.517,
+        "rank": 2
+      },
+      {
+        "team": "Ivory Coast",
+        "group": "E",
+        "played": 3,
+        "expected_points": 3.494,
+        "expected_wins": 0.901,
+        "expected_draws": 0.791,
+        "expected_losses": 1.308,
+        "rank": 3
+      },
+      {
+        "team": "Curaçao",
+        "group": "E",
+        "played": 3,
+        "expected_points": 1.377,
+        "expected_wins": 0.234,
+        "expected_draws": 0.676,
+        "expected_losses": 2.091,
+        "rank": 4
+      }
+    ],
+    "F": [
+      {
+        "team": "Japan",
+        "group": "F",
+        "played": 3,
+        "expected_points": 5.644,
+        "expected_wins": 1.596,
+        "expected_draws": 0.857,
+        "expected_losses": 0.547,
+        "rank": 1
+      },
+      {
+        "team": "Netherlands",
+        "group": "F",
+        "played": 3,
+        "expected_points": 5.501,
+        "expected_wins": 1.557,
+        "expected_draws": 0.831,
+        "expected_losses": 0.612,
+        "rank": 2
+      },
+      {
+        "team": "Sweden",
+        "group": "F",
+        "played": 3,
+        "expected_points": 2.863,
+        "expected_wins": 0.648,
+        "expected_draws": 0.92,
+        "expected_losses": 1.432,
+        "rank": 3
+      },
+      {
+        "team": "Tunisia",
+        "group": "F",
+        "played": 3,
+        "expected_points": 2.302,
+        "expected_wins": 0.511,
+        "expected_draws": 0.77,
+        "expected_losses": 1.72,
+        "rank": 4
+      }
+    ],
+    "G": [
+      {
+        "team": "Belgium",
+        "group": "G",
+        "played": 3,
+        "expected_points": 4.892,
+        "expected_wins": 1.324,
+        "expected_draws": 0.92,
+        "expected_losses": 0.756,
+        "rank": 1
+      },
+      {
+        "team": "Iran",
+        "group": "G",
+        "played": 3,
+        "expected_points": 4.876,
+        "expected_wins": 1.308,
+        "expected_draws": 0.951,
+        "expected_losses": 0.741,
+        "rank": 2
+      },
+      {
+        "team": "Egypt",
+        "group": "G",
+        "played": 3,
+        "expected_points": 3.659,
+        "expected_wins": 0.906,
+        "expected_draws": 0.94,
+        "expected_losses": 1.154,
+        "rank": 3
+      },
+      {
+        "team": "New Zealand",
+        "group": "G",
+        "played": 3,
+        "expected_points": 2.712,
+        "expected_wins": 0.601,
+        "expected_draws": 0.909,
+        "expected_losses": 1.49,
+        "rank": 4
+      }
+    ],
+    "H": [
+      {
+        "team": "Spain",
+        "group": "H",
+        "played": 3,
+        "expected_points": 7.528,
+        "expected_wins": 2.332,
+        "expected_draws": 0.532,
+        "expected_losses": 0.136,
+        "rank": 1
+      },
+      {
+        "team": "Uruguay",
+        "group": "H",
+        "played": 3,
+        "expected_points": 4.948,
+        "expected_wins": 1.414,
+        "expected_draws": 0.707,
+        "expected_losses": 0.879,
+        "rank": 2
+      },
+      {
+        "team": "Saudi Arabia",
+        "group": "H",
+        "played": 3,
+        "expected_points": 2.306,
+        "expected_wins": 0.54,
+        "expected_draws": 0.685,
+        "expected_losses": 1.774,
+        "rank": 3
+      },
+      {
+        "team": "Cape Verde",
+        "group": "H",
+        "played": 3,
+        "expected_points": 1.889,
+        "expected_wins": 0.386,
+        "expected_draws": 0.732,
+        "expected_losses": 1.882,
+        "rank": 4
+      }
+    ],
+    "I": [
+      {
+        "team": "France",
+        "group": "I",
+        "played": 3,
+        "expected_points": 6.381,
+        "expected_wins": 1.869,
+        "expected_draws": 0.775,
+        "expected_losses": 0.356,
+        "rank": 1
+      },
+      {
+        "team": "Norway",
+        "group": "I",
+        "played": 3,
+        "expected_points": 4.109,
+        "expected_wins": 1.092,
+        "expected_draws": 0.832,
+        "expected_losses": 1.076,
+        "rank": 2
+      },
+      {
+        "team": "Senegal",
+        "group": "I",
+        "played": 3,
+        "expected_points": 3.915,
+        "expected_wins": 0.991,
+        "expected_draws": 0.942,
+        "expected_losses": 1.067,
+        "rank": 3
+      },
+      {
+        "team": "Iraq",
+        "group": "I",
+        "played": 3,
+        "expected_points": 1.934,
+        "expected_wins": 0.387,
+        "expected_draws": 0.773,
+        "expected_losses": 1.84,
+        "rank": 4
+      }
+    ],
+    "J": [
+      {
+        "team": "Argentina",
+        "group": "J",
+        "played": 3,
+        "expected_points": 6.857,
+        "expected_wins": 2.06,
+        "expected_draws": 0.677,
+        "expected_losses": 0.263,
+        "rank": 1
+      },
+      {
+        "team": "Austria",
+        "group": "J",
+        "played": 3,
+        "expected_points": 3.846,
+        "expected_wins": 0.978,
+        "expected_draws": 0.912,
+        "expected_losses": 1.11,
+        "rank": 2
+      },
+      {
+        "team": "Algeria",
+        "group": "J",
+        "played": 3,
+        "expected_points": 3.386,
+        "expected_wins": 0.838,
+        "expected_draws": 0.873,
+        "expected_losses": 1.289,
+        "rank": 3
+      },
+      {
+        "team": "Jordan",
+        "group": "J",
+        "played": 3,
+        "expected_points": 2.286,
+        "expected_wins": 0.5,
+        "expected_draws": 0.786,
+        "expected_losses": 1.714,
+        "rank": 4
+      }
+    ],
+    "K": [
+      {
+        "team": "Colombia",
+        "group": "K",
+        "played": 3,
+        "expected_points": 5.569,
+        "expected_wins": 1.581,
+        "expected_draws": 0.824,
+        "expected_losses": 0.594,
+        "rank": 1
+      },
+      {
+        "team": "Portugal",
+        "group": "K",
+        "played": 3,
+        "expected_points": 5.403,
+        "expected_wins": 1.501,
+        "expected_draws": 0.901,
+        "expected_losses": 0.598,
+        "rank": 2
+      },
+      {
+        "team": "Uzbekistan",
+        "group": "K",
+        "played": 3,
+        "expected_points": 3.255,
+        "expected_wins": 0.805,
+        "expected_draws": 0.841,
+        "expected_losses": 1.355,
+        "rank": 3
+      },
+      {
+        "team": "DR Congo",
+        "group": "K",
+        "played": 3,
+        "expected_points": 2.076,
+        "expected_wins": 0.416,
+        "expected_draws": 0.829,
+        "expected_losses": 1.755,
+        "rank": 4
+      }
+    ],
+    "L": [
+      {
+        "team": "England",
+        "group": "L",
+        "played": 3,
+        "expected_points": 6.239,
+        "expected_wins": 1.831,
+        "expected_draws": 0.745,
+        "expected_losses": 0.423,
+        "rank": 1
+      },
+      {
+        "team": "Croatia",
+        "group": "L",
+        "played": 3,
+        "expected_points": 5.505,
+        "expected_wins": 1.552,
+        "expected_draws": 0.848,
+        "expected_losses": 0.599,
+        "rank": 2
+      },
+      {
+        "team": "Panama",
+        "group": "L",
+        "played": 3,
+        "expected_points": 3.396,
+        "expected_wins": 0.88,
+        "expected_draws": 0.755,
+        "expected_losses": 1.365,
+        "rank": 3
+      },
+      {
+        "team": "Ghana",
+        "group": "L",
+        "played": 3,
+        "expected_points": 1.352,
+        "expected_wins": 0.228,
+        "expected_draws": 0.666,
+        "expected_losses": 2.105,
+        "rank": 4
+      }
+    ]
+  },
+  "simulation_runs": 3000,
+  "format_note": "Round-of-32 qualification follows the 2026 format: top two teams from each group plus the eight best third-placed teams. Knockout pairings are an approximate strength-seeded bracket, not the official FIFA bracket."
+}
