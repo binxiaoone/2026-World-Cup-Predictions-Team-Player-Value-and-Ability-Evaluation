@@ -10,6 +10,7 @@ The app is intentionally simple to publish: generated JSON lives in `data/proces
 - Expected group tables for Groups A-L
 - Team strength rankings and champion probabilities from Monte Carlo simulation
 - Player database for the 48 squads, with caps, goals, clubs, positions, and captains
+- Player market values and national-team squad total values
 - Player photo cards with Wikimedia/Wikipedia thumbnail URLs when available
 - Six-attribute, 6-star radar charts for player attack, creativity, defense, experience, physical profile, and impact
 - Clickable player links to Wikipedia source pages and Hupu search pages
@@ -21,6 +22,7 @@ The app is intentionally simple to publish: generated JSON lives in `data/proces
 
 - International match results CSV: `https://raw.githubusercontent.com/martj42/international_results/master/results.csv`
 - 2026 FIFA World Cup squads page: `https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads`
+- Transfermarkt datasets players CSV: `https://pub-e682421888d945d684bcae8890b0ec20.r2.dev/data/players.csv.gz`
 
 The raw download cache is ignored by Git. Regenerate it whenever you want fresh data.
 
@@ -43,6 +45,10 @@ This is a portfolio/demo forecast. It is not betting advice.
 
 Player cards and table rows also include generated Hupu search links such as `https://bbs.hupu.com/search?q=C%E7%BD%97`. The app links out to public Hupu search pages instead of bulk-scraping Hupu posts into the repository, because Hupu content is forum-based and can be rate-limited or change structure.
 
+## Market Values
+
+`scripts/enrich_market_values.py` matches roster players to the public Transfermarkt dataset and adds `market_value` records to `players.json`. It also writes each national team's squad total into `teams.json`. Team totals sum matched players only; unmatched or unvalued players stay blank instead of being guessed.
+
 ## Run Locally
 
 ```powershell
@@ -50,6 +56,7 @@ cd D:\worldcup-ai-predictor
 python -m pip install -r requirements.txt
 python scripts\build_data.py --force-download --simulations 5000
 python scripts\enrich_player_media.py --strategy rest --top-ranked --limit 120 --delay 0.7 --retries 2
+python scripts\enrich_market_values.py --force-download
 python -m http.server 8016
 ```
 
@@ -64,6 +71,7 @@ http://localhost:8016
 ```powershell
 python scripts\build_data.py --force-download --simulations 5000
 python scripts\enrich_player_media.py --strategy rest --top-ranked --limit 120 --delay 0.7 --retries 2
+python scripts\enrich_market_values.py --force-download
 ```
 
 If a source page changes structure, the script will continue to use local cached files when available. For long-term production use, consider replacing the Wikipedia squad parser with an official licensed feed.
@@ -104,6 +112,7 @@ Then enable GitHub Pages:
 |   `-- raw
 |-- scripts
 |   |-- build_data.py
+|   |-- enrich_market_values.py
 |   `-- enrich_player_media.py
 |-- src
 |   |-- app.js

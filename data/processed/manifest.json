@@ -12,6 +12,12 @@
       "url": "https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads",
       "cached_file": "data/raw/wiki_squads.html",
       "downloaded_this_run": false
+    },
+    {
+      "name": "Transfermarkt datasets players.csv.gz",
+      "url": "https://pub-e682421888d945d684bcae8890b0ec20.r2.dev/data/players.csv.gz",
+      "cached_file": "data/raw/transfermarkt_players.csv.gz",
+      "downloaded_this_run": false
     }
   ],
   "model": {
@@ -35,7 +41,11 @@
     "teams": 48,
     "players": 1246,
     "fixtures_predicted": 72,
-    "historical_rows": 49363
+    "historical_rows": 49363,
+    "market_values_matched": 1121,
+    "market_values_valued": 815
   },
-  "disclaimer": "This is an educational forecasting model for a portfolio/GitHub project. It is not betting advice and does not use private team information."
+  "disclaimer": "This is an educational forecasting model for a portfolio/GitHub project. It is not betting advice and does not use private team information.",
+  "market_values_generated_at": "2026-06-03T07:29:52+00:00",
+  "market_value_note": "Market values are matched from a public Transfermarkt dataset mirror. Unmatched players are left blank; team totals sum only matched player values."
 }

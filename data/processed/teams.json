@@ -62,7 +62,16 @@
             "goals": 4,
             "captain": true
           }
-        ]
+        ],
+        "market_value": {
+          "team": "Spain",
+          "matched_players": 26,
+          "valued_players": 25,
+          "total_eur": 990000000,
+          "players": 26,
+          "total_label": "€990.0m",
+          "coverage": 0.962
+        }
       },
       "simulation": {
         "advance_r32": 0.9937,
@@ -135,7 +144,16 @@
             "goals": 5,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "Argentina",
+          "matched_players": 25,
+          "valued_players": 24,
+          "total_eur": 801500000,
+          "players": 26,
+          "total_label": "€801.5m",
+          "coverage": 0.923
+        }
       },
       "simulation": {
         "advance_r32": 0.9777,
@@ -208,7 +226,16 @@
             "goals": 0,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "France",
+          "matched_players": 26,
+          "valued_players": 26,
+          "total_eur": 1463000000,
+          "players": 26,
+          "total_label": "€1.46bn",
+          "coverage": 1.0
+        }
       },
       "simulation": {
         "advance_r32": 0.9487,
@@ -281,7 +308,16 @@
             "goals": 3,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "England",
+          "matched_players": 26,
+          "valued_players": 26,
+          "total_eur": 1294000000,
+          "players": 26,
+          "total_label": "€1.29bn",
+          "coverage": 1.0
+        }
       },
       "simulation": {
         "advance_r32": 0.955,
@@ -354,7 +390,16 @@
             "goals": 9,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "Brazil",
+          "matched_players": 23,
+          "valued_players": 18,
+          "total_eur": 710000000,
+          "players": 26,
+          "total_label": "€710.0m",
+          "coverage": 0.692
+        }
       },
       "simulation": {
         "advance_r32": 0.946,
@@ -427,7 +472,16 @@
             "goals": 8,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "Colombia",
+          "matched_players": 26,
+          "valued_players": 19,
+          "total_eur": 216300000,
+          "players": 26,
+          "total_label": "€216.3m",
+          "coverage": 0.731
+        }
       },
       "simulation": {
         "advance_r32": 0.91,
@@ -500,7 +554,16 @@
             "goals": 12,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "Portugal",
+          "matched_players": 26,
+          "valued_players": 26,
+          "total_eur": 1022500000,
+          "players": 26,
+          "total_label": "€1.02bn",
+          "coverage": 1.0
+        }
       },
       "simulation": {
         "advance_r32": 0.8867,
@@ -573,7 +636,16 @@
             "goals": 14,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "Netherlands",
+          "matched_players": 26,
+          "valued_players": 26,
+          "total_eur": 835100000,
+          "players": 26,
+          "total_label": "€835.1m",
+          "coverage": 1.0
+        }
       },
       "simulation": {
         "advance_r32": 0.9,
@@ -646,7 +718,16 @@
             "goals": 0,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "Germany",
+          "matched_players": 26,
+          "valued_players": 26,
+          "total_eur": 985500000,
+          "players": 26,
+          "total_label": "€985.5m",
+          "coverage": 1.0
+        }
       },
       "simulation": {
         "advance_r32": 0.9273,
@@ -719,7 +800,16 @@
             "goals": 5,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "Ecuador",
+          "matched_players": 25,
+          "valued_players": 17,
+          "total_eur": 297600000,
+          "players": 26,
+          "total_label": "€297.6m",
+          "coverage": 0.654
+        }
       },
       "simulation": {
         "advance_r32": 0.9403,
@@ -792,7 +882,16 @@
             "goals": 12,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "Japan",
+          "matched_players": 26,
+          "valued_players": 20,
+          "total_eur": 222100000,
+          "players": 26,
+          "total_label": "€222.1m",
+          "coverage": 0.769
+        }
       },
       "simulation": {
         "advance_r32": 0.917,
@@ -865,7 +964,16 @@
             "goals": 11,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "Morocco",
+          "matched_players": 23,
+          "valued_players": 20,
+          "total_eur": 408600000,
+          "players": 26,
+          "total_label": "€408.6m",
+          "coverage": 0.769
+        }
       },
       "simulation": {
         "advance_r32": 0.909,
@@ -938,7 +1046,16 @@
             "goals": 11,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "Croatia",
+          "matched_players": 26,
+          "valued_players": 24,
+          "total_eur": 307650000,
+          "players": 26,
+          "total_label": "€307.6m",
+          "coverage": 0.923
+        }
       },
       "simulation": {
         "advance_r32": 0.9077,
@@ -1011,7 +1128,16 @@
             "goals": 13,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "Uruguay",
+          "matched_players": 25,
+          "valued_players": 17,
+          "total_eur": 430750000,
+          "players": 26,
+          "total_label": "€430.8m",
+          "coverage": 0.654
+        }
       },
       "simulation": {
         "advance_r32": 0.8843,
@@ -1084,7 +1210,16 @@
             "goals": 7,
             "captain": true
           }
-        ]
+        ],
+        "market_value": {
+          "team": "Mexico",
+          "matched_players": 26,
+          "valued_players": 11,
+          "total_eur": 115500000,
+          "players": 26,
+          "total_label": "€115.5m",
+          "coverage": 0.423
+        }
       },
       "simulation": {
         "advance_r32": 0.947,
@@ -1157,7 +1292,16 @@
             "goals": 1,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "Norway",
+          "matched_players": 26,
+          "valued_players": 21,
+          "total_eur": 524000000,
+          "players": 26,
+          "total_label": "€524.0m",
+          "coverage": 0.808
+        }
       },
       "simulation": {
         "advance_r32": 0.76,
@@ -1230,7 +1374,16 @@
             "goals": 11,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "Switzerland",
+          "matched_players": 26,
+          "valued_players": 23,
+          "total_eur": 310300000,
+          "players": 26,
+          "total_label": "€310.3m",
+          "coverage": 0.885
+        }
       },
       "simulation": {
         "advance_r32": 0.9477,
@@ -1303,7 +1456,16 @@
             "goals": 3,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "Turkey",
+          "matched_players": 26,
+          "valued_players": 25,
+          "total_eur": 404900000,
+          "players": 26,
+          "total_label": "€404.9m",
+          "coverage": 0.962
+        }
       },
       "simulation": {
         "advance_r32": 0.768,
@@ -1376,7 +1538,16 @@
             "goals": 10,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "Belgium",
+          "matched_players": 26,
+          "valued_players": 26,
+          "total_eur": 453800000,
+          "players": 26,
+          "total_label": "€453.8m",
+          "coverage": 1.0
+        }
       },
       "simulation": {
         "advance_r32": 0.828,
@@ -1449,7 +1620,16 @@
             "goals": 2,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "Senegal",
+          "matched_players": 26,
+          "valued_players": 24,
+          "total_eur": 390800000,
+          "players": 26,
+          "total_label": "€390.8m",
+          "coverage": 0.923
+        }
       },
       "simulation": {
         "advance_r32": 0.688,
@@ -1522,7 +1702,16 @@
             "goals": 8,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "Canada",
+          "matched_players": 24,
+          "valued_players": 14,
+          "total_eur": 159150000,
+          "players": 25,
+          "total_label": "€159.2m",
+          "coverage": 0.56
+        }
       },
       "simulation": {
         "advance_r32": 0.9413,
@@ -1595,7 +1784,16 @@
             "goals": 2,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "Paraguay",
+          "matched_players": 22,
+          "valued_players": 11,
+          "total_eur": 110500000,
+          "players": 26,
+          "total_label": "€110.5m",
+          "coverage": 0.423
+        }
       },
       "simulation": {
         "advance_r32": 0.6883,
@@ -1668,7 +1866,16 @@
             "goals": 11,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "Australia",
+          "matched_players": 26,
+          "valued_players": 16,
+          "total_eur": 34050000,
+          "players": 26,
+          "total_label": "€34.0m",
+          "coverage": 0.615
+        }
       },
       "simulation": {
         "advance_r32": 0.6627,
@@ -1741,7 +1948,16 @@
             "goals": 7,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "Austria",
+          "matched_players": 25,
+          "valued_players": 22,
+          "total_eur": 253400000,
+          "players": 25,
+          "total_label": "€253.4m",
+          "coverage": 0.88
+        }
       },
       "simulation": {
         "advance_r32": 0.689,
@@ -1814,7 +2030,16 @@
             "goals": 14,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "Iran",
+          "matched_players": 15,
+          "valued_players": 14,
+          "total_eur": 19275000,
+          "players": 26,
+          "total_label": "€19.3m",
+          "coverage": 0.538
+        }
       },
       "simulation": {
         "advance_r32": 0.8213,
@@ -1887,7 +2112,16 @@
             "goals": 4,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "South Korea",
+          "matched_players": 1,
+          "valued_players": 1,
+          "total_eur": 1500000,
+          "players": 26,
+          "total_label": "€1.5m",
+          "coverage": 0.038
+        }
       },
       "simulation": {
         "advance_r32": 0.7997,
@@ -1960,7 +2194,16 @@
             "goals": 1,
             "captain": true
           }
-        ]
+        ],
+        "market_value": {
+          "team": "United States",
+          "matched_players": 26,
+          "valued_players": 18,
+          "total_eur": 322800000,
+          "players": 26,
+          "total_label": "€322.8m",
+          "coverage": 0.692
+        }
       },
       "simulation": {
         "advance_r32": 0.6057,
@@ -2033,7 +2276,16 @@
             "goals": 6,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "Algeria",
+          "matched_players": 24,
+          "valued_players": 20,
+          "total_eur": 198800000,
+          "players": 26,
+          "total_label": "€198.8m",
+          "coverage": 0.769
+        }
       },
       "simulation": {
         "advance_r32": 0.616,
@@ -2106,7 +2358,16 @@
             "goals": 17,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "Panama",
+          "matched_players": 22,
+          "valued_players": 6,
+          "total_eur": 15200000,
+          "players": 26,
+          "total_label": "€15.2m",
+          "coverage": 0.231
+        }
       },
       "simulation": {
         "advance_r32": 0.6583,
@@ -2179,7 +2440,16 @@
             "goals": 10,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "Uzbekistan",
+          "matched_players": 21,
+          "valued_players": 8,
+          "total_eur": 52850000,
+          "players": 26,
+          "total_label": "€52.9m",
+          "coverage": 0.308
+        }
       },
       "simulation": {
         "advance_r32": 0.582,
@@ -2252,7 +2522,16 @@
             "goals": 10,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "Scotland",
+          "matched_players": 24,
+          "valued_players": 24,
+          "total_eur": 232600000,
+          "players": 26,
+          "total_label": "€232.6m",
+          "coverage": 0.923
+        }
       },
       "simulation": {
         "advance_r32": 0.5727,
@@ -2325,7 +2604,16 @@
             "goals": 0,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "Egypt",
+          "matched_players": 17,
+          "valued_players": 9,
+          "total_eur": 112000000,
+          "players": 26,
+          "total_label": "€112.0m",
+          "coverage": 0.346
+        }
       },
       "simulation": {
         "advance_r32": 0.638,
@@ -2398,7 +2686,16 @@
             "goals": 7,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "Ivory Coast",
+          "matched_players": 26,
+          "valued_players": 24,
+          "total_eur": 419800000,
+          "players": 26,
+          "total_label": "€419.8m",
+          "coverage": 0.923
+        }
       },
       "simulation": {
         "advance_r32": 0.6597,
@@ -2471,7 +2768,16 @@
             "goals": 5,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "Czech Republic",
+          "matched_players": 26,
+          "valued_players": 15,
+          "total_eur": 126400000,
+          "players": 26,
+          "total_label": "€126.4m",
+          "coverage": 0.577
+        }
       },
       "simulation": {
         "advance_r32": 0.6193,
@@ -2544,7 +2850,16 @@
             "goals": 3,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "Jordan",
+          "matched_players": 17,
+          "valued_players": 0,
+          "total_eur": 0,
+          "players": 26,
+          "total_label": "€0",
+          "coverage": 0.0
+        }
       },
       "simulation": {
         "advance_r32": 0.3573,
@@ -2617,7 +2932,16 @@
             "goals": 6,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "Sweden",
+          "matched_players": 26,
+          "valued_players": 20,
+          "total_eur": 439800000,
+          "players": 26,
+          "total_label": "€439.8m",
+          "coverage": 0.769
+        }
       },
       "simulation": {
         "advance_r32": 0.4717,
@@ -2690,7 +3014,16 @@
             "goals": 7,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "DR Congo",
+          "matched_players": 23,
+          "valued_players": 20,
+          "total_eur": 114550000,
+          "players": 26,
+          "total_label": "€114.5m",
+          "coverage": 0.769
+        }
       },
       "simulation": {
         "advance_r32": 0.311,
@@ -2763,7 +3096,16 @@
             "goals": 1,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "New Zealand",
+          "matched_players": 26,
+          "valued_players": 15,
+          "total_eur": 22875000,
+          "players": 26,
+          "total_label": "€22.9m",
+          "coverage": 0.577
+        }
       },
       "simulation": {
         "advance_r32": 0.4377,
@@ -2836,7 +3178,16 @@
             "goals": 3,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "Iraq",
+          "matched_players": 23,
+          "valued_players": 6,
+          "total_eur": 7100000,
+          "players": 26,
+          "total_label": "€7.1m",
+          "coverage": 0.231
+        }
       },
       "simulation": {
         "advance_r32": 0.2957,
@@ -2909,7 +3260,16 @@
             "goals": 4,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "Tunisia",
+          "matched_players": 20,
+          "valued_players": 12,
+          "total_eur": 36200000,
+          "players": 26,
+          "total_label": "€36.2m",
+          "coverage": 0.462
+        }
       },
       "simulation": {
         "advance_r32": 0.3737,
@@ -2982,7 +3342,16 @@
             "goals": 11,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "Saudi Arabia",
+          "matched_players": 26,
+          "valued_players": 3,
+          "total_eur": 5650000,
+          "players": 26,
+          "total_label": "€5.7m",
+          "coverage": 0.115
+        }
       },
       "simulation": {
         "advance_r32": 0.3973,
@@ -3055,7 +3424,16 @@
             "goals": 5,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "Cape Verde",
+          "matched_players": 17,
+          "valued_players": 13,
+          "total_eur": 36775000,
+          "players": 26,
+          "total_label": "€36.8m",
+          "coverage": 0.5
+        }
       },
       "simulation": {
         "advance_r32": 0.2737,
@@ -3128,7 +3506,16 @@
             "goals": 10,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "Haiti",
+          "matched_players": 17,
+          "valued_players": 15,
+          "total_eur": 54050000,
+          "players": 26,
+          "total_label": "€54.0m",
+          "coverage": 0.577
+        }
       },
       "simulation": {
         "advance_r32": 0.229,
@@ -3201,7 +3588,16 @@
             "goals": 8,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "South Africa",
+          "matched_players": 21,
+          "valued_players": 1,
+          "total_eur": 13000000,
+          "players": 26,
+          "total_label": "€13.0m",
+          "coverage": 0.038
+        }
       },
       "simulation": {
         "advance_r32": 0.3113,
@@ -3274,7 +3670,16 @@
             "goals": 2,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "Bosnia and Herzegovina",
+          "matched_players": 25,
+          "valued_players": 18,
+          "total_eur": 77350000,
+          "players": 26,
+          "total_label": "€77.3m",
+          "coverage": 0.692
+        }
       },
       "simulation": {
         "advance_r32": 0.394,
@@ -3347,7 +3752,16 @@
             "goals": 0,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "Ghana",
+          "matched_players": 24,
+          "valued_players": 20,
+          "total_eur": 181100000,
+          "players": 26,
+          "total_label": "€181.1m",
+          "coverage": 0.769
+        }
       },
       "simulation": {
         "advance_r32": 0.16,
@@ -3420,7 +3834,16 @@
             "goals": 1,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "Curaçao",
+          "matched_players": 25,
+          "valued_players": 22,
+          "total_eur": 34425000,
+          "players": 26,
+          "total_label": "€34.4m",
+          "coverage": 0.846
+        }
       },
       "simulation": {
         "advance_r32": 0.1623,
@@ -3493,7 +3916,16 @@
             "goals": 11,
             "captain": false
           }
-        ]
+        ],
+        "market_value": {
+          "team": "Qatar",
+          "matched_players": 21,
+          "valued_players": 4,
+          "total_eur": 8300000,
+          "players": 26,
+          "total_label": "€8.3m",
+          "coverage": 0.154
+        }
       },
       "simulation": {
         "advance_r32": 0.3293,

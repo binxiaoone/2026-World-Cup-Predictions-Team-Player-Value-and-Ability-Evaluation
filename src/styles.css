@@ -477,7 +477,7 @@ tr:last-child td {
 }
 
 .table-wrap table {
-  min-width: 1040px;
+  min-width: 1120px;
   background: #fbfcfb;
 }
 
@@ -559,7 +559,15 @@ tr:last-child td {
   text-align: center;
 }
 
-.overall {
+.player-facts {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.overall,
+.value-pill {
   display: inline-flex;
   align-items: baseline;
   gap: 5px;
@@ -571,12 +579,19 @@ tr:last-child td {
   font-weight: 850;
 }
 
-.overall strong {
+.value-pill {
+  background: rgba(47, 102, 144, 0.1);
+  color: var(--blue);
+}
+
+.overall strong,
+.value-pill strong {
   color: var(--ink);
   font-size: 1.2rem;
 }
 
-.overall span {
+.overall span,
+.value-pill span {
   color: var(--muted);
 }
 

@@ -39,6 +39,10 @@ const I18N = {
     player: "球员",
     position: "位置",
     overall: "综合",
+    marketValue: "身价",
+    squadValue: "总身价",
+    valueCoverage: "覆盖率",
+    noValue: "暂无",
     age: "年龄",
     caps: "出场",
     goals: "进球",
@@ -106,6 +110,10 @@ const I18N = {
     player: "Player",
     position: "Pos",
     overall: "Overall",
+    marketValue: "Market Value",
+    squadValue: "Squad Value",
+    valueCoverage: "Coverage",
+    noValue: "N/A",
     age: "Age",
     caps: "Caps",
     goals: "Goals",
@@ -335,6 +343,14 @@ function playerLinks(player, compact = false) {
   return `<div class="external-links">${wiki}${hupu}</div>`;
 }
 
+function marketLabel(player) {
+  return player.market_value?.label || t("noValue");
+}
+
+function teamMarketValue(team) {
+  return team.squad?.market_value || {};
+}
+
 function fixturePasses(fixture) {
   if (state.group !== "All" && fixture.group !== state.group) return false;
   if (state.team !== "All" && ![fixture.home_team, fixture.away_team].includes(state.team)) return false;
@@ -418,16 +434,18 @@ function renderFeaturedSquads() {
     ? teams
         .map((team) => {
           const squad = team.squad || {};
+          const market = teamMarketValue(team);
           const topPlayers = squad.top_players || [];
           return `
             <article class="squad">
               <h3>${escapeHtml(team.team)}</h3>
               <div class="subtext">${t("group")} ${team.group} | ${t("champion")} ${percent(team.simulation?.champion || 0)}</div>
               <div class="squad-stats">
+                <div><span>${t("squadValue")}</span><strong>${market.total_label || t("noValue")}</strong></div>
+                <div><span>${t("valueCoverage")}</span><strong>${percent(market.coverage || 0)}</strong></div>
                 <div><span>${t("avgAge")}</span><strong>${squad.avg_age ?? "--"}</strong></div>
-                <div><span>${t("caps")}</span><strong>${number(squad.total_caps)}</strong></div>
-                <div><span>${t("goals")}</span><strong>${number(squad.total_goals)}</strong></div>
               </div>
+              <div class="subtext">${t("caps")} ${number(squad.total_caps)} | ${t("goals")} ${number(squad.total_goals)}</div>
               <div class="mini-list">
                 ${topPlayers
                   .map(
@@ -549,6 +567,7 @@ function renderPlayers() {
               <td>${escapeHtml(player.team)}</td>
               <td>${escapeHtml(player.position)}</td>
               <td><strong>${player.abilities?.overall ?? "--"}</strong></td>
+              <td><strong>${escapeHtml(marketLabel(player))}</strong></td>
               <td>${player.age ?? "--"}</td>
               <td>${number(player.caps)}</td>
               <td>${number(player.goals)}</td>
@@ -558,7 +577,7 @@ function renderPlayers() {
           `,
         )
         .join("")
-    : `<tr><td colspan="10">${empty(t("noPlayers"))}</td></tr>`;
+    : `<tr><td colspan="11">${empty(t("noPlayers"))}</td></tr>`;
 }
 
 function renderPlayerCards(players) {
@@ -576,7 +595,10 @@ function playerCard(player) {
           <span class="subtext">${t("group")} ${escapeHtml(player.group)} | ${escapeHtml(player.position)}</span>
           <h3>${escapeHtml(player.player)}${player.captain ? '<span class="captain">C</span>' : ""}</h3>
           <p>${escapeHtml(player.team)} | ${escapeHtml(player.club)}</p>
-          <div class="overall">${t("overall")} <strong>${player.abilities?.overall ?? "--"}</strong><span>/ 6</span></div>
+          <div class="player-facts">
+            <div class="overall">${t("overall")} <strong>${player.abilities?.overall ?? "--"}</strong><span>/ 6</span></div>
+            <div class="value-pill">${t("marketValue")} <strong>${escapeHtml(marketLabel(player))}</strong></div>
+          </div>
           ${playerLinks(player)}
         </div>
       </div>
