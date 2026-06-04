@@ -109,6 +109,7 @@ const I18N = {
     squadFreshness: "Squads",
     featuredSquads: "Featured Squads",
     topExperience: "Top international experience",
+    heroHeadline: "Opening match, title odds, and squad value at a glance",
     matchPredictions: "Match Predictions",
     winDrawLoss: "Home win / draw / away win",
     playerDatabase: "Player Database",
@@ -375,9 +376,18 @@ function renderHeroFacts() {
   const sourceNames = sources.map((source) => source.name).slice(0, 3);
   const scheduleFixtures = state.fixtures.filter((fixture) => fixture.kickoff_utc || fixture.kickoff_et);
   const firstMatch = scheduleFixtures[0];
+  const topTitleTeams = [...state.teams]
+    .sort((a, b) => (b.simulation?.champion || 0) - (a.simulation?.champion || 0))
+    .slice(0, 3)
+    .map((team) => `${team.team} ${percent(team.simulation?.champion || 0)}`);
   const squadUpdated = state.manifest.generated_at
     ? new Date(state.manifest.generated_at).toLocaleDateString(state.lang === "zh" ? "zh-CN" : "en-US")
     : "--";
+
+  $("#heroHeadline").textContent = firstMatch
+    ? `${firstMatch.home_team} vs ${firstMatch.away_team} starts ${firstMatch.kickoff_et || firstMatch.kickoff_utc}`
+    : "Opening match and title race overview";
+  $("#heroSubline").textContent = `Top title odds: ${topTitleTeams.join("  |  ")}`;
 
   $("#dataSourceSummary").textContent = `${number(sources.length)} ${state.lang === "zh" ? "个公开数据源" : "public sources"}`;
   $("#dataSourceDetail").textContent = sourceNames.join(" / ");

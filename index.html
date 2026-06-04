@@ -26,41 +26,50 @@
     </header>
 
     <main>
-      <section class="summary-grid" aria-label="Model summary">
-        <article class="metric">
-          <span class="metric-label" data-i18n="teams">Teams</span>
-          <strong id="teamCount">--</strong>
-        </article>
-        <article class="metric">
-          <span class="metric-label" data-i18n="players">Players</span>
-          <strong id="playerCount">--</strong>
-        </article>
-        <article class="metric">
-          <span class="metric-label" data-i18n="fixtures">Fixtures</span>
-          <strong id="fixtureCount">--</strong>
-        </article>
-        <article class="metric">
-          <span class="metric-label" data-i18n="validationAccuracy">Validation Accuracy</span>
-          <strong id="modelAccuracy">--</strong>
-        </article>
-      </section>
+      <section class="hero-shell">
+        <section class="hero-main">
+          <div class="hero-copy">
+            <p class="hero-kicker" data-i18n="appTitle">AI Prediction Dashboard</p>
+            <h2 id="heroHeadline">--</h2>
+            <p id="heroSubline">--</p>
+          </div>
+          <div class="hero-metrics">
+            <article class="hero-stat">
+              <span class="metric-label" data-i18n="teams">Teams</span>
+              <strong id="teamCount">--</strong>
+            </article>
+            <article class="hero-stat">
+              <span class="metric-label" data-i18n="players">Players</span>
+              <strong id="playerCount">--</strong>
+            </article>
+            <article class="hero-stat">
+              <span class="metric-label" data-i18n="fixtures">Fixtures</span>
+              <strong id="fixtureCount">--</strong>
+            </article>
+            <article class="hero-stat">
+              <span class="metric-label" data-i18n="validationAccuracy">Validation Accuracy</span>
+              <strong id="modelAccuracy">--</strong>
+            </article>
+          </div>
+        </section>
 
-      <section class="hero-strip">
-        <article class="hero-card">
-          <span class="hero-label" data-i18n="dataSources">Data sources</span>
-          <strong id="dataSourceSummary">--</strong>
-          <p id="dataSourceDetail">--</p>
-        </article>
-        <article class="hero-card">
-          <span class="hero-label" data-i18n="scheduleFreshness">Schedule times</span>
-          <strong id="scheduleSummary">--</strong>
-          <p id="scheduleDetail">--</p>
-        </article>
-        <article class="hero-card">
-          <span class="hero-label" data-i18n="squadFreshness">Squads</span>
-          <strong id="squadSummary">--</strong>
-          <p id="squadDetail">--</p>
-        </article>
+        <aside class="hero-side">
+          <article class="hero-card hero-card-spotlight">
+            <span class="hero-label" data-i18n="scheduleFreshness">Schedule times</span>
+            <strong id="scheduleSummary">--</strong>
+            <p id="scheduleDetail">--</p>
+          </article>
+          <article class="hero-card">
+            <span class="hero-label" data-i18n="squadFreshness">Squads</span>
+            <strong id="squadSummary">--</strong>
+            <p id="squadDetail">--</p>
+          </article>
+          <article class="hero-card">
+            <span class="hero-label" data-i18n="dataSources">Data sources</span>
+            <strong id="dataSourceSummary">--</strong>
+            <p id="dataSourceDetail">--</p>
+          </article>
+        </aside>
       </section>
 
       <section class="toolbar" aria-label="Dashboard controls">
