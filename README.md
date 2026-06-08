@@ -22,7 +22,7 @@ The app is intentionally simple to publish: generated JSON lives in `data/proces
 
 - International match results CSV: `https://raw.githubusercontent.com/martj42/international_results/master/results.csv`
 - 2026 FIFA World Cup squads page: `https://en.wikipedia.org/wiki/2026_FIFA_World_Cup_squads`
-- Transfermarkt datasets players CSV: `https://pub-e682421888d945d684bcae8890b0ec20.r2.dev/data/players.csv.gz`
+- Transfermarkt player values dataset: `https://github.com/dcaribou/transfermarkt-datasets`
 
 The raw download cache is ignored by Git. Regenerate it whenever you want fresh data.
 
@@ -47,7 +47,7 @@ Player cards and table rows also include generated Hupu search links such as `ht
 
 ## Market Values
 
-`scripts/enrich_market_values.py` matches roster players to the public Transfermarkt dataset and adds `market_value` records to `players.json`. It also writes each national team's squad total into `teams.json`. Team totals sum matched players only; unmatched or unvalued players stay blank instead of being guessed.
+`scripts/enrich_market_values.py` matches roster players to a public Transfermarkt-derived dataset and adds `market_value` records to `players.json`. It also writes each national team's squad total into `teams.json`. Team totals sum matched players only; unmatched or unvalued players stay blank instead of being guessed.
 
 ## Run Locally
 

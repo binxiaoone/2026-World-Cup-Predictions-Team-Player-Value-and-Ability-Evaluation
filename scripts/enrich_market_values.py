@@ -22,6 +22,8 @@ TEAMS_PATH = PROCESSED_DIR / "teams.json"
 MANIFEST_PATH = PROCESSED_DIR / "manifest.json"
 TM_PLAYERS_PATH = RAW_DIR / "transfermarkt_players.csv.gz"
 TM_PLAYERS_URL = "https://pub-e682421888d945d684bcae8890b0ec20.r2.dev/data/players.csv.gz"
+TM_SOURCE_NAME = "Transfermarkt player values dataset"
+TM_SOURCE_URL = "https://github.com/dcaribou/transfermarkt-datasets"
 
 TEAM_COUNTRY_ALIASES = {
     "Bosnia and Herzegovina": ["Bosnia-Herzegovina", "Bosnia and Herzegovina"],
@@ -244,8 +246,8 @@ def enrich(force_download: bool) -> None:
         market_value: dict[str, Any] = {
             "eur": None,
             "label": None,
-            "source": "Transfermarkt datasets",
-            "source_url": TM_PLAYERS_URL,
+            "source": TM_SOURCE_NAME,
+            "source_url": TM_SOURCE_URL,
             "player_url": None,
             "matched_name": None,
             "matched_club": None,
@@ -303,13 +305,15 @@ def enrich(force_download: bool) -> None:
         team.setdefault("squad", {})["market_value"] = value
 
     source_record = {
-        "name": "Transfermarkt datasets players.csv.gz",
-        "url": TM_PLAYERS_URL,
+        "name": TM_SOURCE_NAME,
+        "url": TM_SOURCE_URL,
         "cached_file": str(TM_PLAYERS_PATH.relative_to(ROOT)).replace("\\", "/"),
         "downloaded_this_run": downloaded,
     }
     data_sources = [
-        source for source in manifest.setdefault("data_sources", []) if source.get("url") != TM_PLAYERS_URL
+        source
+        for source in manifest.setdefault("data_sources", [])
+        if source.get("cached_file") != str(TM_PLAYERS_PATH.relative_to(ROOT)).replace("\\", "/")
     ]
     data_sources.append(source_record)
     manifest["data_sources"] = data_sources
